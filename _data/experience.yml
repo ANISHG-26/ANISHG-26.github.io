@@ -1,0 +1,14 @@
+- company: Ernst & Young LLP
+  role: Senior Technology Consultant
+  period: 2024 — Present
+  focus: Kubernetes delivery, CI/CD, observability, release workflows, and developer enablement.
+
+- company: Morgan Stanley
+  role: Technology Analyst Intern
+  period: 2023 — 2024
+  focus: Containerized test infrastructure and repeatable developer tooling for a legacy platform.
+
+- company: Accenture
+  role: Application Development Analyst
+  period: 2020 — 2022
+  focus: CI/CD automation, OpenShift application delivery, and reusable onboarding workflows.

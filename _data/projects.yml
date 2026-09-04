@@ -1,0 +1,32 @@
+- index: "01"
+  status: Academic prototype
+  title: Cross-cloud MLOps pipeline
+  description: >-
+    A comparative delivery workflow across AWS, Azure, and GCP, built with a
+    three-person university team.
+  tags:
+    - Cloud delivery
+    - Containers
+    - MLOps
+
+- index: "02"
+  status: Client-restricted case study
+  title: Jason's Moving App
+  description: >-
+    A cloud and DevOps workstream for a student consulting engagement,
+    presented without client source or private details.
+  tags:
+    - Azure
+    - GitHub Actions
+    - Platform design
+
+- index: "03"
+  status: Team project
+  title: ChargeRoute Navigator
+  description: >-
+    A hackathon EV route-planning prototype where the contribution focused on
+    hosted integration and team enablement.
+  tags:
+    - Integration
+    - Delivery
+    - Rapid prototyping
