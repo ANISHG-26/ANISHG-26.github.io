@@ -204,6 +204,13 @@ has not been verified. This is a reference-role contract, not a completed visual
   typographic family.
 - Preserve the existing size hierarchy, spacing, colors, and frozen homepage.
 
+### I026 — Animated About Profile Terminal, 2026-09-05
+
+- Present the About profile introduction in a terminal window with an animated
+  `$ whoami` command followed by the profile output.
+- Balance the portrait and terminal panel as stretch-height columns for wider
+  laptop layouts while preserving the mobile stack.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

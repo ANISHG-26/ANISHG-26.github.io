@@ -69,3 +69,21 @@ if (terminal && terminalCommand && terminalOutput && !reducedMotion.matches) {
   };
   window.setTimeout(typeCommand, 420);
 }
+const aboutCommand = document.querySelector('[data-about-command]');
+const aboutReveal = document.querySelector('.about-reveal');
+const aboutProfile = document.querySelector('.about-profile');
+if (aboutCommand && aboutReveal && aboutProfile && !reducedMotion.matches) {
+  const command = aboutCommand.textContent;
+  aboutCommand.textContent = '';
+  document.documentElement.classList.add('about-sequence-pending');
+  let index = 0;
+  const typeAboutCommand = () => {
+    aboutCommand.textContent = command.slice(0, ++index);
+    if (index < command.length) window.setTimeout(typeAboutCommand, 80);
+    else window.setTimeout(() => {
+      aboutProfile.classList.add('is-executed');
+      document.documentElement.classList.remove('about-sequence-pending');
+    }, 480);
+  };
+  window.setTimeout(typeAboutCommand, 420);
+}
