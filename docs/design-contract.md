@@ -172,6 +172,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Increase and vertically align the workspace path text to match the terminal
   typography scale.
 
+### I020 — Wrapped Homepage Reflection, 2026-09-05
+
+- Keep the homepage reflection text inside its grid column by allowing grid
+  children to shrink and wrapping long technical terms safely.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
