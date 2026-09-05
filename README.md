@@ -33,7 +33,8 @@ changing its identity.
 
 The current iteration puts foundation-first philosophy at the center, with a Linux
 directory-style homepage and a values YAML panel. Read `AGENTS.md`,
-`docs/design-contract.md`, and `CHANGELOG.md` before making another iteration.
+`docs/design-contract.md`, and the ignored local privacy/changelog files identified
+by `AGENTS.md` before making another iteration.
 The custom stylesheet is `assets/css/portfolio.css`, avoiding the default theme's
 `style.css` output. Public resume source and build instructions live in
 `docs/resume/`; only its reviewed PDF is included in the site.

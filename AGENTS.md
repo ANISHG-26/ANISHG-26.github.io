@@ -1,8 +1,33 @@
 # Portfolio Agent Contract
 
-Read this file and `docs/design-contract.md` before changing this portfolio.
-Maintain `CHANGELOG.md` for every iteration. The user's latest explicit direction
-takes precedence; update these contracts when that direction changes.
+Read this file, `docs/design-contract.md`, and the local-only
+`.context/private/privacy.md` before changing this portfolio. Maintain the local-only
+`.context/private/CHANGELOG.md` for every iteration. If either private file is absent,
+recreate a conservative local copy before working; never move it into the tracked tree.
+The user's latest explicit direction takes precedence; update these contracts when
+that direction changes.
+
+## Privacy Boundary
+
+- Treat every tracked file, commit message, branch name, Issue, pull request, build
+  artifact, and generated page as public. Git deletion does not remove prior commits.
+- Do not copy restricted material from the career repository or any other repository
+  into this one. Restricted material includes direct contact details, home addresses,
+  raw career narratives, private reflections, job-search or application status,
+  compensation, recruiter or networking records, private correspondence, credentials,
+  confidential client or product details, and local filesystem paths.
+- Import career claims only from approved canonical evidence and reduce them to the
+  minimum public-safe wording needed by the site. Public identity, approved biography,
+  professional history, education, portfolio interests, GitHub, LinkedIn, and this
+  portfolio URL are allowed only when intentionally selected for publication.
+- Never place raw source material in this repository, even temporarily. Use an ignored
+  path under `.context/private/` for private review notes and delete disposable copies
+  when they are no longer needed.
+- Before committing, scan the staged diff and generated site for email addresses,
+  phone numbers, `mailto:`/`tel:` links, secrets, local paths, and unintended personal
+  details. Inspect PDF text, links, attachments, and metadata separately.
+- A privacy audit may report findings but does not authorize publishing, pushing,
+  rewriting Git history, or deleting private source material.
 
 ## Iterations And Git History
 
@@ -16,9 +41,9 @@ takes precedence; update these contracts when that direction changes.
   Label it as an inherited draft, not an approved design or approved public content.
   Exclude generated output, secrets, and private material. Record any excluded
   files and outstanding review in the changelog.
-- Every completed iteration MUST end with a local Git commit. Update the changelog
-  and commit it with that iteration's files before starting another iteration or
-  handing the work back to the user. Local commits are authorized by this contract;
+- Every completed iteration MUST end with a local Git commit. Update the local-only
+  changelog before committing the iteration's tracked files. The changelog itself must
+  remain ignored and must not be staged. Local commits are authorized by this contract;
   do not repeatedly ask whether to commit.
 - Stage explicit paths or reviewed hunks. Never use blanket staging to absorb
   unrelated work. Inspect the staged diff and run `git diff --cached --check`.
@@ -45,7 +70,7 @@ takes precedence; update these contracts when that direction changes.
   validation is historical context, not a check run by the current agent.
 - Keep entries public-safe. Do not include private career narratives, credentials,
   internal client information, or local personal paths.
-- The entry is included in its own commit; Git history supplies its commit hash.
+- The entry remains local-only; record the resulting commit hash in it after commit.
 
 ## Implementation And Validation
 

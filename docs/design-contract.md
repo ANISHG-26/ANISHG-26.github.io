@@ -80,9 +80,9 @@ has not been verified. This is a reference-role contract, not a completed visual
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
-has chosen, update this file and the changelog in the same iteration commit.
+has chosen, update this file and the local-only changelog during the same iteration.
 Do not treat an agent's proposal as an approved design decision.
 
 Before another iteration starts, its predecessor must have a recoverable Git
-checkpoint. This contract is the stable reference; the changelog records change,
-and Git preserves the actual versions.
+checkpoint. This contract is the stable reference; the local-only changelog records
+change, and Git preserves the actual versions.
