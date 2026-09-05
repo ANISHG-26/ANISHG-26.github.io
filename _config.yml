@@ -11,6 +11,12 @@ markdown: kramdown
 permalink: pretty
 
 exclude:
+  - AGENTS.md
+  - CHANGELOG.md
+  - docs
+  - scripts
+  - tmp
+  - .context
   - README.md
   - node_modules
   - .pnpm-store

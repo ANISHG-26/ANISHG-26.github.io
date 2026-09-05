@@ -9,3 +9,5 @@ node_modules/
 .pnpm-store/
 .DS_Store
 Thumbs.db
+tmp/
+.context/

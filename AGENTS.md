@@ -73,3 +73,7 @@ takes precedence; update these contracts when that direction changes.
 - A local checkpoint does not approve a resume or career claim for publication.
   The inherited resume's candidate-approval status must be resolved before public
   deployment. Do not infer approval from its presence in `assets/resume/`.
+- Public resume contact details must be limited to LinkedIn, GitHub, and the
+  portfolio URL. Rebuild from public-safe source; check extracted text, annotations,
+  and metadata for email/phone data before committing the PDF. Never commit the
+  inherited contact-bearing PDF or raw private notes.

@@ -2,7 +2,7 @@
 layout: page
 title: Experience
 description: Platform delivery, developer enablement, and reliable engineering foundations across enterprise environments.
-command: git log --career
+command: cat experience.md
 permalink: /experience/
 ---
 
@@ -12,6 +12,7 @@ permalink: /experience/
       <div>
         <h2>{{ item.company }}</h2>
         <p>{{ item.role }}</p>
+        {% if item.previous_role %}<p class="previous-role">{{ item.previous_role }}</p>{% endif %}
       </div>
       <p class="experience-focus">{{ item.focus }}</p>
       <time>{{ item.period }}</time>

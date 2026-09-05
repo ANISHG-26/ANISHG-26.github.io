@@ -31,4 +31,14 @@ interaction language, a neutral gray dark mode, and cyan, teal, pink, and purple
 A later writing index and individual project case studies can deepen the site without
 changing its identity.
 
+The current iteration puts foundation-first philosophy at the center, with a Linux
+directory-style homepage and a values YAML panel. Read `AGENTS.md`,
+`docs/design-contract.md`, and `CHANGELOG.md` before making another iteration.
+The custom stylesheet is `assets/css/portfolio.css`, avoiding the default theme's
+`style.css` output. Public resume source and build instructions live in
+`docs/resume/`; only its reviewed PDF is included in the site.
+
+After a production build, run `python scripts/check_public.py` (requires pypdf)
+to check local links, output exclusions, and the public resume contact policy.
+
 Public deployment remains gated on content, link, privacy, and security review.

@@ -1,68 +1,57 @@
 ---
 layout: default
-title: Anish George — Platform Engineer
-description: Platform engineering portfolio of Anish George.
+title: Anish George — Foundations First
+description: Platform engineering, thoughtful foundations, and a few things beyond the terminal. The personal workspace of Anish George.
 ---
-
 <a class="skip-link" href="#main">Skip to content</a>
 {% include site-header.html %}
-
-<main id="main">
-  <section class="home-hero section-shell">
-    <div class="hero-status reveal">
-      <span class="signal-dot" aria-hidden="true"></span>
-      <span>available for platform engineering conversations</span>
-      <span class="status-location">Ottawa, Canada</span>
-    </div>
-
-    <div class="home-hero-grid">
-      <div class="hero-copy reveal">
-        <p class="command-line"><span class="prompt-mark">❯</span> whoami</p>
-        <h1>Anish George<span class="hero-role">Platform Engineer.</span></h1>
-        <div class="hero-actions">
-          <a class="button button-primary" href="{{ '/assets/resume/anish-george-resume.pdf' | relative_url }}" target="_blank" rel="noopener">
-            <i data-lucide="file-down" aria-hidden="true"></i> resume.pdf
-          </a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/anishgeorge97" target="_blank" rel="noopener noreferrer">
-            <i data-lucide="network" aria-hidden="true"></i> LinkedIn <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="mission-copy reveal" aria-label="Platform engineering mission">
-        <p>I build the <mark class="highlight-cyan">delivery paths</mark>, <mark class="highlight-pink">runtime foundations</mark>, and <mark class="highlight-purple">developer workflows</mark> that help teams ship with confidence.</p>
+<main id="main" class="section-shell workspace-home">
+  <div class="workspace-path"><span>~/anish-george</span><span>Platform Engineer · Ottawa, Canada</span></div>
+  <section class="foundation-hero" aria-labelledby="home-title">
+    <div class="foundation-copy reveal">
+      <p class="command-line"><span class="prompt-mark">$</span> whoami <span class="shell-comment"># a little context</span></p>
+      <p class="name-line">Hi, I’m Anish George.</p>
+      <h1 id="home-title">Build The<br><span>Foundation.</span></h1>
+      <p class="hero-subline">Give good things somewhere to grow.</p>
+      <p class="hero-thesis">I build the delivery paths, runtime foundations, and developer workflows that help teams ship with confidence.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="{{ '/assets/resume/anish-george-resume.pdf' | relative_url }}" target="_blank" rel="noopener"><i data-lucide="file-down" aria-hidden="true"></i> Resume.pdf ↗</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/anishgeorge97" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="button button-secondary" href="https://github.com/ANISHG-26" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
       </div>
     </div>
+    <section class="values-panel reveal" aria-label="My values, expressed as YAML">
+      <div class="panel-label"><span>~/ag/values.yaml</span><span class="file-type">YAML</span></div>
+      <div class="values-body">
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-typed-text>cat values.yaml</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+        <pre class="yaml-code"><code><span class="yaml-comment"># The way I try to build.</span>
+<span class="yaml-key">foundation</span>: <span class="yaml-string">people_before_tools</span>
+<span class="yaml-key">approach</span>:
+  - <span class="yaml-string">understand_the_friction</span>
+  - <span class="yaml-string">make_the_basics_dependable</span>
+  - <span class="yaml-string">build_test_learn</span>
+<span class="yaml-key">principles</span>:
+  <span class="yaml-key">empathy</span>: <span class="yaml-string">build_for_the_next_person</span>
+  <span class="yaml-key">integrity</span>: <span class="yaml-string">say_what_is_true</span>
+  <span class="yaml-key">curiosity</span>: <span class="yaml-string">keep_asking_why</span>
+<span class="yaml-key">growth</span>: <span class="yaml-string">one_sound_layer_at_a_time</span></code></pre>
+      </div>
+      <p class="panel-footnote"><span aria-hidden="true">↳</span> A work in progress. So am I.</p>
+    </section>
   </section>
-
-  <section class="section-shell route-section reveal" aria-labelledby="explore-title">
-    <div class="route-heading">
-      <p class="section-index"><span class="prompt-mark">❯</span> ls ./portfolio</p>
-      <h2 id="explore-title">Explore</h2>
-    </div>
-    <nav class="route-grid" aria-label="Portfolio sections">
-      <a class="route-card route-cyan" href="{{ '/about/' | relative_url }}">
-        <i data-lucide="sparkles" aria-hidden="true"></i><span>01</span><h3>About</h3>
-        <p>Philosophy, values, and how I approach the work.</p><i data-lucide="arrow-up-right" aria-hidden="true"></i>
-      </a>
-      <a class="route-card route-purple" href="{{ '/experience/' | relative_url }}">
-        <i data-lucide="history" aria-hidden="true"></i><span>02</span><h3>Experience</h3>
-        <p>The roles and systems that shaped my engineering practice.</p><i data-lucide="arrow-up-right" aria-hidden="true"></i>
-      </a>
-      <a class="route-card route-pink" href="{{ '/projects/' | relative_url }}">
-        <i data-lucide="blocks" aria-hidden="true"></i><span>03</span><h3>Projects</h3>
-        <p>Selected work, with context and ownership kept honest.</p><i data-lucide="arrow-up-right" aria-hidden="true"></i>
-      </a>
-      <a class="route-card route-teal" href="{{ '/field-notes/' | relative_url }}">
-        <i data-lucide="notebook-pen" aria-hidden="true"></i><span>04</span><h3>Field Notes</h3>
-        <p>Reflections on engineering, growth, and direction.</p><i data-lucide="arrow-up-right" aria-hidden="true"></i>
-      </a>
-      <a class="route-card route-mix" href="{{ '/geek-out/' | relative_url }}">
-        <i data-lucide="headphones" aria-hidden="true"></i><span>05</span><h3>Geek Out</h3>
-        <p>Cars, bass, cooking, and the things we might connect over.</p><i data-lucide="arrow-up-right" aria-hidden="true"></i>
-      </a>
+  <section class="workspace-directory reveal" aria-labelledby="directory-title">
+    <div class="section-bar"><h2 id="directory-title"><span class="prompt-mark">$</span> ls ./portfolio/</h2><span>Pick A Directory</span></div>
+    <nav class="directory-list" aria-label="Portfolio sections">
+      <a href="{{ '/about/' | relative_url }}"><span class="directory-number">01</span><span class="directory-name">about/</span><span class="directory-description">The philosophy behind the work</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/experience/' | relative_url }}"><span class="directory-number">02</span><span class="directory-name">experience/</span><span class="directory-description">Delivery, reproducibility, developer enablement</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/projects/' | relative_url }}"><span class="directory-number">03</span><span class="directory-name">projects/</span><span class="directory-description">Things built, and what they taught me</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/field-notes/' | relative_url }}"><span class="directory-number">04</span><span class="directory-name">field-notes/</span><span class="directory-description">Making sense of the path along the way</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/geek-out/' | relative_url }}"><span class="directory-number">05</span><span class="directory-name">geek-out/</span><span class="directory-description">Three pedals, good food, guitar &amp; bass</span><span aria-hidden="true">↗</span></a>
     </nav>
   </section>
+  <section class="home-notes reveal" aria-labelledby="notes-title">
+    <div><p class="command-line"><span class="prompt-mark">$</span> cat field-notes/README.md</p><h2 id="notes-title">A Pattern, Then A Direction.</h2><p>Different systems. A familiar question: what would make this easier for the next person? Over time, that question became my way into Platform Engineering.</p></div>
+    <a class="note-preview" href="{{ '/field-notes/the-long-way-toward-platform-engineering/' | relative_url }}"><span class="file-type">Field Note / Growth</span><h3>The Long Way Toward Platform Engineering</h3><span class="text-link">Read The Story ↗</span></a>
+  </section>
 </main>
-
 {% include site-footer.html %}

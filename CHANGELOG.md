@@ -3,6 +3,38 @@
 Each iteration has a dated entry and a corresponding local Git commit. Entries
 describe actual changes; they do not imply public deployment or content approval.
 
+## 2026-09-04 — I003 — Foundations First
+
+- Rebuilt the homepage around foundation-first philosophy, a `cat values.yaml`
+  panel, Linux-style directory navigation, and a featured evolution story.
+  Preserved the charcoal/light palettes, ambient color fields, and compact identity.
+- Reworked About into principles and a delivery-to-reproducibility-to-platform
+  throughline. Made the direction article more restrained and public-facing.
+- Added the user-confirmed guitar interest alongside bass, manual GLI, Japanese
+  food, and home cooking. Kept private source narratives out of the repository.
+- Added Home navigation on all pages and accurate promotion chronology from the
+  canonical record. Generalized the student client's project name.
+- Replaced the inherited resume with a two-page public version built from current
+  canonical evidence. Included only LinkedIn, GitHub, and portfolio contact links.
+  Retained public-safe LaTeX source and build instructions outside published output.
+- Removed unused old design CSS and fixed a generated-theme stylesheet collision
+  by using `portfolio.css`. Added graceful handling for blocked browser storage,
+  readable content without JavaScript, and reduced-motion behavior.
+- Added a public-output validation script and excluded documentation, scripts,
+  temporary builds, and private workspace directories from Jekyll output.
+- Validation: production Jekyll build; JavaScript syntax; nine HTML pages and all
+  their local links/assets; public-output exclusions; two-page PDF text, links,
+  metadata, attachment check, and visual inspection of both rendered pages.
+  Browser checks covered desktop and mobile, light and dark themes, navigation,
+  keyboard focus, and horizontal overflow. Reduced-motion and unavailable-storage
+  initialization passed a Node smoke check. No live OS reduced-motion toggle was
+  used; that branch was checked with an emulated media preference and CSS review.
+- Excluded claims: unsupported production isolation, formal on-call/SLO ownership,
+  unapproved numerical outcomes, and client/private implementation details. The
+  portfolio changes do not modify canonical career facts or the original resume.
+- Status: local feedback iteration, not pushed or deployed. Await user feedback
+  before the next design iteration.
+
 ## 2026-09-04 — I002 — Inherited Draft Checkpoint
 
 - Preserved the inherited homepage, section pages, field notes, shared templates,

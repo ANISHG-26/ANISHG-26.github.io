@@ -59,6 +59,24 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I003 — User Direction, 2026-09-04
+
+- Make foundation-first philosophy the brand, expressed through a terminal/Linux
+  interface and a `cat values.yaml` panel. Keep the existing colors and ambient
+  background. Preserve the small header identity alongside this content panel.
+- Convey the career evolution through public-safe lessons from canonical evidence.
+  Private notes can inform broad themes only; never copy private narratives into
+  this repository or the built site.
+- Keep the tone friendly, personal, and restrained. A public portfolio should
+  invite conversation without exposing private motivations or employer criticism.
+- Public resume contact links are limited to LinkedIn, GitHub, and this portfolio.
+  No phone number, email, mailto/tel link, or embedded private contact data.
+- User-confirmed interests: manual Volkswagen GLI, Japanese food, being a foodie
+  and home cook, guitar, and bass. These are approved personal portfolio details,
+  not additions to canonical professional evidence.
+- This iteration is for local feedback. Commit it and wait for feedback before
+  starting another design direction; no push or publication is authorized.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
