@@ -88,6 +88,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Reference role applied: Sofka as terminal hierarchy and presentation
   inspiration; no Sofka operational content is reproduced.
 
+### I007 — Specific Homepage Throughline, 2026-09-04
+
+- Replace the vague homepage field-notes summary with a public-safe synthesis of
+  recurring work across reusable CI/CD, containerized test infrastructure, and
+  Kubernetes delivery.
+- Keep the copy grounded in the approved throughline of runnable, deployable,
+  observable systems and reduced developer friction.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
