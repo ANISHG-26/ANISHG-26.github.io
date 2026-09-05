@@ -103,6 +103,13 @@ has not been verified. This is a reference-role contract, not a completed visual
   experimentation, learning from friction, and deliberate improvement before
   connecting the pattern to Platform Engineering.
 
+### I009 — Welcoming Geek-Out And Theme Icons, 2026-09-04
+
+- Replace the homepage `geek-out/` directory description with a warmer invitation
+  to find common interests.
+- Show light and dark theme controls as Lucide sun/moon icon buttons. Keep the
+  system preference as the default behavior and preserve explicit overrides.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

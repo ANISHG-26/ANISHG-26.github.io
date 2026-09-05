@@ -43,7 +43,8 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .desktop-nav a:hover, .desktop-nav a[aria-current] { color: var(--cyan); }
 .desktop-nav a[aria-current] { box-shadow: inset 0 -1px var(--cyan); }
 .theme-switcher { display: flex; padding: .2rem; border: 1px solid var(--border); }
-.theme-switcher button { min-width: 2.65rem; min-height: 2rem; border: 0; cursor: pointer; color: var(--muted-foreground); background: transparent; font: .7rem var(--font-code); }
+.theme-switcher button { display: grid; place-items: center; min-width: 2.2rem; min-height: 2rem; border: 0; cursor: pointer; color: var(--muted-foreground); background: transparent; }
+.theme-switcher button svg { width: .95rem; height: .95rem; }
 .theme-switcher button[aria-pressed="true"] { background: var(--cyan-soft); color: var(--cyan); }
 .workspace-path { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.3rem; color: var(--muted-foreground); font: .73rem var(--font-code); }
 .workspace-path > span:first-child { color: var(--purple); }
@@ -184,7 +185,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 }
 @media (min-width: 801px) and (max-width: 1180px) {
   .desktop-nav { gap: .55rem; font-size: .7rem; }
-  .theme-switcher button { min-width: 2.35rem; }
 }
 @media (max-width: 800px) {
   .site-header { grid-template-columns: 1fr auto; padding-block: .7rem; }
