@@ -35,7 +35,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .skip-link { position: fixed; z-index: 100; top: 1rem; left: 1rem; padding: .6rem 1rem; background: var(--foreground); color: var(--background); transform: translateY(-180%); }
 .skip-link:focus { transform: none; }
 .site-header { position: sticky; top: 0; z-index: 20; min-height: 4.6rem; display: grid; grid-template-columns: 1fr auto auto; gap: 2rem; align-items: center; border-bottom: 1px solid var(--border); background: color-mix(in srgb, var(--background) 94%, transparent); backdrop-filter: blur(16px); }
-.wordmark { position: relative; display: inline-flex; width: fit-content; align-items: center; gap: .5rem; font: 700 .94rem var(--font-code); }
+.wordmark { position: relative; display: inline-flex; width: fit-content; align-items: center; gap: .5rem; margin-left: .45rem; font: 700 .94rem var(--font-code); }
 .prompt-mark { color: var(--pink); }
 .terminal-prompt, .directory-name { color: var(--cyan); }
 .desktop-nav { display: flex; gap: 1.25rem; font: .86rem var(--font-code); }
