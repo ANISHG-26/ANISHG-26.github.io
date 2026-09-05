@@ -221,6 +221,15 @@ has not been verified. This is a reference-role contract, not a completed visual
   the experimenter’s build / reflect / improve loop without adding unsupported
   claims.
 
+### I030 — Evolution Across Projects, 2026-09-05
+
+- Reframe the About message around the recurring pattern across Accenture,
+  Morgan Stanley, and later platform-delivery work rather than centering EY.
+- Keep the existing terminal, YAML highlight, visual layout, and simple-sentence
+  tone.
+- Describe only verified delivery, onboarding-automation, test-reproducibility,
+  Kubernetes, artifact, release, and observability experience.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
