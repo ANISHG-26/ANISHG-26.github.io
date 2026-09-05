@@ -310,6 +310,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Replace fragile backslash-based cat art with plain ASCII characters that do
   not depend on HTML entity rendering.
 
+### I042 — Restore Complete Bass Pattern, 2026-09-05
+
+- Restore the missing two `5` notes on the D string.
+- Keep the complete user-provided D, A, and E note pattern in sequence rather
+  than aligning notes vertically as chords.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
