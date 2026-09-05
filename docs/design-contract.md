@@ -140,6 +140,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Set the homepage reflection paragraph in the terminal code font and increase
   the general reading scale and directory-description size.
 
+### I015 — Homepage Type Scale, 2026-09-05
+
+- Reduce the hero thesis slightly so the full statement has more breathing room.
+- Increase navigation and button type sizes and padding.
+- Increase YAML text sizing by approximately two CSS points while retaining
+  responsive adjustments for intermediate and mobile widths.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
