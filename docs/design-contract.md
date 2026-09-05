@@ -147,6 +147,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Increase YAML text sizing by approximately two CSS points while retaining
   responsive adjustments for intermediate and mobile widths.
 
+### I016 — Rounded Theme Control, 2026-09-05
+
+- Add a rounded segmented-control treatment to the light/dark theme toggle.
+- Give the control a small right margin so it sits slightly left within the
+  expanded top navigation bar.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

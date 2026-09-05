@@ -42,10 +42,10 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .desktop-nav a { padding-block: .6rem; color: var(--muted-foreground); white-space: nowrap; }
 .desktop-nav a:hover, .desktop-nav a[aria-current] { color: var(--cyan); }
 .desktop-nav a[aria-current] { box-shadow: inset 0 -1px var(--cyan); }
-.theme-switcher { display: flex; padding: .2rem; border: 1px solid var(--border); }
+.theme-switcher { display: flex; margin-right: .45rem; padding: .2rem; border: 1px solid var(--border); border-radius: .55rem; overflow: hidden; }
 .theme-switcher button { display: grid; place-items: center; min-width: 2.2rem; min-height: 2rem; border: 0; cursor: pointer; color: var(--muted-foreground); background: transparent; }
 .theme-switcher button svg { width: .95rem; height: .95rem; }
-.theme-switcher button[aria-pressed="true"] { background: var(--cyan-soft); color: var(--cyan); }
+.theme-switcher button[aria-pressed="true"] { border-radius: .35rem; background: var(--cyan-soft); color: var(--cyan); }
 .workspace-path { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.3rem; color: var(--muted-foreground); font: .73rem var(--font-code); }
 .workspace-path > span:first-child { color: var(--purple); }
 .foundation-hero { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-block: 3.3rem 4.5rem; }
