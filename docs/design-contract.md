@@ -110,6 +110,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Show light and dark theme controls as Lucide sun/moon icon buttons. Keep the
   system preference as the default behavior and preserve explicit overrides.
 
+### I010 — Warmer Directory Descriptions, 2026-09-04
+
+- Rewrite the homepage `ls ./portfolio/` descriptions as warmer, first-person
+  invitations while preserving the existing routes and terminal structure.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
