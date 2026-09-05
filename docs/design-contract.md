@@ -122,6 +122,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Add a subtle cool hue to light mode while keeping the existing neutral palette,
   contrast, and ambient-color approach.
 
+### I012 — Executing Values Terminal, 2026-09-04
+
+- Extend the terminal command sequence to the `cat values.yaml` panel: type the
+  command, pause briefly, then reveal the YAML output.
+- Preserve immediate content for reduced-motion users and no-JavaScript fallback.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

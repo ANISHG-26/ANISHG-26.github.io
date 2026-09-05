@@ -34,14 +34,20 @@ if (!reducedMotion.matches && 'IntersectionObserver' in window) {
 const typedText = document.querySelector('[data-typed-text]');
 if (typedText && !reducedMotion.matches) {
   const message = typedText.textContent;
+  const valuesPanel = document.querySelector('.values-panel');
   typedText.setAttribute('aria-label', message);
   const visual = document.createElement('span');
   visual.setAttribute('aria-hidden', 'true');
   typedText.replaceChildren(visual);
+  document.documentElement.classList.add('values-sequence-pending');
   let index = 0;
   const typeNext = () => {
     visual.textContent = reducedMotion.matches ? message : message.slice(0, ++index);
     if (!reducedMotion.matches && index < message.length) window.setTimeout(typeNext, 65);
+    else window.setTimeout(() => {
+      valuesPanel?.classList.add('is-executed');
+      document.documentElement.classList.remove('values-sequence-pending');
+    }, 480);
   };
   window.setTimeout(typeNext, 350);
 }
