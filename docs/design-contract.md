@@ -190,6 +190,13 @@ has not been verified. This is a reference-role contract, not a completed visual
   a warm personal voice.
 - Do not make further homepage edits unless the user explicitly reopens it.
 
+### I023 — About Page Revamp, 2026-09-05
+
+- Revamp only the About page into a clearer profile → principles → throughline
+  → direction flow, using the homepage terminal language as the visual system.
+- Add the user's public GitHub avatar as a temporary profile image.
+- Keep the homepage frozen and preserve the existing public-safe About content.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

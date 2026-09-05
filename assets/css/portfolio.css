@@ -111,15 +111,24 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .interior-intro h1 { font-size: clamp(2rem, 4.5vw, 3.5rem); letter-spacing: -.055em; margin-bottom: 1rem; }
 .interior-intro > p:last-child { color: var(--muted-foreground); max-width: 44rem; margin-bottom: 0; }
 .interior-content { padding-top: 2.8rem; }
-.about-lead { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 3rem; }
-.about-lead > p { font: 1.8rem/1.5 var(--font-code); letter-spacing: -.045em; }
-.about-lead > div { color: var(--muted-foreground); }
+.about-profile { display: grid; grid-template-columns: minmax(12rem, .4fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-strong); }
+.about-portrait { margin: 0; border: 1px solid var(--border-strong); border-top: 2px solid var(--cyan); background: var(--surface); }
+.about-portrait img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+.about-portrait figcaption { padding: .75rem 1rem; border-top: 1px solid var(--border); color: var(--muted-foreground); font: .72rem/1.6 var(--font-code); }
+.about-portrait figcaption .prompt-mark { margin-right: .35rem; }
+.about-profile-copy { min-width: 0; }
+.about-role { margin-bottom: 1rem; color: var(--cyan); font: .8rem var(--font-code); }
+.about-profile-copy h2 { max-width: 20ch; margin-bottom: 1.3rem; font-size: clamp(1.8rem, 3.4vw, 3rem); letter-spacing: -.055em; }
+.about-profile-copy > p:not(.command-line):not(.about-role) { max-width: 55ch; color: var(--muted-foreground); }
+.about-profile-copy > p:last-child { margin-bottom: 0; }
 .principles-section { padding-block: 1rem 3rem; border-bottom: 1px solid var(--border); }
+.principles-section > .terminal-window-bar { margin-bottom: 2rem; border: 1px solid var(--border); }
 .section-heading-row { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; margin-bottom: 1.5rem; }
 .section-heading-row h2 { font-size: 1.5rem; }
 .section-heading-row p { max-width: 24rem; color: var(--muted-foreground); }
 .principles-grid, .project-grid, .geek-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 1rem; }
 .principle-card, .project-card, .geek-card { padding: 1.5rem; border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 85%, transparent); }
+.principle-card > svg { width: 1.5rem; height: 1.5rem; margin-bottom: 1.3rem; }
 .principle-card > span, .geek-card > span { display: block; margin-bottom: 1.8rem; font: .75rem var(--font-code); }
 .principle-card h3 { font-size: 1.2rem; }
 .principle-card p, .project-card p, .geek-card p { color: var(--muted-foreground); margin-bottom: 0; }
@@ -201,7 +210,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .foundation-hero { grid-template-columns: 1fr; padding-top: 2rem; gap: 2rem; }
   .values-panel { max-width: 38rem; width: 100%; }
   .yaml-code { font-size: .8rem; }
-  .home-notes, .about-lead { grid-template-columns: 1fr; gap: 2rem; }
+  .home-notes, .about-profile { grid-template-columns: 1fr; gap: 2rem; }
   .principles-grid, .project-grid, .geek-grid { grid-template-columns: 1fr; }
   .experience-row { grid-template-columns: 1fr auto; }
   .experience-focus { grid-row: 2; grid-column: 1/-1; }
@@ -220,6 +229,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .directory-list a > span:last-child { grid-column: 3; grid-row: 1/3; }
   .home-notes { padding-block: 3rem; }
   .interior-shell { padding-top: 2rem; }
+  .about-portrait { max-width: 24rem; }
   .journey-list article { grid-template-columns: 1fr; gap: .8rem; }
   .experience-row { grid-template-columns: 1fr; gap: .6rem; }
   .experience-focus { grid-column: auto; grid-row: auto; }
