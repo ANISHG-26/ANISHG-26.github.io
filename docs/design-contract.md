@@ -271,6 +271,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Restore the reference-inspired GLI treatment at a smaller terminal size.
 - Preserve the existing delayed output sequence.
 
+### I037 — Linked Terminal Command Sequence, 2026-09-05
+
+- Link the About commands into one ordered sequence: `whoami`, `foundation.yaml`,
+  `bassline.txt`, then subtle `.gli` output.
+- Keep each command visible while typing and reveal only its output after the
+  command completes.
+- Preserve the existing animation style and reduced-motion behavior.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated

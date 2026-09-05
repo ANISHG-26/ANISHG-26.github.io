@@ -111,7 +111,7 @@ function runAboutYamlSequence() {
   typeAboutTerminalCommand(aboutYamlCommand, 'about-yaml-pending', aboutYamlCommand.dataset.command || aboutYamlCommand.textContent, () => {
     aboutYamlOutput.classList.add('is-rendered');
     document.documentElement.classList.remove('about-yaml-pending');
-    window.setTimeout(runAboutBassSequence, 900);
+    window.setTimeout(runAboutBassSequence, 1000);
   });
 }
 function runAboutBassSequence() {
@@ -119,7 +119,7 @@ function runAboutBassSequence() {
   typeAboutTerminalCommand(aboutBassCommand, 'about-bass-pending', aboutBassCommand.dataset.command || aboutBassCommand.textContent, () => {
     aboutEasterEgg.classList.add('is-rendered');
     document.documentElement.classList.remove('about-bass-pending');
-    window.setTimeout(runAboutGliSequence, 800);
+    window.setTimeout(runAboutGliSequence, 1000);
   });
 }
 function runAboutGliSequence() {
