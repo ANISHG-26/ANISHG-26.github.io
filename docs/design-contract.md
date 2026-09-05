@@ -252,6 +252,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Correct the GLI ASCII output and keep it as the final delayed terminal reveal.
 - Stretch the bass tab horizontally while preserving the user-provided note idea.
 
+### I034 — GLI ASCII Treatment, 2026-09-05
+
+- Rework the GLI ASCII mark toward the provided reference’s large, spaced,
+  red-letter treatment.
+- Keep it terminal-native, animated, and compatible with the existing Linux theme.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
