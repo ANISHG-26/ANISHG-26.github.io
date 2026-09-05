@@ -212,6 +212,15 @@ has not been verified. This is a reference-role contract, not a completed visual
   `build / reflect / improve` working loop without adding new career claims.
 - Stack the output below the profile copy on smaller screens.
 
+### I029 — EY-Grounded About Message, 2026-09-05
+
+- Keep the existing About terminal and `foundation.yaml` visual treatment.
+- Replace repeated foundation prose with a concise, personal account grounded in
+  verified EY platform-delivery work.
+- Use simple sentences to connect friction reduction, developer enablement, and
+  the experimenter’s build / reflect / improve loop without adding unsupported
+  claims.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
