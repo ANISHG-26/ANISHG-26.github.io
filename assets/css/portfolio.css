@@ -99,7 +99,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .home-notes > div, .home-notes > a { min-width: 0; }
 .home-notes h2 { font-size: 1.45rem; letter-spacing: -.03em; }
 .iteration-tagline { margin-bottom: .8rem; color: var(--cyan); font: .8rem var(--font-code); letter-spacing: .08em; text-transform: uppercase; }
-.home-notes p:last-child { color: var(--muted-foreground); margin-bottom: 0; font: 1rem/1.8 var(--font-code); overflow-wrap: anywhere; text-wrap: pretty; }
+.home-notes p:last-child { color: var(--muted-foreground); margin-bottom: 0; font: 1rem/1.8 var(--font-code); overflow-wrap: anywhere; text-wrap: pretty; text-align: justify; text-justify: inter-word; text-align-last: left; }
 .note-preview { display: block; padding: 0; border: 1px solid var(--border); border-left: 2px solid var(--pink); background: color-mix(in srgb, var(--surface) 65%, transparent); transition: border-color .2s; }
 .note-preview:hover { border-color: var(--cyan); }
 .note-preview-body { padding: 1.4rem; }

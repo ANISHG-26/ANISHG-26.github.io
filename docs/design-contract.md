@@ -177,6 +177,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the homepage reflection text inside its grid column by allowing grid
   children to shrink and wrapping long technical terms safely.
 
+### I021 — Justified Homepage Reflection, 2026-09-05
+
+- Apply Word-style inter-word justification to the homepage reflection paragraph
+  while keeping its final line left-aligned and preserving safe wrapping.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
