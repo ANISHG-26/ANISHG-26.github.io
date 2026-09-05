@@ -264,6 +264,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Restore the earlier compact bass groove and its original note spacing.
 - Leave the terminal sequencing and GLI animation behavior unchanged.
 
+### I036 — Sequential Bass Notes And Reduced GLI, 2026-09-05
+
+- Place the E-string notes after the A-string phrase so the tab reads as a
+  single-note groove rather than simultaneous notes or chords.
+- Restore the reference-inspired GLI treatment at a smaller terminal size.
+- Preserve the existing delayed output sequence.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated

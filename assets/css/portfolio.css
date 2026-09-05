@@ -142,6 +142,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .about-easter-egg .command-line { margin-bottom: .75rem; }
 .bass-tab { color: var(--muted-foreground); line-height: 1.65 !important; }
 .ascii-art { color: var(--cyan); line-height: 1.25 !important; }
+.gli-art { color: var(--pink); font-size: clamp(.78rem, 1.8vw, 1.12rem) !important; letter-spacing: .04em; text-shadow: .06em .06em 0 color-mix(in srgb, var(--pink) 25%, transparent); }
 @keyframes terminal-line-in { from { opacity: 0; transform: translateY(.2rem); } to { opacity: 1; transform: translateY(0); } }
 .principles-section { padding-block: 1rem 3rem; border-bottom: 1px solid var(--border); }
 .principles-section > .terminal-window-bar { margin-bottom: 2rem; border: 1px solid var(--border); }
