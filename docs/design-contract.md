@@ -211,6 +211,15 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Balance the portrait and terminal panel as stretch-height columns for wider
   laptop layouts while preserving the mobile stack.
 
+### I027 — Holistic About Identity And Foundations, 2026-09-05
+
+- Use `Platform Engineer · Builder · Bassist · Car Nerd` as the About identity
+  line while keeping Platform Engineer first.
+- Keep “Dependable” in the main heading and turn the foundation sentence into a
+  numbered list of a place to run, a path to deploy, and a way to understand.
+- Justify the supporting About copy and use the terminal panel space for the
+  structured foundation output.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

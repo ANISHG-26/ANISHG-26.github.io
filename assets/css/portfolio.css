@@ -122,8 +122,10 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .about-reveal { transition: opacity .35s ease, transform .35s ease; }
 .about-role { margin-bottom: 1rem; color: var(--cyan); font: .8rem var(--font-code); }
 .about-profile-copy h2 { max-width: 20ch; margin-bottom: 1.3rem; font-size: clamp(1.8rem, 3.4vw, 3rem); letter-spacing: -.055em; }
-.about-profile-copy > p:not(.command-line):not(.about-role) { max-width: 55ch; color: var(--muted-foreground); }
-.about-profile-copy > p:last-child { margin-bottom: 0; }
+.about-profile-copy > .about-reveal > p:not(.about-role) { max-width: 55ch; color: var(--muted-foreground); text-align: justify; text-justify: inter-word; text-align-last: left; }
+.foundation-list { max-width: 48rem; margin: .4rem 0 1.1rem; padding-left: 1.8rem; color: var(--cyan); font: 1rem/1.8 var(--font-code); }
+.foundation-list li { padding-left: .4rem; }
+.about-profile-copy > .about-reveal > p:last-child { margin-bottom: 0; }
 .principles-section { padding-block: 1rem 3rem; border-bottom: 1px solid var(--border); }
 .principles-section > .terminal-window-bar { margin-bottom: 2rem; border: 1px solid var(--border); }
 .section-heading-row { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; margin-bottom: 1.5rem; }
