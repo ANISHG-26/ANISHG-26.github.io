@@ -303,6 +303,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Verify each visual iteration in light, dark, reduced-motion, and unavailable
   external-asset states before calling it complete.
 
+### I041 — Plain ASCII Fallbacks, 2026-09-05
+
+- Keep the sequential bass tab unchanged because its spacing intentionally
+  places the E-string phrase after the A-string phrase.
+- Replace fragile backslash-based cat art with plain ASCII characters that do
+  not depend on HTML entity rendering.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
