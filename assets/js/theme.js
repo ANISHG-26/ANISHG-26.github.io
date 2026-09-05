@@ -9,7 +9,7 @@ function applyTheme(theme) {
   const dark = theme === 'dark' || (theme === 'system' && media.matches);
   document.documentElement.classList.toggle('dark', dark);
   document.documentElement.dataset.theme = theme;
-  document.querySelector('meta[name="theme-color"]').content = dark ? '#111216' : '#f4f4f6';
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#111216' : '#f3f4fa';
   options.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.themeOption === theme)));
 }
 applyTheme(selectedTheme);
@@ -44,4 +44,22 @@ if (typedText && !reducedMotion.matches) {
     if (!reducedMotion.matches && index < message.length) window.setTimeout(typeNext, 65);
   };
   window.setTimeout(typeNext, 350);
+}
+const terminal = document.querySelector('.hero-terminal');
+const terminalCommand = document.querySelector('[data-terminal-command]');
+const terminalOutput = document.querySelector('[data-terminal-output]');
+if (terminal && terminalCommand && terminalOutput && !reducedMotion.matches) {
+  const command = terminalCommand.textContent;
+  terminalCommand.textContent = '';
+  document.documentElement.classList.add('terminal-sequence-pending');
+  let index = 0;
+  const typeCommand = () => {
+    terminalCommand.textContent = command.slice(0, ++index);
+    if (index < command.length) window.setTimeout(typeCommand, 70);
+    else window.setTimeout(() => {
+      terminal.classList.add('is-executed');
+      document.documentElement.classList.remove('terminal-sequence-pending');
+    }, 520);
+  };
+  window.setTimeout(typeCommand, 420);
 }

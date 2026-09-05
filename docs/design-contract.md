@@ -115,6 +115,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Rewrite the homepage `ls ./portfolio/` descriptions as warmer, first-person
   invitations while preserving the existing routes and terminal structure.
 
+### I011 — Executing Hero Terminal And Light Hue, 2026-09-04
+
+- Animate the homepage `cat README.md` command before revealing the thesis as
+  terminal output, with reduced-motion fallback preserved.
+- Add a subtle cool hue to light mode while keeping the existing neutral palette,
+  contrast, and ambient-color approach.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
