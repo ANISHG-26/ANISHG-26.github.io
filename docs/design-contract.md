@@ -285,6 +285,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Add one block to the I in the reference-inspired GLI ASCII mark.
 - Use the open profile-card space for a small terminal-style pair of cats.
 
+### I039 — Repair GLI And Cat ASCII, 2026-09-05
+
+- Repair the profile cats’ escaped characters so the ears render consistently.
+- Add the missing vertical GLI block and keep the reduced reference-inspired
+  styling.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
