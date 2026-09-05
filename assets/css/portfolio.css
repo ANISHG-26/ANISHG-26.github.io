@@ -18,7 +18,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 8rem; }
 body {
-  margin: 0; color: var(--foreground); font-family: var(--font-body); line-height: 1.7;
+  margin: 0; color: var(--foreground); font-family: var(--font-body); font-size: 1.05rem; line-height: 1.7;
   background: radial-gradient(circle at 8% 12%, color-mix(in srgb, var(--cyan) 10%, transparent), transparent 25rem), radial-gradient(circle at 92% 18%, color-mix(in srgb, var(--purple) 11%, transparent), transparent 28rem), radial-gradient(circle at 55% 78%, color-mix(in srgb, var(--pink) 7%, transparent), transparent 32rem), var(--background);
   background-attachment: fixed;
 }
@@ -80,7 +80,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .panel-footnote { margin: 0; padding: .7rem 1.2rem; border-top: 1px solid var(--border); color: var(--muted-foreground); font: .72rem/1.6 var(--font-code); }
 .panel-footnote span { color: var(--pink); }
 .terminal-caret { color: var(--pink); animation: blink 1s steps(1,end) 5; }
-.hero-terminal .terminal-caret { animation-iteration-count: infinite; }
 .terminal-sequence-pending .hero-thesis { opacity: 0; transform: translateY(.35rem); }
 .values-sequence-pending .values-output { opacity: 0; transform: translateY(.35rem); }
 .hero-thesis { transition: opacity .35s ease, transform .35s ease; }
@@ -94,12 +93,12 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .directory-list a:hover { background: var(--surface); padding-left: 1.1rem; }
 .directory-number { color: var(--purple); font: .7rem var(--font-code); }
 .directory-name { font: .9rem var(--font-code); }
-.directory-description { color: var(--muted-foreground); font: .78rem/1.6 var(--font-code); letter-spacing: -.01em; }
+.directory-description { color: var(--muted-foreground); font: .84rem/1.6 var(--font-code); letter-spacing: -.01em; }
 .directory-list a > span:last-child { color: var(--cyan); }
 .home-notes { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); padding-block: 4rem; align-items: center; }
 .home-notes h2 { font-size: 1.45rem; letter-spacing: -.03em; }
 .iteration-tagline { margin-bottom: .8rem; color: var(--cyan); font: .8rem var(--font-code); letter-spacing: .08em; text-transform: uppercase; }
-.home-notes p:last-child { color: var(--muted-foreground); margin-bottom: 0; }
+.home-notes p:last-child { color: var(--muted-foreground); margin-bottom: 0; font: 1rem/1.8 var(--font-code); }
 .note-preview { display: block; padding: 1.4rem; border-left: 2px solid var(--pink); background: color-mix(in srgb, var(--surface) 65%, transparent); transition: border-color .2s; }
 .note-preview:hover { border-color: var(--cyan); }
 .note-preview h3 { font: 1.15rem/1.5 var(--font-code); margin: 1rem 0 1.3rem; }
@@ -215,7 +214,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .values-body { padding: 1.2rem .9rem; }
   .section-bar > span { font-size: .6rem; }
   .directory-list a { grid-template-columns: 1.5rem 1fr auto; row-gap: .2rem; padding-block: .9rem; }
-  .directory-description { grid-column: 2; grid-row: 2; font-size: .74rem; }
+  .directory-description { grid-column: 2; grid-row: 2; font-size: .79rem; }
   .directory-list a > span:last-child { grid-column: 3; grid-row: 1/3; }
   .home-notes { padding-block: 3rem; }
   .interior-shell { padding-top: 2rem; }

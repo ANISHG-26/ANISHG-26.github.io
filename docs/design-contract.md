@@ -133,6 +133,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Normalize the homepage `ls ./portfolio/` descriptions to the terminal code
   font and a consistent line-height across desktop and mobile widths.
 
+### I014 — Unified Motion And Reading Scale, 2026-09-05
+
+- Use the same finite blinking-cursor behavior for the README and YAML command
+  sequences.
+- Set the homepage reflection paragraph in the terminal code font and increase
+  the general reading scale and directory-description size.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
