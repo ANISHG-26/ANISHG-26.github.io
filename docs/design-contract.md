@@ -128,6 +128,11 @@ has not been verified. This is a reference-role contract, not a completed visual
   command, pause briefly, then reveal the YAML output.
 - Preserve immediate content for reduced-motion users and no-JavaScript fallback.
 
+### I013 — Consistent Directory Typography, 2026-09-04
+
+- Normalize the homepage `ls ./portfolio/` descriptions to the terminal code
+  font and a consistent line-height across desktop and mobile widths.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
