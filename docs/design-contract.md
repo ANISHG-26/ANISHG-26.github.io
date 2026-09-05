@@ -197,6 +197,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Add the user's public GitHub avatar as a temporary profile image.
 - Keep the homepage frozen and preserve the existing public-safe About content.
 
+### I025 — Interior Terminal Typography, 2026-09-05
+
+- Apply the homepage terminal font system to interior page content so commands,
+  headings, labels, subtitles, cards, and supporting copy use one consistent
+  typographic family.
+- Preserve the existing size hierarchy, spacing, colors, and frozen homepage.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
