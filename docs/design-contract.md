@@ -246,6 +246,12 @@ has not been verified. This is a reference-role contract, not a completed visual
   to use the remaining terminal space.
 - Keep the additions original, lightweight, and compatible with reduced motion.
 
+### I033 — Refined Terminal Easter Eggs, 2026-09-05
+
+- Remove the rock-on ASCII block and its delayed animation.
+- Correct the GLI ASCII output and keep it as the final delayed terminal reveal.
+- Stretch the bass tab horizontally while preserving the user-provided note idea.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
