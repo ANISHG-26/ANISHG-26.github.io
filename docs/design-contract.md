@@ -204,6 +204,14 @@ has not been verified. This is a reference-role contract, not a completed visual
   typographic family.
 - Preserve the existing size hierarchy, spacing, colors, and frozen homepage.
 
+### I028 — About Foundation Output Column, 2026-09-05
+
+- Use the open space inside the About profile terminal for a second
+  `foundation.yaml` output column.
+- Show dependable runtime, repeatable delivery, observable systems, and the
+  `build / reflect / improve` working loop without adding new career claims.
+- Stack the output below the profile copy on smaller screens.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
