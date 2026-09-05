@@ -96,6 +96,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the copy grounded in the approved throughline of runnable, deployable,
   observable systems and reduced developer friction.
 
+### I008 — Build Reflect Improve Tagline, 2026-09-04
+
+- Use `Build · Reflect · Improve` as the homepage field-notes tagline.
+- Rewrite the supporting paragraph with short, direct sentences that describe
+  experimentation, learning from friction, and deliberate improvement before
+  connecting the pattern to Platform Engineering.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

@@ -90,6 +90,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .directory-list a > span:last-child { color: var(--cyan); }
 .home-notes { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 6rem); padding-block: 4rem; align-items: center; }
 .home-notes h2 { font-size: 1.45rem; letter-spacing: -.03em; }
+.iteration-tagline { margin-bottom: .8rem; color: var(--cyan); font: .8rem var(--font-code); letter-spacing: .08em; text-transform: uppercase; }
 .home-notes p:last-child { color: var(--muted-foreground); margin-bottom: 0; }
 .note-preview { display: block; padding: 1.4rem; border-left: 2px solid var(--pink); background: color-mix(in srgb, var(--surface) 65%, transparent); transition: border-color .2s; }
 .note-preview:hover { border-color: var(--cyan); }
