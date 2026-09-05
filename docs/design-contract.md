@@ -279,6 +279,12 @@ has not been verified. This is a reference-role contract, not a completed visual
   command completes.
 - Preserve the existing animation style and reduced-motion behavior.
 
+### I038 — Subtle VW Mark And Profile Cats, 2026-09-05
+
+- Rename the subtle GLI terminal file to `.vw`.
+- Add one block to the I in the reference-inspired GLI ASCII mark.
+- Use the open profile-card space for a small terminal-style pair of cats.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
