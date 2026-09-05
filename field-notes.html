@@ -1,0 +1,23 @@
+---
+layout: page
+title: Field Notes
+description: Reflections on engineering, growth, and choosing direction deliberately.
+command: ls ./field-notes
+permalink: /field-notes/
+---
+
+<section class="writing-list">
+  {% for post in site.posts %}
+    <a class="writing-card" href="{{ post.url | relative_url }}">
+      <div class="writing-meta">
+        <span>{{ forloop.index | prepend: '0' }}</span>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
+      </div>
+      <div>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+      </div>
+      <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+    </a>
+  {% endfor %}
+</section>

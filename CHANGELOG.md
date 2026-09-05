@@ -3,6 +3,18 @@
 Each iteration has a dated entry and a corresponding local Git commit. Entries
 describe actual changes; they do not imply public deployment or content approval.
 
+## 2026-09-04 — I002 — Inherited Draft Checkpoint
+
+- Preserved the inherited homepage, section pages, field notes, shared templates,
+  styles, and JavaScript before the terminal redesign.
+- Validation: reviewed source and existing diffs; staged whitespace check.
+  This is an unverified draft checkpoint, not a validated release.
+- Excluded the inherited resume PDF because a public version without direct
+  contact details is required. Consequently this historical checkpoint alone
+  does not supply its linked resume asset. Generated site output is also excluded.
+- The following iteration will review public wording, replace the resume, and
+  validate the redesigned site. Nothing is published by this checkpoint.
+
 ## 2026-09-04 — I001 — Workflow And Design Contracts
 
 - Added `AGENTS.md` with mandatory per-iteration local commits, explicit staging,

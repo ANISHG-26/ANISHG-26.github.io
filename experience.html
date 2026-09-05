@@ -1,0 +1,26 @@
+---
+layout: page
+title: Experience
+description: Platform delivery, developer enablement, and reliable engineering foundations across enterprise environments.
+command: git log --career
+permalink: /experience/
+---
+
+<section class="experience-list">
+  {% for item in site.data.experience %}
+    <article class="experience-row">
+      <div>
+        <h2>{{ item.company }}</h2>
+        <p>{{ item.role }}</p>
+      </div>
+      <p class="experience-focus">{{ item.focus }}</p>
+      <time>{{ item.period }}</time>
+    </article>
+  {% endfor %}
+</section>
+
+<aside class="page-note">
+  <i data-lucide="info" aria-hidden="true"></i>
+  <p>This is a selected view of the work. The resume carries the full professional chronology.</p>
+  <a href="{{ '/assets/resume/anish-george-resume.pdf' | relative_url }}" target="_blank" rel="noopener">Open Resume <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+</aside>

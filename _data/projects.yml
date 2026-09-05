@@ -1,6 +1,7 @@
 - index: "01"
+  icon: cloud-cog
   status: Academic prototype
-  title: Cross-cloud MLOps pipeline
+  title: Cross-Cloud MLOps Pipeline
   description: >-
     A comparative delivery workflow across AWS, Azure, and GCP, built with a
     three-person university team.
@@ -10,6 +11,7 @@
     - MLOps
 
 - index: "02"
+  icon: truck
   status: Client-restricted case study
   title: Jason's Moving App
   description: >-
@@ -21,6 +23,7 @@
     - Platform design
 
 - index: "03"
+  icon: route
   status: Team project
   title: ChargeRoute Navigator
   description: >-
