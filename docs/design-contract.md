@@ -182,6 +182,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Apply Word-style inter-word justification to the homepage reflection paragraph
   while keeping its final line left-aligned and preserving safe wrapping.
 
+### I022 — Homepage Freeze, 2026-09-05
+
+- Treat the homepage as approved and frozen for the next page iterations.
+- Carry its established principles forward: terminal/Linux hierarchy, restrained
+  color, unified readable typography, purposeful motion, accessible controls, and
+  a warm personal voice.
+- Do not make further homepage edits unless the user explicitly reopens it.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
