@@ -38,11 +38,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .wordmark { position: relative; display: inline-flex; width: fit-content; align-items: center; gap: .5rem; font: 700 .94rem var(--font-code); }
 .prompt-mark { color: var(--pink); }
 .terminal-prompt, .directory-name { color: var(--cyan); }
-.identity-copy { position: absolute; top: calc(100% + 1.5rem); left: 0; width: min(33rem, calc(100vw - 4rem)); padding: 1rem 1.2rem; border: 1px solid var(--border-strong); background: var(--surface); color: var(--foreground); font-size: .8rem; line-height: 1.7; font-weight: 400; opacity: 0; pointer-events: none; transform: translateY(-6px); transition: opacity .2s, transform .2s; }
-.identity-copy::before { content: "$ "; color: var(--pink); }
-.identity-terminal:hover .identity-copy, .identity-terminal:focus-visible .identity-copy { opacity: 1; transform: none; }
-.home-header .identity-copy { animation: identity-peek 4.8s .9s both; }
-.home-header .identity-terminal:hover .identity-copy, .home-header .identity-terminal:focus-visible .identity-copy { animation: none; opacity: 1; transform: none; }
 .desktop-nav { display: flex; gap: 1.25rem; font: .76rem var(--font-code); }
 .desktop-nav a { padding-block: .6rem; color: var(--muted-foreground); white-space: nowrap; }
 .desktop-nav a:hover, .desktop-nav a[aria-current] { color: var(--cyan); }
@@ -56,11 +51,16 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .command-line, .section-index { color: var(--muted-foreground); font: .8rem/1.6 var(--font-code); margin-bottom: 1.6rem; }
 .shell-comment, .yaml-comment { color: var(--muted-foreground); }
 .shell-comment { margin-left: .6rem; }
-.name-line { font: 1rem var(--font-code); margin-bottom: 1.4rem; }
-.foundation-copy h1 { font-size: clamp(2.6rem, 4.7vw, 4.15rem); line-height: 1.12; letter-spacing: -.06em; margin-bottom: 1.15rem; }
-.foundation-copy h1 > span { color: var(--cyan); }
-.hero-subline { font-size: 1.15rem; margin-bottom: .8rem; }
-.hero-thesis { max-width: 43ch; color: var(--muted-foreground); margin-bottom: 1.8rem; font-size: 1rem; }
+.hero-terminal, .directory-terminal { border: 1px solid var(--border-strong); background: color-mix(in srgb, var(--surface) 90%, transparent); box-shadow: 0 1.4rem 3rem color-mix(in srgb, var(--foreground) 5%, transparent); }
+.terminal-window-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .75rem 1rem; border-bottom: 1px solid var(--border); color: var(--purple); font: .72rem var(--font-code); }
+.terminal-window-bar span:first-child { display: inline-flex; align-items: center; gap: .55rem; }
+.terminal-window-bar svg { width: .9rem; height: .9rem; }
+.terminal-window-actions { display: inline-flex; gap: .55rem; color: var(--muted-foreground); }
+.terminal-window-actions svg { width: .72rem; height: .72rem; }
+.hero-terminal-body { padding: 1.5rem 1.35rem 1.75rem; }
+.hero-terminal-body .command-line { margin-bottom: 1.1rem; color: var(--foreground); }
+.hero-thesis { max-width: 26ch; color: var(--foreground); margin: 0; font: 700 clamp(1.5rem, 2.65vw, 2.45rem)/1.3 var(--font-code); letter-spacing: -.055em; }
+.hero-thesis .terminal-caret { margin-left: .12em; font-size: .8em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
 .button { display: inline-flex; gap: .6rem; align-items: center; padding: .65rem .85rem; border: 1px solid var(--border-strong); font: .76rem/1.5 var(--font-code); transition: border-color .2s, transform .2s; }
 .button-primary { color: var(--background); background: var(--cyan); border-color: var(--cyan); }
@@ -79,10 +79,10 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .panel-footnote { margin: 0; padding: .7rem 1.2rem; border-top: 1px solid var(--border); color: var(--muted-foreground); font: .72rem/1.6 var(--font-code); }
 .panel-footnote span { color: var(--pink); }
 .terminal-caret { color: var(--pink); animation: blink 1s steps(1,end) 5; }
-.section-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--border-strong); }
+.section-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 1rem; border-bottom: 1px solid var(--border-strong); }
 .section-bar h2 { margin: 0; font-size: .9rem; font-weight: 500; }
 .section-bar > span { font: .7rem var(--font-code); color: var(--muted-foreground); }
-.directory-list a { display: grid; grid-template-columns: 2.3rem 13rem 1fr auto; gap: 1rem; align-items: center; padding: 1rem .7rem; border-bottom: 1px solid var(--border); transition: background .2s, padding .2s; }
+.directory-list a { display: grid; grid-template-columns: 2.3rem 13rem 1fr auto; gap: 1rem; align-items: center; padding: 1rem; border-bottom: 1px solid var(--border); transition: background .2s, padding .2s; }
 .directory-list a:hover { background: var(--surface); padding-left: 1.1rem; }
 .directory-number { color: var(--purple); font: .7rem var(--font-code); }
 .directory-name { font: .9rem var(--font-code); }
@@ -175,7 +175,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .motion-ready .reveal { opacity: 0; transform: translateY(10px); }
 .motion-ready .reveal.is-visible { opacity: 1; transform: none; transition: opacity .5s, transform .5s; }
 @keyframes blink { 50% { opacity: 0; } }
-@keyframes identity-peek { 0%,100% { opacity: 0; transform: translateY(-6px); } 12%,76% { opacity: 1; transform: none; } }
 @media (max-width: 1000px) {
   .site-header { gap: 1rem; }
   .desktop-nav { gap: .8rem; }
@@ -191,7 +190,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .desktop-nav { grid-row: 2; grid-column: 1/-1; flex-wrap: wrap; gap: .3rem 1.3rem; }
   .theme-switcher { justify-self: end; }
   .foundation-hero { grid-template-columns: 1fr; padding-top: 2rem; gap: 2rem; }
-  .foundation-copy h1 { font-size: clamp(2.8rem,8vw,4rem); }
   .values-panel { max-width: 38rem; width: 100%; }
   .yaml-code { font-size: .8rem; }
   .home-notes, .about-lead { grid-template-columns: 1fr; gap: 2rem; }
@@ -205,8 +203,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .section-shell, .site-header { width: calc(100% - 2rem); }
   .workspace-path { flex-direction: column; gap: .6rem; }
   .desktop-nav { gap: .25rem 1rem; font-size: .73rem; }
-  .identity-copy { width: calc(100vw - 2rem); }
-  .foundation-copy h1 { font-size: clamp(2.55rem, 10.5vw, 3.5rem); }
   .yaml-code { font-size: clamp(.63rem, 2.7vw, .78rem); }
   .values-body { padding: 1.2rem .9rem; }
   .section-bar > span { font-size: .6rem; }

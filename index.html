@@ -9,11 +9,13 @@ description: Platform engineering, thoughtful foundations, and a few things beyo
   <div class="workspace-path"><span>~/anish-george</span><span>Platform Engineer · Ottawa, Canada</span></div>
   <section class="foundation-hero" aria-labelledby="home-title">
     <div class="foundation-copy reveal">
-      <p class="command-line"><span class="prompt-mark">$</span> whoami <span class="shell-comment"># a little context</span></p>
-      <p class="name-line">Hi, I’m Anish George.</p>
-      <h1 id="home-title">Build The<br><span>Foundation.</span></h1>
-      <p class="hero-subline">Give good things somewhere to grow.</p>
-      <p class="hero-thesis">I build the delivery paths, runtime foundations, and developer workflows that help teams ship with confidence.</p>
+      <div class="hero-terminal" role="group" aria-labelledby="home-title">
+        <div class="terminal-window-bar"><span><i data-lucide="terminal" aria-hidden="true"></i> ~/ag/README.md</span><span class="terminal-window-actions" aria-hidden="true"><i data-lucide="minus"></i><i data-lucide="square"></i><i data-lucide="x"></i></span></div>
+        <div class="hero-terminal-body">
+          <p class="command-line"><span class="prompt-mark">$</span> cat README.md</p>
+          <h1 id="home-title" class="hero-thesis">I build the delivery paths, runtime foundations, and developer workflows that help teams ship with confidence.<span class="terminal-caret" aria-hidden="true">▌</span></h1>
+        </div>
+      </div>
       <div class="hero-actions">
         <a class="button button-primary" href="{{ '/assets/resume/anish-george-resume.pdf' | relative_url }}" target="_blank" rel="noopener"><i data-lucide="file-down" aria-hidden="true"></i> Resume.pdf ↗</a>
         <a class="button button-secondary" href="https://www.linkedin.com/in/anishgeorge97" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
@@ -40,14 +42,17 @@ description: Platform engineering, thoughtful foundations, and a few things beyo
     </section>
   </section>
   <section class="workspace-directory reveal" aria-labelledby="directory-title">
-    <div class="section-bar"><h2 id="directory-title"><span class="prompt-mark">$</span> ls ./portfolio/</h2><span>Pick A Directory</span></div>
-    <nav class="directory-list" aria-label="Portfolio sections">
+    <div class="directory-terminal">
+      <div class="terminal-window-bar"><span><i data-lucide="folder-tree" aria-hidden="true"></i> ~/ag/portfolio</span><span class="file-type">DIRECTORY</span></div>
+      <div class="section-bar"><h2 id="directory-title"><span class="prompt-mark">$</span> ls ./portfolio/</h2><span>Pick A Directory</span></div>
+      <nav class="directory-list" aria-label="Portfolio sections">
       <a href="{{ '/about/' | relative_url }}"><span class="directory-number">01</span><span class="directory-name">about/</span><span class="directory-description">The philosophy behind the work</span><span aria-hidden="true">↗</span></a>
       <a href="{{ '/experience/' | relative_url }}"><span class="directory-number">02</span><span class="directory-name">experience/</span><span class="directory-description">Delivery, reproducibility, developer enablement</span><span aria-hidden="true">↗</span></a>
       <a href="{{ '/projects/' | relative_url }}"><span class="directory-number">03</span><span class="directory-name">projects/</span><span class="directory-description">Things built, and what they taught me</span><span aria-hidden="true">↗</span></a>
       <a href="{{ '/field-notes/' | relative_url }}"><span class="directory-number">04</span><span class="directory-name">field-notes/</span><span class="directory-description">Making sense of the path along the way</span><span aria-hidden="true">↗</span></a>
       <a href="{{ '/geek-out/' | relative_url }}"><span class="directory-number">05</span><span class="directory-name">geek-out/</span><span class="directory-description">Three pedals, good food, guitar &amp; bass</span><span aria-hidden="true">↗</span></a>
-    </nav>
+      </nav>
+    </div>
   </section>
   <section class="home-notes reveal" aria-labelledby="notes-title">
     <div><p class="command-line"><span class="prompt-mark">$</span> cat field-notes/README.md</p><h2 id="notes-title">A Pattern, Then A Direction.</h2><p>Different systems. A familiar question: what would make this easier for the next person? Over time, that question became my way into Platform Engineering.</p></div>

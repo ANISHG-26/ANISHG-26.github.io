@@ -41,11 +41,9 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Terminal influence should inform typography, hierarchy, spacing, borders,
   navigation, and command/output grouping. Exact implementation comes in a
   separate iteration; no fake operational metrics or mandatory command entry.
-- Keep the compact `>_ ~/ag` identity in the upper-left header. It links to About,
-  reveals the positioning statement on hover/focus, and briefly animates on the
-  homepage with reduced-motion support.
-- Do not substitute a large terminal window for that identity without an explicit
-  design decision from the user.
+- Keep the compact `>_ ~/ag` identity in the upper-left header as an About link.
+  The positioning statement is static content in the homepage terminal panel;
+  it is not revealed by hover or focus.
 - Keep full navigation available on every page, including small screens.
 - Use Initial Caps headings, sparse consistent Lucide icons, restrained motion,
   keyboard-accessible controls, and readable long-form text.
@@ -76,6 +74,19 @@ has not been verified. This is a reference-role contract, not a completed visual
   not additions to canonical professional evidence.
 - This iteration is for local feedback. Commit it and wait for feedback before
   starting another design direction; no push or publication is authorized.
+
+### I006 — Static Terminal Thesis, 2026-09-04
+
+- Remove the positioning statement's hover/focus reveal and homepage auto-peek.
+- Present the statement as the primary static output in a framed `$` terminal,
+  with a blinking caret and Lucide terminal chrome.
+- Remove the separate `Build The Foundation.` / `Give good things somewhere to
+  grow.` hero branding and wrap the `ls ./portfolio/` directory in matching
+  terminal chrome.
+- Keep the compact `>_ ~/ag` About link, values YAML panel, palette, navigation,
+  and existing content model.
+- Reference role applied: Sofka as terminal hierarchy and presentation
+  inspiration; no Sofka operational content is reproduced.
 
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
