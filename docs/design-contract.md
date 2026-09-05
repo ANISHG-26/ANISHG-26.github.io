@@ -238,6 +238,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Use an original bass riff rather than reproducing copyrighted song notation.
 - Preserve the existing visual system and respect reduced-motion preferences.
 
+### I032 — Terminal Music Easter Eggs, 2026-09-05
+
+- Extend the delayed About terminal sequence with the user-provided bass-note
+  change and the label “Try and make a groove out of this”.
+- Follow the groove with animated `cat GLI.txt` and `cat rock-on.txt` ASCII output
+  to use the remaining terminal space.
+- Keep the additions original, lightweight, and compatible with reduced motion.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated

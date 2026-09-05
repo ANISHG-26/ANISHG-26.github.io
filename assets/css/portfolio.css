@@ -128,8 +128,8 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .about-profile-output { min-width: 0; padding: 1.5rem 1.35rem 1.75rem; border-left: 1px solid var(--border); }
 .about-profile-output .command-line { margin-bottom: 1.1rem; color: var(--foreground); }
 .about-profile-output pre { margin: 0; font: .82rem/2 var(--font-code); white-space: pre-wrap; overflow-wrap: anywhere; }
-.about-yaml-output, .about-easter-egg { transition: opacity .35s ease, transform .35s ease; }
-.about-yaml-pending .about-yaml-output, .about-bass-pending .about-easter-egg { opacity: 0; transform: translateY(.35rem); }
+.about-yaml-output, .about-easter-egg > pre { transition: opacity .35s ease, transform .35s ease; }
+.about-yaml-pending .about-yaml-output, .about-bass-pending .bass-tab, .about-gli-pending .about-gli-output, .about-rock-pending .about-rock-output { opacity: 0; transform: translateY(.35rem); }
 .about-yaml-output.is-rendered .yaml-line { display: inline-block; animation: terminal-line-in .3s ease both; }
 .about-yaml-output.is-rendered .yaml-line:nth-child(2) { animation-delay: .06s; }
 .about-yaml-output.is-rendered .yaml-line:nth-child(3) { animation-delay: .12s; }
@@ -141,6 +141,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .about-easter-egg { margin-top: 1.5rem; padding-top: 1.1rem; border-top: 1px solid var(--border); }
 .about-easter-egg .command-line { margin-bottom: .75rem; }
 .bass-tab { color: var(--muted-foreground); line-height: 1.65 !important; }
+.ascii-art { color: var(--cyan); line-height: 1.25 !important; }
 @keyframes terminal-line-in { from { opacity: 0; transform: translateY(.2rem); } to { opacity: 1; transform: translateY(0); } }
 .principles-section { padding-block: 1rem 3rem; border-bottom: 1px solid var(--border); }
 .principles-section > .terminal-window-bar { margin-bottom: 2rem; border: 1px solid var(--border); }

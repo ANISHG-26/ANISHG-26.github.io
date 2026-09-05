@@ -76,6 +76,10 @@ const aboutYamlCommand = document.querySelector('[data-about-yaml-command]');
 const aboutYamlOutput = document.querySelector('[data-about-yaml-output]');
 const aboutBassCommand = document.querySelector('[data-about-bass-command]');
 const aboutEasterEgg = document.querySelector('[data-about-easter-egg]');
+const aboutGliCommand = document.querySelector('[data-about-gli-command]');
+const aboutGliOutput = document.querySelector('[data-about-gli-output]');
+const aboutRockCommand = document.querySelector('[data-about-rock-command]');
+const aboutRockOutput = document.querySelector('[data-about-rock-output]');
 if (aboutCommand && aboutReveal && aboutProfile && !reducedMotion.matches) {
   const command = aboutCommand.textContent;
   aboutCommand.textContent = '';
@@ -117,5 +121,21 @@ function runAboutBassSequence() {
   typeAboutTerminalCommand(aboutBassCommand, 'about-bass-pending', aboutBassCommand.dataset.command || aboutBassCommand.textContent, () => {
     aboutEasterEgg.classList.add('is-rendered');
     document.documentElement.classList.remove('about-bass-pending');
+    window.setTimeout(runAboutGliSequence, 800);
+  });
+}
+function runAboutGliSequence() {
+  if (!aboutGliCommand || !aboutGliOutput) return;
+  typeAboutTerminalCommand(aboutGliCommand, 'about-gli-pending', aboutGliCommand.dataset.command || aboutGliCommand.textContent, () => {
+    aboutGliOutput.querySelector('.ascii-art').classList.add('is-rendered');
+    document.documentElement.classList.remove('about-gli-pending');
+    window.setTimeout(runAboutRockSequence, 800);
+  });
+}
+function runAboutRockSequence() {
+  if (!aboutRockCommand || !aboutRockOutput) return;
+  typeAboutTerminalCommand(aboutRockCommand, 'about-rock-pending', aboutRockCommand.dataset.command || aboutRockCommand.textContent, () => {
+    aboutRockOutput.querySelector('.ascii-art').classList.add('is-rendered');
+    document.documentElement.classList.remove('about-rock-pending');
   });
 }
