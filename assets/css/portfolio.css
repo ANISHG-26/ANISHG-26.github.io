@@ -123,6 +123,12 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .about-profile-copy > p:last-child { margin-bottom: 0; }
 .principles-section { padding-block: 1rem 3rem; border-bottom: 1px solid var(--border); }
 .principles-section > .terminal-window-bar { margin-bottom: 2rem; border: 1px solid var(--border); }
+.principles-command { margin-bottom: 1.5rem; padding: 1rem 1.2rem; border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 68%, transparent); }
+.principles-command .command-line { margin-bottom: .7rem; color: var(--foreground); }
+.principles-output { margin: 0; font: .78rem/1.8 var(--font-code); }
+.principles-sequence-pending .principles-output { opacity: 0; transform: translateY(.35rem); }
+.principles-output { transition: opacity .35s ease, transform .35s ease; }
+.principles-section.is-executed .principles-command .terminal-caret { opacity: 0; }
 .section-heading-row { display: flex; justify-content: space-between; gap: 2rem; align-items: baseline; margin-bottom: 1.5rem; }
 .section-heading-row h2 { font-size: 1.5rem; }
 .section-heading-row p { max-width: 24rem; color: var(--muted-foreground); }
