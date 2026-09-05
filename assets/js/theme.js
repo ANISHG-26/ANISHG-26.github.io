@@ -72,6 +72,10 @@ if (terminal && terminalCommand && terminalOutput && !reducedMotion.matches) {
 const aboutCommand = document.querySelector('[data-about-command]');
 const aboutReveal = document.querySelector('.about-reveal');
 const aboutProfile = document.querySelector('.about-profile');
+const aboutYamlCommand = document.querySelector('[data-about-yaml-command]');
+const aboutYamlOutput = document.querySelector('[data-about-yaml-output]');
+const aboutBassCommand = document.querySelector('[data-about-bass-command]');
+const aboutEasterEgg = document.querySelector('[data-about-easter-egg]');
 if (aboutCommand && aboutReveal && aboutProfile && !reducedMotion.matches) {
   const command = aboutCommand.textContent;
   aboutCommand.textContent = '';
@@ -83,7 +87,35 @@ if (aboutCommand && aboutReveal && aboutProfile && !reducedMotion.matches) {
     else window.setTimeout(() => {
       aboutProfile.classList.add('is-executed');
       document.documentElement.classList.remove('about-sequence-pending');
+      runAboutYamlSequence();
     }, 480);
   };
   window.setTimeout(typeAboutCommand, 420);
+}
+function typeAboutTerminalCommand(target, pendingClass, command, onComplete) {
+  if (!target) return;
+  target.textContent = '';
+  document.documentElement.classList.add(pendingClass);
+  let index = 0;
+  const typeNext = () => {
+    target.textContent = command.slice(0, ++index);
+    if (index < command.length) window.setTimeout(typeNext, 65);
+    else window.setTimeout(onComplete, 420);
+  };
+  typeNext();
+}
+function runAboutYamlSequence() {
+  if (!aboutYamlCommand || !aboutYamlOutput) return;
+  typeAboutTerminalCommand(aboutYamlCommand, 'about-yaml-pending', aboutYamlCommand.dataset.command || aboutYamlCommand.textContent, () => {
+    aboutYamlOutput.classList.add('is-rendered');
+    document.documentElement.classList.remove('about-yaml-pending');
+    window.setTimeout(runAboutBassSequence, 900);
+  });
+}
+function runAboutBassSequence() {
+  if (!aboutBassCommand || !aboutEasterEgg) return;
+  typeAboutTerminalCommand(aboutBassCommand, 'about-bass-pending', aboutBassCommand.dataset.command || aboutBassCommand.textContent, () => {
+    aboutEasterEgg.classList.add('is-rendered');
+    document.documentElement.classList.remove('about-bass-pending');
+  });
 }

@@ -230,6 +230,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Describe only verified delivery, onboarding-automation, test-reproducibility,
   Kubernetes, artifact, release, and observability experience.
 
+### I031 — Animated Foundation And Bass Output, 2026-09-05
+
+- Keep the About message natural and centered on the evolution across projects.
+- Animate `cat foundation.yaml`, reveal its YAML output line by line, then run a
+  delayed `cat bassline.txt` easter egg underneath it.
+- Use an original bass riff rather than reproducing copyrighted song notation.
+- Preserve the existing visual system and respect reduced-motion preferences.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
