@@ -291,6 +291,18 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Add the missing vertical GLI block and keep the reduced reference-inspired
   styling.
 
+### I040 — Rendering Reliability Rule, 2026-09-05
+
+- Treat visual elements as assets that need failure handling, not only markup
+  that looks correct in source.
+- Prefer local, versioned images and icon assets; when an external source is
+  retained, provide a local fallback, explicit dimensions, and meaningful alt
+  text or accessible text.
+- Keep ASCII inside `<pre>` blocks, escape HTML-sensitive characters, use stable
+  monospace line lengths, and test at the target desktop and mobile widths.
+- Verify each visual iteration in light, dark, reduced-motion, and unavailable
+  external-asset states before calling it complete.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
