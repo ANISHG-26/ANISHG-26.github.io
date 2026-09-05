@@ -165,6 +165,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Present the homepage field-note preview as a small Linux-style file terminal
   window with a path bar and field-note metadata.
 
+### I019 — Working Icons And Path Scale, 2026-09-05
+
+- Use a valid Lucide UMD release so the existing icon placeholders render across
+  the homepage controls, terminal chrome, and navigation affordances.
+- Increase and vertically align the workspace path text to match the terminal
+  typography scale.
+
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user

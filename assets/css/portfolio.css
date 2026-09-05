@@ -46,7 +46,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .theme-switcher button { display: grid; place-items: center; min-width: 2.2rem; min-height: 2rem; border: 0; cursor: pointer; color: var(--muted-foreground); background: transparent; }
 .theme-switcher button svg { width: .95rem; height: .95rem; }
 .theme-switcher button[aria-pressed="true"] { border-radius: .35rem; background: var(--cyan-soft); color: var(--cyan); }
-.workspace-path { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.3rem; color: var(--muted-foreground); font: .73rem var(--font-code); }
+.workspace-path { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.3rem; color: var(--muted-foreground); font: .82rem/1.6 var(--font-code); }
 .workspace-path > span:first-child { color: var(--purple); }
 .foundation-hero { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr); gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-block: 3.3rem 4.5rem; }
 .command-line, .section-index { color: var(--muted-foreground); font: .8rem/1.6 var(--font-code); margin-bottom: 1.6rem; }
