@@ -69,21 +69,3 @@ if (terminal && terminalCommand && terminalOutput && !reducedMotion.matches) {
   };
   window.setTimeout(typeCommand, 420);
 }
-const principlesCommand = document.querySelector('[data-principles-command]');
-const principlesOutput = document.querySelector('.principles-output');
-const principlesSection = document.querySelector('.principles-section');
-if (principlesCommand && principlesOutput && principlesSection && !reducedMotion.matches) {
-  const command = principlesCommand.textContent;
-  principlesCommand.textContent = '';
-  document.documentElement.classList.add('principles-sequence-pending');
-  let index = 0;
-  const typePrinciplesCommand = () => {
-    principlesCommand.textContent = command.slice(0, ++index);
-    if (index < command.length) window.setTimeout(typePrinciplesCommand, 70);
-    else window.setTimeout(() => {
-      principlesSection.classList.add('is-executed');
-      document.documentElement.classList.remove('principles-sequence-pending');
-    }, 480);
-  };
-  window.setTimeout(typePrinciplesCommand, 650);
-}

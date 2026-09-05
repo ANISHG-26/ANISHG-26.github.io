@@ -197,13 +197,6 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Add the user's public GitHub avatar as a temporary profile image.
 - Keep the homepage frozen and preserve the existing public-safe About content.
 
-### I024 — Animated Principles Terminal, 2026-09-05
-
-- Keep the About principles cards as the primary content and use the available
-  space above them for an animated `$ cat principles.yaml` command sequence.
-- Reveal a concise foundation/iteration YAML summary after the command executes,
-  with reduced-motion and no-JavaScript fallbacks preserved.
-
 For each iteration, state the concrete scope and the applicable reference role.
 If a request conflicts with an established constraint, identify the conflict and
 resolve it with the user before implementing that dependent change. Once the user
