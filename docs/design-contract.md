@@ -258,6 +258,12 @@ has not been verified. This is a reference-role contract, not a completed visual
   red-letter treatment.
 - Keep it terminal-native, animated, and compatible with the existing Linux theme.
 
+### I035 — Restore GLI And Bass Output, 2026-09-05
+
+- Restore the smaller GLI treatment from the earlier terminal iteration.
+- Restore the earlier compact bass groove and its original note spacing.
+- Leave the terminal sequencing and GLI animation behavior unchanged.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
