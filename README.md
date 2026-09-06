@@ -41,5 +41,15 @@ The custom stylesheet is `assets/css/portfolio.css`, avoiding the default theme'
 
 After a production build, run `python scripts/check_public.py` (requires pypdf)
 to check local links, output exclusions, and the public resume contact policy.
+Run `python -m unittest discover -s tests -v` to check the frozen ASCII sources,
+their rendered output, and the responsive CSS contract. The Pages workflow runs
+both commands after building and before uploading a deployable artifact.
+
+Run `npm run test:visual` after a Jekyll build to render the About page in
+headless Chromium at representative phone, tablet, laptop, and desktop sizes.
+These checks fail on wrapped or clipped artwork, changed line geometry, incorrect
+tablet columns, or page overflow, and retain a full-page screenshot on failure.
+The browser suite requires Node.js 20 or newer and a one-time
+`npx playwright install chromium` setup.
 
 Public deployment remains gated on content, link, privacy, and security review.

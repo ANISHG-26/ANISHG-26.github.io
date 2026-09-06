@@ -345,6 +345,19 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Validate representative phone, tablet portrait and landscape, laptop, and
   desktop widths without changing the frozen artwork.
 
+### I046 — Automated Artwork Regression Tests, 2026-09-06
+
+- Test the approved cat and GLI text as frozen golden sources.
+- Test that the About template includes and HTML-escapes those sources, that the
+  built page preserves them exactly, and that the responsive no-wrap and tablet
+  stacking rules remain present.
+- Run the regression suite and existing public-output validator in the GitHub
+  Pages build before its artifact can be uploaded or deployed.
+- Render the About page in Chromium at representative phone, tablet, laptop, and
+  desktop viewports. Fail on changed artwork line counts, wrapping, clipping,
+  incorrect tablet column layout, or page-level overflow, and capture a full-page
+  screenshot whenever a visual test fails.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
