@@ -9,9 +9,7 @@ permalink: /about/
   <figure class="about-portrait">
     <img src="https://github.com/ANISHG-26.png?size=640" alt="Anish George" width="640" height="640">
     <figcaption><span class="prompt-mark">↳</span> Public profile / GitHub</figcaption>
-    <pre class="portrait-cats" aria-label="A pair of terminal cats"><code>=^.^=      =^.^=
-(     )    (     )
-  / \        / \</code></pre>
+    {% capture cats_art %}{% include ascii/cats.txt %}{% endcapture %}<pre class="portrait-cats" aria-label="A pair of terminal cats"><code>{{ cats_art | escape }}</code></pre>
   </figure>
   <div class="about-profile-terminal">
     <div class="terminal-window-bar"><span><i data-lucide="terminal" aria-hidden="true"></i> ~/ag/about.md</span><span class="file-type">PROFILE</span></div>
@@ -48,13 +46,7 @@ E|--------------------------5-7-7-5-3-5-7-|</code></pre>
       </div>
       <div class="about-easter-egg about-gli-output" data-about-gli-output>
         <p class="command-line"><span class="prompt-mark">$</span> <span data-about-gli-command>cat .vw</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
-        <pre class="ascii-art gli-art" aria-label="GLI in ASCII"><code> ██████    ██       ██████
-██         ██         ██
-██  ███    ██         ██
-██   ██    ██         ██
-            ██         ██
-            ██         ██
- ██████    ██████   ██████</code></pre>
+        {% capture gli_art %}{% include ascii/gli.txt %}{% endcapture %}<pre class="ascii-art gli-art" aria-label="GLI in ASCII"><code>{{ gli_art | escape }}</code></pre>
       </div>
     </aside>
   </div>

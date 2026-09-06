@@ -4,6 +4,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import re
 from pypdf import PdfReader
+from check_ascii_art import verify_ascii_art
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / '_site'
@@ -36,6 +37,7 @@ for page in pages:
         if target.is_dir():
             target /= 'index.html'
         assert target.exists(), f'Broken local link: {page.name} -> {url}'
+verify_ascii_art()
 source_pdf = ROOT / 'assets/resume/anish-george-resume.pdf'
 assert source_pdf.read_bytes() == (SITE / 'assets/resume/anish-george-resume.pdf').read_bytes(), 'Stale deployed resume'
 reader = PdfReader(source_pdf)

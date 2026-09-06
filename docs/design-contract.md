@@ -316,6 +316,17 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the complete user-provided D, A, and E note pattern in sequence rather
   than aligning notes vertically as chords.
 
+### I043 — Freeze GLI And Cat Art, 2026-09-06
+
+- Restore the confirmed three-line pair of cats with literal backslashes.
+- Remove the two unintended vertical rows from the GLI mark, leaving one
+  continuous horizontal bar at the top and bottom of the I.
+- Treat `_includes/ascii/cats.txt` and `_includes/ascii/gli.txt` as the editable
+  sources of truth, render them through HTML escaping, and validate that the
+  generated page remains byte-for-text faithful to those sources.
+- Leave the bass tab unchanged until its earlier versions are reviewed with the
+  user.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
