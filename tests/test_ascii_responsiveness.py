@@ -86,6 +86,15 @@ class ResponsiveContractTests(unittest.TestCase):
             r'\.about-profile-output\s*\{[^}]*border-left:\s*0;',
         )
 
+    def test_confirmed_art_is_centered(self):
+        cats = re.search(r'^\.portrait-cats\s*\{([^}]*)\}', self.css, re.MULTILINE)
+        gli = re.search(r'^\.gli-art\s*\{([^}]*)\}', self.css, re.MULTILINE)
+        self.assertIsNotNone(cats)
+        self.assertIsNotNone(gli)
+        self.assertIn('place-items: center', cats.group(1))
+        self.assertIn('width: max-content', gli.group(1))
+        self.assertIn('margin-inline: auto !important', gli.group(1))
+
 
 if __name__ == '__main__':
     unittest.main()

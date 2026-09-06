@@ -379,6 +379,15 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Scale the longer tab against its containing output panel so it remains intact
   in both stacked tablet and split laptop layouts without changing its source.
 
+### I049 — Center Confirmed Art, 2026-09-06
+
+- Center the confirmed cat pair horizontally and vertically within its portrait
+  footer panel while keeping the profile caption left-aligned.
+- Center the confirmed GLI artwork horizontally beneath `.vw` while keeping its
+  terminal command left-aligned.
+- Preserve every character in the frozen cats, GLI, and bassline sources and add
+  structural and browser-geometry assertions for the centered artwork.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated

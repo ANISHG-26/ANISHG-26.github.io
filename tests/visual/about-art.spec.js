@@ -36,6 +36,18 @@ for (const device of devices) {
         cats: measure('.portrait-cats'),
         bass: measure('.bass-tab'),
         gli: measure('.gli-art'),
+        catsCenterDelta: Math.abs(
+          document.querySelector('.portrait-cats code').getBoundingClientRect().x
+          + document.querySelector('.portrait-cats code').getBoundingClientRect().width / 2
+          - (document.querySelector('.portrait-cats').getBoundingClientRect().x
+            + document.querySelector('.portrait-cats').getBoundingClientRect().width / 2)
+        ),
+        gliCenterDelta: Math.abs(
+          document.querySelector('.gli-art').getBoundingClientRect().x
+          + document.querySelector('.gli-art').getBoundingClientRect().width / 2
+          - (document.querySelector('.about-gli-output').getBoundingClientRect().x
+            + document.querySelector('.about-gli-output').getBoundingClientRect().width / 2)
+        ),
       };
     });
 
@@ -43,6 +55,8 @@ for (const device of devices) {
     expect(layout.cats.lines).toBe(3);
     expect(layout.bass.lines).toBe(5);
     expect(layout.gli.lines).toBe(5);
+    expect(layout.catsCenterDelta).toBeLessThanOrEqual(1);
+    expect(layout.gliCenterDelta).toBeLessThanOrEqual(1);
 
     for (const art of [layout.cats, layout.bass, layout.gli]) {
       expect(art.whiteSpace).toBe('pre');
