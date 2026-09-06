@@ -18,18 +18,25 @@ EXPECTED_GLI = """ ██████    ██       ██████
 ██   ██    ██         ██
  ██████    ██████   ██████"""
 
+EXPECTED_BASSLINE = """G|--------------------------------|
+D|------5---5---------------------|
+A|--5-7---7---7-5-----------------|
+E|----------------7-5-3---5-7-----|"""
+
 
 class FrozenAsciiTests(unittest.TestCase):
     def test_approved_sources_are_unchanged(self):
         self.assertEqual(EXPECTED_CATS, self._source('cats'))
         self.assertEqual(EXPECTED_GLI, self._source('gli'))
+        self.assertEqual(EXPECTED_BASSLINE, self._source('bassline'))
 
     def test_about_template_uses_escaped_source_files(self):
         template = (ROOT / 'about.html').read_text(encoding='utf-8-sig')
-        for name in ('cats', 'gli'):
+        for name in ('cats', 'gli', 'bassline'):
             self.assertIn(f'include ascii/{name}.txt', template)
         self.assertIn('{{ cats_art | escape }}', template)
         self.assertIn('{{ gli_art | escape }}', template)
+        self.assertIn('{{ bass_art | escape }}', template)
 
     def test_built_page_matches_source_files(self):
         verify_ascii_art()

@@ -358,6 +358,15 @@ has not been verified. This is a reference-role contract, not a completed visual
   incorrect tablet column layout, or page-level overflow, and capture a full-page
   screenshot whenever a visual test fails.
 
+### I047 — Freeze Correct Bassline, 2026-09-06
+
+- Use the extended I033 bass pattern as the musical source, remove its first
+  E-string `5-7`, and retain the later `7-5-3---5-7` phrase.
+- Preserve the original 32-character tab width and the D- and A-string timing.
+- Treat `_includes/ascii/bassline.txt` as the editable source of truth, render it
+  through HTML escaping, and include it in source, generated-page, and visual
+  regression checks.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated

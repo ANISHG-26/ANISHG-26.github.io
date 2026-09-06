@@ -20,6 +20,9 @@ class AsciiArt(HTMLParser):
         elif tag == 'pre' and 'gli-art' in classes:
             self.current = 'gli'
             self.art[self.current] = ''
+        elif tag == 'pre' and 'bass-tab' in classes:
+            self.current = 'bassline'
+            self.art[self.current] = ''
 
     def handle_endtag(self, tag):
         if tag == 'pre':
@@ -33,12 +36,14 @@ class AsciiArt(HTMLParser):
 def verify_ascii_art():
     parser = AsciiArt()
     parser.feed((SITE / 'about/index.html').read_text(encoding='utf-8-sig'))
-    for name in ('cats', 'gli'):
+    for name in ('cats', 'gli', 'bassline'):
         expected = (ROOT / f'_includes/ascii/{name}.txt').read_text(encoding='utf-8-sig').rstrip('\r\n')
         actual = parser.art.get(name, '').rstrip('\r\n')
+        if name == 'bassline':
+            actual = actual.split('\n', 1)[1]
         assert actual == expected, f'{name} ASCII differs from its source file'
 
 
 if __name__ == '__main__':
     verify_ascii_art()
-    print('PASS: rendered cats and GLI match their plain-text sources')
+    print('PASS: rendered cats, GLI, and bassline match their plain-text sources')
