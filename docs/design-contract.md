@@ -333,6 +333,18 @@ has not been verified. This is a reference-role contract, not a completed visual
   to six so they appear even.
 - Preserve the G, L, I stem, confirmed cats, raw-source workflow, and bass tab.
 
+### I045 — Responsive ASCII Presentation, 2026-09-06
+
+- Keep the approved GLI and cat source text unchanged.
+- Stack the About terminal's internal copy and output columns at tablet widths so
+  neither is compressed inside the outer profile layout.
+- Never wrap ASCII art or tablature lines. Scale the bass tab conservatively on
+  narrow screens and retain horizontal scrolling as a last-resort safeguard.
+- Version the local stylesheet URL per site build so browsers load responsive
+  changes instead of retaining an earlier cached layout.
+- Validate representative phone, tablet portrait and landscape, laptop, and
+  desktop widths without changing the frozen artwork.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
