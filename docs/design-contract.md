@@ -327,6 +327,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Leave the bass tab unchanged until its earlier versions are reviewed with the
   user.
 
+### I044 — Even GLI I Bars, 2026-09-06
+
+- Widen only the GLI letter I's top and bottom horizontal bars from five blocks
+  to six so they appear even.
+- Preserve the G, L, I stem, confirmed cats, raw-source workflow, and bass tab.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
