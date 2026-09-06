@@ -18,10 +18,10 @@ EXPECTED_GLI = """ ██████    ██       ██████
 ██   ██    ██         ██
  ██████    ██████   ██████"""
 
-EXPECTED_BASSLINE = """G|--------------------------------|
-D|------5---5---------------------|
-A|--5-7---7---7-5-----------------|
-E|----------------7-5-3---5-7-----|"""
+EXPECTED_BASSLINE = """G|----------------------------------------------------|
+D|------------------------3---4-----------------------|
+A|--------3---5---x---------------5-------------------|
+D|--0----------------------------------0----2---3---2-|"""
 
 
 class FrozenAsciiTests(unittest.TestCase):
@@ -40,6 +40,12 @@ class FrozenAsciiTests(unittest.TestCase):
 
     def test_built_page_matches_source_files(self):
         verify_ascii_art()
+
+    def test_drop_d_bassline_rows_are_aligned(self):
+        rows = self._source('bassline').splitlines()
+        self.assertEqual(['G', 'D', 'A', 'D'], [row[0] for row in rows])
+        self.assertEqual(1, len({len(row) for row in rows}))
+        self.assertTrue(all(row.endswith('|') for row in rows))
 
     @staticmethod
     def _source(name):

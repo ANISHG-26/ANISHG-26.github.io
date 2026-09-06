@@ -367,6 +367,18 @@ has not been verified. This is a reference-role contract, not a completed visual
   through HTML escaping, and include it in source, generated-page, and visual
   regression checks.
 
+### I048 — Drop-D Bassline, 2026-09-06
+
+- Replace the earlier groove with the user-provided Drop-D transcription using
+  `G–D–A–D` tuning and no hammer-on notation.
+- Keep the A-string dead note, omit the dead note before the upper D-string
+  `3–4`, and align every closing bar in the same character column.
+- Freeze the approved text in the existing bassline source and test its exact
+  content, tuning, row lengths, closing bars, generated output, and responsive
+  browser presentation.
+- Scale the longer tab against its containing output panel so it remains intact
+  in both stacked tablet and split laptop layouts without changing its source.
+
 ### I026 — Animated About Profile Terminal, 2026-09-05
 
 - Present the About profile introduction in a terminal window with an animated
