@@ -203,7 +203,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .experience-kicker { margin-bottom: .7rem; }
 .experience-company-header h2 { margin: 0; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
 .experience-company-header > time, .experience-project-heading time { color: var(--purple); font: .73rem/1.6 var(--font-code); white-space: nowrap; }
-.experience-summary { max-width: 58rem; margin: 1.1rem 0 1.8rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.75; }
+.experience-summary { max-width: none; margin: 1.1rem 0 1.8rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.75; }
 .experience-summary, .experience-project > p { text-align: justify; text-justify: inter-word; text-align-last: left; }
 .experience-roles { display: grid; gap: .35rem; margin-bottom: 2rem; padding: .9rem 1rem; border-left: 2px solid var(--purple); background: color-mix(in srgb, var(--surface) 70%, transparent); }
 .experience-roles p { display: flex; justify-content: space-between; gap: 1rem; margin: 0; color: var(--foreground); font: .8rem/1.6 var(--font-code); }

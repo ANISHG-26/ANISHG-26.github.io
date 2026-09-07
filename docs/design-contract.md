@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I083 — Full-Width Company Summaries, 2026-09-07
+
+- Let company-level Experience summaries use the available content width instead
+  of inheriting a narrow reading cap, reducing unused horizontal space in the
+  company blocks.
+- Preserve justified copy and responsive wrapping on smaller screens.
+
 ### I082 — Scroll-Triggered Skills Tree, 2026-09-07
 
 - Start the Experience-page `tree ./skills/` type-in sequence when the skills
