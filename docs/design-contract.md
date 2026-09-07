@@ -77,6 +77,16 @@ has not been verified. This is a reference-role contract, not a completed visual
   including the planned later LinkedIn review, unless the user explicitly
   reopens the page design.
 
+### I109 — Field Notes Page Freeze, 2026-09-07
+
+- Freeze the current Field Notes index design and layout as the approved
+  direction.
+- Preserve the Linux-style terminal directory listing, `ls -lt ./field-notes/`
+  command-execution animation, staggered note-row reveal, responsive behavior,
+  and shared Markdown typography.
+- Future Field Notes work should focus on note content only unless the user
+  explicitly reopens the page design.
+
 ### I095 — Education Metadata Right Alignment, 2026-09-07
 
 - Right-align the education date and location rows inside the right-side
