@@ -1,0 +1,58 @@
+- company: Ernst & Young LLP
+  display_name: Ernst & Young
+  location: Ottawa, Ontario, Canada
+  division: Digital & Emerging Technologies group in our Consulting practice
+  division_display: Digital & Emerging Technologies
+  period: 2024 — Present
+  summary: Built delivery paths and runtime foundations for internal GenAI and cybersecurity products, spanning Kubernetes, CI/CD, observability, QA enablement, and developer workflows.
+  roles:
+    - title: Senior Technology Consultant
+      period: Aug 2026 — Present
+    - title: Staff Technology Consultant
+      period: Oct 2024 — Jul 2026
+  projects:
+    - name: FlexiGenAI
+      period: Oct 2025 — Jul 2026
+      summary: Translated an evolving multi-component application into working Kubernetes development and QA environments, with reusable artifact delivery and centralized runtime visibility.
+      highlights:
+        - Kubernetes manifests, Azure delivery integrations, persistent storage, autoscaling, disruption budgets, and health probes.
+        - GitHub migration, JFrog package publishing, Prometheus/Loki/Tempo/Grafana observability, and CI-integrated performance testing.
+    - name: Internal Cybersecurity Product
+      period: Oct 2024 — Dec 2025
+      summary: Moved a VM-hosted application into a containerized AKS deployment and led the infrastructure, DevOps, QA enablement, and internal release work.
+      highlights:
+        - Helm-based deployment patterns, Azure DevOps pipelines, branching and promotion practices.
+        - Security and quality controls integrated into the delivery workflow and release process.
+
+- company: Morgan Stanley
+  display_name: Morgan Stanley
+  location: Montreal, Quebec, Canada
+  division: Enterprise Technology & Services (ETS)
+  period: 2023 — 2024
+  summary: Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
+  roles:
+    - title: Technology Analyst Intern
+      period: May 2023 — Apr 2024
+  projects:
+    - name: System Test Platform
+      period: 2023 — 2024
+      summary: Modernized system-test workflows for an established platform with repeatable image construction, test execution, dependency inspection, and result-review tooling.
+
+- company: Accenture Solutions Pvt Ltd
+  display_name: Accenture
+  location: Bengaluru, Karnataka, India
+  division: Advanced Technology Centers in India (ATCI)
+  period: 2020 — 2022
+  summary: Built CI/CD automation, OpenShift delivery workflows, and reusable onboarding tools within an architect-led enterprise DevOps platform.
+  roles:
+    - title: Application Development Analyst
+      period: Dec 2021 — Aug 2022
+    - title: Application Development Associate
+      period: Nov 2020 — Nov 2021
+  projects:
+    - name: myWizard for DevXOps
+      period: 2020 — 2022
+      summary: Connected Jenkins, GitLab, SonarQube, and Nexus through reusable Groovy and Job DSL automation for application teams.
+      highlights:
+        - Automated repository and Jenkins-job onboarding with shared libraries and Job DSL.
+        - Built Python automation to compare image versions across OpenShift environments and exposed it through Jenkins.

@@ -1,0 +1,92 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[default]{carlito}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\hypersetup{pdftitle={Anish George - Platform Engineering},pdfauthor={Anish George},pdfsubject={Public portfolio resume}}
+\pagestyle{plain}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\renewenvironment{itemize}{\begin{list}{\textbullet}{\setlength{\leftmargin}{1.3em}\setlength{\itemsep}{3pt}\setlength{\topsep}{4pt}\setlength{\parsep}{0pt}}}{\end{list}}
+\newcommand{\sect}[1]{\vspace{5pt}{\large\bfseries #1}\par\vspace{1pt}\hrule\vspace{4pt}}
+\newcommand{\role}[2]{\textbf{#1}\hfill #2\par}
+\begin{document}
+{\LARGE\bfseries Anish George}\par
+{\large Platform Engineering | Developer Experience}\par
+Ottawa, Ontario, Canada\par
+\href{https://www.linkedin.com/in/anishgeorge97}{LinkedIn: anishgeorge97}\enspace |\enspace
+\href{https://github.com/ANISHG-26}{GitHub: ANISHG-26}\enspace |\enspace
+\href{https://anishg-26.github.io/}{Portfolio: anishg-26.github.io}
+
+\sect{Profile}
+Platform engineer focused on the runtime foundations, delivery paths, and developer
+workflows that help teams build with confidence. Experience spans reusable CI/CD,
+containerized test infrastructure, Kubernetes delivery, secure release workflows,
+and observability. Works with application teams to understand friction and turn
+recurring tasks into understandable, repeatable engineering practices.
+
+\sect{Technical Capabilities}
+\textbf{Platform:} Kubernetes, Azure Kubernetes Service, Docker, Helm, OpenShift application delivery.\par
+\textbf{Delivery \& Automation:} GitHub Actions, Azure DevOps, Jenkins, GitLab, JFrog Artifactory, Python, Shell, Groovy, Git.\par
+\textbf{Observability \& Validation:} OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Locust.\par
+\textbf{Secure Delivery:} SAST, SCA, container and DAST integration; Azure Key Vault with Secrets Store CSI Driver.
+
+\sect{Professional Experience}
+\textbf{Ernst \& Young LLP} --- Ottawa, Ontario\par
+\role{Senior Technology Consultant}{Aug 2026 -- Present}
+\role{Staff Technology Consultant}{Oct 2024 -- Jul 2026}
+\textit{Enterprise GenAI Product | Platform Delivery | Oct 2025 -- Jul 2026}
+\begin{itemize}
+\item Translated an evolving multi-component application design into working Kubernetes development and QA environments, using manifests, Azure delivery integrations, persistent storage, autoscaling, disruption budgets, and health probes.
+\item Built adopted pipelines to version and publish Python SDK wheels and shared UI packages to JFrog for reuse across product components.
+\item Collaborated with application engineers on shared-storage tool-installation and Module Federation delivery proofs of concept. Dynamic lifecycle automation and dependency isolation remained incomplete.
+\item Deployed Prometheus, Loki, Tempo, and Grafana in internal environments to centralize logs, metrics, traces, and scaling visibility for developer troubleshooting.
+\item Built an initial k6 proof of concept and integrated developer-authored Locust tests into CI/CD; proposed weighted usage scenarios implemented by another engineer.
+\item Migrated repositories from Azure DevOps to GitHub using centrally managed tooling and removed more than 200 stale branches with CSV-driven automation.
+\end{itemize}
+\textit{Scope: internal development, QA, demo, and consultant-use environments; no customer-production, formal on-call, or SLO ownership.}
+
+\newpage
+{\large\bfseries Anish George}\hfill Platform Engineering\par
+\sect{Professional Experience, Continued}
+\textbf{Ernst \& Young LLP}\par
+\textit{Internal Cybersecurity Product | Infrastructure \& Delivery | Oct 2024 -- Dec 2025}
+\begin{itemize}
+\item Owned infrastructure and DevOps implementation within the product team, moving a VM-hosted application to a containerized Azure Kubernetes Service deployment with Helm-based deployment patterns.
+\item Built Azure DevOps delivery pipelines, branching and promotion practices, and integrated security and quality controls into the release workflow.
+\item Led QA enablement and release into the organization's internal production environment through required enterprise processes and controls.
+\end{itemize}
+
+\textbf{Morgan Stanley} --- Montreal, Quebec\par
+\role{Technology Analyst Intern}{May 2023 -- Apr 2024}
+\begin{itemize}
+\item Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
+\item Traced direct and transitive dependencies and built CLI tooling for repeatable image construction, test execution, and result inspection. A future parallel runner remained exploratory.
+\end{itemize}
+
+\textbf{Accenture Solutions Pvt Ltd} --- Bengaluru, India\par
+\role{Application Development Analyst}{Dec 2021 -- Aug 2022}
+\role{Application Development Associate}{Nov 2020 -- Nov 2021}
+\begin{itemize}
+\item Implemented CI/CD and OpenShift application delivery within an architect-led enterprise DevOps platform, connecting Jenkins, GitLab, SonarQube, and Nexus.
+\item Built reusable Groovy Shared Library logic and Job DSL automation for repository and Jenkins-job onboarding.
+\item Developed Python automation to compare image versions across OpenShift environments and exposed the workflow through Jenkins for application teams.
+\end{itemize}
+
+\sect{Selected Projects}
+\textbf{Cross-Cloud MLOps Pipeline} | Academic three-person team | 2023\par
+Implemented provider-specific training and deployment artifacts across AWS SageMaker,
+Azure Machine Learning, and GCP Vertex AI; tested hosted endpoints through a shared
+notebook. Academic prototype, not production MLOps ownership.\par
+\textbf{Moving Services Application} | Student client engagement | 2023\par
+Led the cloud and DevOps workstream within a student team, evaluated Azure hosting,
+and established GitHub Actions delivery for a React and Spring Boot solution.
+
+\sect{Education}
+\textbf{Master of Engineering, Electrical and Computer Engineering}\par
+University of Ottawa | Sep 2022 -- May 2024\par
+\textbf{Bachelor of Engineering, Electronics and Communication Engineering}\par
+JSS Academy of Technical Education, Visvesvaraya Technological University\par
+Aug 2016 -- Aug 2020
+\end{document}

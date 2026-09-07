@@ -1,0 +1,28 @@
+title: Anish George — Platform Engineer
+description: >-
+  Portfolio of Anish George, a platform engineer focused on platform delivery
+  and developer enablement.
+url: "https://anishg-26.github.io"
+baseurl: ""
+lang: en-CA
+timezone: America/Toronto
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - AGENTS.md
+  - CHANGELOG.md
+  - docs
+  - scripts
+  - tmp
+  - .context
+  - README.md
+  - node_modules
+  - .pnpm-store
+  - vendor

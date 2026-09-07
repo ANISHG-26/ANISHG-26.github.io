@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<a class="skip-link" href="#main">Skip to content</a>
+{% include site-header.html %}
+
+<main id="main" class="post-shell section-shell">
+  <header class="post-intro reveal">
+    <p class="command-line"><span class="prompt-mark">❯</span> cat {{ page.slug }}.md</p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      <span>{{ page.category_label }}</span>
+    </div>
+  </header>
+  <article class="post-content reveal">
+    {{ content }}
+  </article>
+  <a class="back-link post-back" href="{% if page.collection == 'projects' %}{{ '/projects/' | relative_url }}{% else %}{{ '/field-notes/' | relative_url }}{% endif %}"><i data-lucide="arrow-left" aria-hidden="true"></i> {% if page.collection == 'projects' %}All Projects{% else %}All Field Notes{% endif %}</a>
+</main>
+
+{% include site-footer.html %}

@@ -1,0 +1,16 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/
+Gemfile.lock
+node_modules/
+__pycache__/
+playwright-report/
+test-results/
+.pnpm-store/
+.DS_Store
+Thumbs.db
+tmp/
+.context/

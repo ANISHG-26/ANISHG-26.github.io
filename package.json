@@ -1,0 +1,15 @@
+{
+  "name": "anish-george-portfolio-tests",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "python -m unittest discover -s tests -v",
+    "test:visual": "playwright test",
+    "validate": "npm run test:visual && npm test && python scripts/check_public.py"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}

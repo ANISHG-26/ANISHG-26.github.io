@@ -1,0 +1,82 @@
+---
+layout: page
+title: Foundations First
+description: A philosophy for engineering. Something I’m learning to practise beyond it.
+command: cat about.md
+permalink: /about/
+---
+<section class="about-profile">
+  <figure class="about-portrait">
+    <img src="https://github.com/ANISHG-26.png?size=640" alt="Anish George" width="640" height="640">
+    <figcaption><span class="prompt-mark">↳</span> Public profile / GitHub</figcaption>
+    {% capture cats_art %}{% include ascii/cats.txt %}{% endcapture %}<pre class="portrait-cats" aria-label="A pair of terminal cats"><code>{{ cats_art | escape }}</code></pre>
+  </figure>
+  <div class="about-profile-terminal">
+    <div class="terminal-window-bar"><span><i data-lucide="terminal" aria-hidden="true"></i> ~/ag/about.md</span><span class="file-type">PROFILE</span></div>
+    <div class="about-profile-copy">
+      <p class="command-line"><span class="prompt-mark">$</span> <span data-about-command>whoami</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+      <div class="about-reveal">
+        <p class="about-role">Platform Engineer · Builder · Bassist · Car Nerd</p>
+        <h2>Before You Build Higher,<br>Make The Ground Dependable.</h2>
+        <p>At first, I focused on getting systems to run. At Accenture, I worked on CI/CD and OpenShift delivery, and began turning repeated onboarding work into automation.</p>
+        <p>At Morgan Stanley, I saw the same question from another angle. How do you make a difficult test environment easier to reproduce? Containerizing the legacy tests gave me a practical answer.</p>
+        <p>The work grew from there. It moved into platform delivery: Kubernetes environments, release paths, shared artifacts, and observability. The tools changed. The pattern stayed. Make the next step clearer for the person who has to take it.</p>
+      </div>
+    </div>
+    <aside class="about-profile-output" aria-label="Foundation summary">
+      <p class="command-line"><span class="prompt-mark">$</span> <span data-about-yaml-command>cat foundation.yaml</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+      <div class="about-yaml-output" data-about-yaml-output>
+        <pre><code><span class="yaml-line"><span class="yaml-key">foundation</span>:</span>
+<span class="yaml-line">  <span class="yaml-key">run</span>: <span class="yaml-string">dependable</span></span>
+<span class="yaml-line">  <span class="yaml-key">deploy</span>: <span class="yaml-string">repeatable</span></span>
+<span class="yaml-line">  <span class="yaml-key">understand</span>: <span class="yaml-string">observable</span></span>
+
+<span class="yaml-line"><span class="yaml-key">working_loop</span>:</span>
+<span class="yaml-line">  - <span class="yaml-string">build</span></span>
+<span class="yaml-line">  - <span class="yaml-string">reflect</span></span>
+<span class="yaml-line">  - <span class="yaml-string">improve</span></span></code></pre>
+      </div>
+      <div class="about-easter-egg" data-about-easter-egg>
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-about-bass-command>cat bassline.txt</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+        {% capture bass_art %}{% include ascii/bassline.txt %}{% endcapture %}<pre class="bass-tab" aria-label="A bass groove"><code><span class="yaml-comment"># guess the bassline</span>
+{{ bass_art | escape }}</code></pre>
+      </div>
+      <div class="about-easter-egg about-gli-output" data-about-gli-output>
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-about-gli-command>cat .vw</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+        {% capture gli_art %}{% include ascii/gli.txt %}{% endcapture %}<pre class="ascii-art gli-art" aria-label="GLI in ASCII"><code>{{ gli_art | escape }}</code></pre>
+      </div>
+    </aside>
+  </div>
+</section>
+<section class="principles-section" aria-labelledby="principles-title">
+  <div class="terminal-window-bar"><span><i data-lucide="file-code-2" aria-hidden="true"></i> ~/ag/principles.yaml</span><span class="file-type">VALUES</span></div>
+  <div class="section-heading-row"><h2 id="principles-title">How I Try To Work</h2><p>Good foundations are technical.<br>They are also human.</p></div>
+  <div class="principles-grid">
+    <article class="principle-card principle-cyan"><i data-lucide="users" aria-hidden="true"></i><span>01 / Empathy</span><h3>Build For People</h3><p>Understand where developers lose time or context. Make the next change easier to follow, and the next failure easier to understand.</p></article>
+    <article class="principle-card principle-pink"><i data-lucide="shield-check" aria-hidden="true"></i><span>02 / Integrity</span><h3>Keep It Honest</h3><p>Be clear about what I built, what we built together, and what is still an experiment. Useful engineering starts with an accurate picture.</p></article>
+    <article class="principle-card principle-purple"><i data-lucide="search" aria-hidden="true"></i><span>03 / Curiosity</span><h3>Keep Building</h3><p>Ask why. Try something small. Learn from what happens. Reflection matters most when it helps me make the next version better.</p></article>
+  </div>
+</section>
+<section class="evolution-section" aria-labelledby="evolution-title">
+  <p class="command-line"><span class="prompt-mark">$</span> tree ./journey/</p><h2 id="evolution-title">The Tools Changed. The Instinct Stayed.</h2>
+  <div class="journey-terminal">
+    <nav class="journey-tree" aria-label="Journey directories">
+      <p class="journey-tree-root">./journey/</p>
+      <button class="journey-entry is-active" type="button" aria-controls="journey-delivery" aria-selected="true" data-journey-target="journey-delivery"><span>├── 01-delivery/</span><small>Make the path repeatable</small></button>
+      <button class="journey-entry" type="button" aria-controls="journey-reproducibility" aria-selected="false" data-journey-target="journey-reproducibility"><span>├── 02-reproducibility/</span><small>Make the environment understandable</small></button>
+      <button class="journey-entry" type="button" aria-controls="journey-foundations" aria-selected="false" data-journey-target="journey-foundations"><span>└── 03-foundations/</span><small>Give the team something to build on</small></button>
+    </nav>
+    <div class="journey-output">
+      <article id="journey-delivery" class="journey-file" data-journey-panel>
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-journey-command>cat ./journey/01-delivery/README.md</span><span class="terminal-caret" aria-hidden="true">▌</span></p><div class="journey-file-content"><h3>Make The Path Repeatable</h3><p>At Accenture, reusable CI/CD and onboarding automation brought me closer to the engineers using the platform. The recurring tasks were often the best place to start.</p></div>
+      </article>
+      <article id="journey-reproducibility" class="journey-file" data-journey-panel hidden>
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-journey-command>cat ./journey/02-reproducibility/README.md</span><span class="terminal-caret" aria-hidden="true">▌</span></p><div class="journey-file-content"><h3>Make The Environment Understandable</h3><p>At Morgan Stanley, containerizing legacy tests meant tracing dependencies and making execution repeatable. Before making something faster, make it possible to reason about.</p></div>
+      </article>
+      <article id="journey-foundations" class="journey-file" data-journey-panel hidden>
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-journey-command>cat ./journey/03-foundations/README.md</span><span class="terminal-caret" aria-hidden="true">▌</span></p><div class="journey-file-content"><h3>Give The Team Something To Build On</h3><p>At EY, that instinct expanded into Kubernetes delivery, secure release workflows, shared artifacts, and observability. The work connected infrastructure choices with the developer’s next step.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="direction-callout" aria-labelledby="direction-title"><div class="terminal-window-bar"><span><i data-lucide="file-text" aria-hidden="true"></i> ~/ag/direction/README.md</span><span class="file-type">STILL LEARNING</span></div><div class="direction-callout-body"><h2 id="direction-title">A Foundation Is A Beginning.</h2><p>I want to keep deepening my engineering practice: build useful systems, learn from thoughtful people, and stay close to the people using the work.</p><a class="text-link" href="{{ '/field-notes/choosing-the-next-chapter-deliberately/' | relative_url }}">On Growing Deliberately ↗</a></div></section>

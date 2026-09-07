@@ -1,0 +1,22 @@
+---
+layout: page
+title: Field Notes
+description: Reflections on engineering, growth, and choosing direction deliberately.
+command: ls ./field-notes
+permalink: /field-notes/
+---
+
+<section class="notes-terminal" aria-labelledby="notes-directory-title">
+  <div class="terminal-window-bar"><span><i data-lucide="folder-open" aria-hidden="true"></i> ~/ag/field-notes</span><span class="file-type">DIRECTORY</span></div>
+  <div class="section-bar"><h2 id="notes-directory-title"><span class="prompt-mark">$</span> <span data-field-notes-command>ls -lt ./field-notes/</span><span class="terminal-caret field-notes-command-caret" aria-hidden="true">▌</span></h2><span>Read A Note</span></div>
+  <nav class="field-notes-list" aria-label="Field notes">
+    {% for post in site.posts %}
+      <a class="field-note-entry reveal" style="--reveal-delay: {{ forloop.index0 | times: 180 }}ms;" href="{{ post.url | relative_url }}">
+        <span class="note-index">{{ forloop.index | prepend: '0' }}</span>
+        <span class="note-file"><span><i data-lucide="file-text" aria-hidden="true"></i>{{ post.slug }}.md</span><small>{{ post.category_label }}</small></span>
+        <span class="note-copy"><strong>{{ post.title }}</strong><span>{{ post.description }}</span></span>
+        <span class="note-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </a>
+    {% endfor %}
+  </nav>
+</section>

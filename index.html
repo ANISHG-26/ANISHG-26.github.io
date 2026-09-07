@@ -1,0 +1,62 @@
+---
+layout: default
+title: Anish George — Foundations First
+description: Platform engineering, thoughtful foundations, and a few things beyond the terminal. The personal workspace of Anish George.
+---
+<a class="skip-link" href="#main">Skip to content</a>
+{% include site-header.html %}
+<main id="main" class="section-shell workspace-home">
+  <div class="workspace-path"><span>~/anish-george</span><span>Platform Engineer · Ottawa, Canada</span></div>
+  <section class="foundation-hero" aria-labelledby="home-title">
+    <div class="foundation-copy reveal">
+      <div class="hero-terminal" role="group" aria-labelledby="home-title">
+        <div class="terminal-window-bar"><span><i data-lucide="terminal" aria-hidden="true"></i> ~/ag/README.md</span><span class="terminal-window-actions" aria-hidden="true"><i data-lucide="minus"></i><i data-lucide="square"></i><i data-lucide="x"></i></span></div>
+        <div class="hero-terminal-body">
+          <p class="command-line"><span class="prompt-mark">$</span> <span data-terminal-command>cat README.md</span><span class="terminal-caret terminal-command-caret" aria-hidden="true">▌</span></p>
+          <h1 id="home-title" class="hero-thesis"><span data-terminal-output>I build the delivery paths, runtime foundations, and developer workflows that help teams ship with confidence.</span><span class="terminal-caret" aria-hidden="true">▌</span></h1>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="{{ '/assets/resume/anish-george-resume.pdf' | relative_url }}" target="_blank" rel="noopener"><i data-lucide="file-down" aria-hidden="true"></i> Resume.pdf ↗</a>
+        <a class="button button-secondary" href="https://www.linkedin.com/in/anishgeorge97" target="_blank" rel="noopener noreferrer"><i data-lucide="linkedin" aria-hidden="true"></i> LinkedIn ↗</a>
+        <a class="button button-secondary" href="https://github.com/ANISHG-26" target="_blank" rel="noopener noreferrer"><i data-lucide="github" aria-hidden="true"></i> GitHub ↗</a>
+      </div>
+    </div>
+    <section class="values-panel reveal" aria-label="My values, expressed as YAML">
+      <div class="panel-label"><span>~/ag/values.yaml</span><span class="file-type">YAML</span></div>
+      <div class="values-body">
+        <p class="command-line"><span class="prompt-mark">$</span> <span data-typed-text>cat values.yaml</span><span class="terminal-caret" aria-hidden="true">▌</span></p>
+        <pre class="yaml-code values-output"><code><span class="yaml-comment"># The way I try to build.</span>
+<span class="yaml-key">foundation</span>: <span class="yaml-string">people_before_tools</span>
+<span class="yaml-key">approach</span>:
+  - <span class="yaml-string">understand_the_friction</span>
+  - <span class="yaml-string">make_the_basics_dependable</span>
+  - <span class="yaml-string">build_test_learn</span>
+<span class="yaml-key">principles</span>:
+  <span class="yaml-key">empathy</span>: <span class="yaml-string">build_for_the_next_person</span>
+  <span class="yaml-key">integrity</span>: <span class="yaml-string">say_what_is_true</span>
+  <span class="yaml-key">curiosity</span>: <span class="yaml-string">keep_asking_why</span>
+<span class="yaml-key">growth</span>: <span class="yaml-string">one_sound_layer_at_a_time</span></code></pre>
+      </div>
+      <p class="panel-footnote"><span aria-hidden="true">↳</span> A work in progress. So am I.</p>
+    </section>
+  </section>
+  <section class="workspace-directory reveal" aria-labelledby="directory-title">
+    <div class="directory-terminal">
+      <div class="terminal-window-bar"><span><i data-lucide="folder-tree" aria-hidden="true"></i> ~/ag/portfolio</span><span class="file-type">DIRECTORY</span></div>
+      <div class="section-bar"><h2 id="directory-title"><span class="prompt-mark">$</span> ls ./portfolio/</h2><span>Pick A Directory</span></div>
+      <nav class="directory-list" aria-label="Portfolio sections">
+      <a href="{{ '/about/' | relative_url }}"><span class="directory-number">01</span><span class="directory-name">about/</span><span class="directory-description">What I believe, and how I try to work</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/experience/' | relative_url }}"><span class="directory-number">02</span><span class="directory-name">experience/</span><span class="directory-description">The systems I’ve helped make easier</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/projects/' | relative_url }}"><span class="directory-number">03</span><span class="directory-name">projects/</span><span class="directory-description">Things I’ve built, explored, and learned from</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/field-notes/' | relative_url }}"><span class="directory-number">04</span><span class="directory-name">field-notes/</span><span class="directory-description">Lessons and questions from the road</span><span aria-hidden="true">↗</span></a>
+      <a href="{{ '/geek-out/' | relative_url }}"><span class="directory-number">05</span><span class="directory-name">geek-out/</span><span class="directory-description">A few things we might have in common</span><span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </section>
+  <section class="home-notes reveal" aria-labelledby="notes-title">
+    <div><p class="command-line"><span class="prompt-mark">$</span> cat field-notes/README.md</p><h2 id="notes-title">A Pattern, Then A Direction.</h2><p class="iteration-tagline">Build · Reflect · Improve</p><p>I learn by building. I try an idea, put it to work, and see what happens. When something breaks or creates friction, I look for the reason. Then I improve the workflow or the foundation. I followed this pattern through cloud projects, CI/CD, containerized testing, and Kubernetes delivery. Over time, it pointed me toward Platform Engineering: building systems that help other people do their work with confidence.</p></div>
+    <a class="note-preview" href="{{ '/field-notes/the-long-way-toward-platform-engineering/' | relative_url }}"><div class="terminal-window-bar"><span><i data-lucide="file-text" aria-hidden="true"></i> ~/ag/field-notes/README.md</span><span class="file-type">FIELD NOTE / GROWTH</span></div><div class="note-preview-body"><h3>The Long Way Toward Platform Engineering</h3><span class="text-link">Read The Story ↗</span></div></a>
+  </section>
+</main>
+{% include site-footer.html %}

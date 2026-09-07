@@ -1,0 +1,31 @@
+- label: What I’m really good at
+  description: The platform-delivery foundations I have used most deeply.
+  items:
+    - Kubernetes
+    - Azure Kubernetes Service
+    - Docker
+    - Helm
+    - GitHub Actions
+    - Python
+    - OpenTelemetry
+    - Prometheus, Loki, Tempo, Grafana
+    - Performance and load testing
+
+- label: What I’m learning now
+  description: Areas I am actively building depth in, without calling them production ownership.
+  items:
+    - Go
+    - GitOps
+    - Terraform
+    - Snowflake
+
+- label: What I knew before
+  description: Earlier platform, automation, and security experience that still informs the work.
+  items:
+    - Azure DevOps
+    - Jenkins
+    - JFrog Artifactory
+    - Azure Key Vault + Secrets Store CSI Driver
+    - SAST, SCA, and DAST integration
+    - AWS and Google Cloud Platform
+    - Multi-cloud security and compliance
