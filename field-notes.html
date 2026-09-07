@@ -6,18 +6,17 @@ command: ls ./field-notes
 permalink: /field-notes/
 ---
 
-<section class="writing-list">
-  {% for post in site.posts %}
-    <a class="writing-card" href="{{ post.url | relative_url }}">
-      <div class="writing-meta">
-        <span>{{ forloop.index | prepend: '0' }}</span>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time>
-      </div>
-      <div>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.description }}</p>
-      </div>
-      <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-    </a>
-  {% endfor %}
+<section class="notes-terminal" aria-labelledby="notes-directory-title">
+  <div class="terminal-window-bar"><span><i data-lucide="folder-open" aria-hidden="true"></i> ~/ag/field-notes</span><span class="file-type">DIRECTORY</span></div>
+  <div class="section-bar"><h2 id="notes-directory-title"><span class="prompt-mark">$</span> ls -lt ./field-notes/</h2><span>Read A Note</span></div>
+  <nav class="field-notes-list" aria-label="Field notes">
+    {% for post in site.posts %}
+      <a class="field-note-entry" href="{{ post.url | relative_url }}">
+        <span class="note-index">{{ forloop.index | prepend: '0' }}</span>
+        <span class="note-file"><span><i data-lucide="file-text" aria-hidden="true"></i>{{ post.slug }}.md</span><small>{{ post.category_label }}</small></span>
+        <span class="note-copy"><strong>{{ post.title }}</strong><span>{{ post.description }}</span></span>
+        <span class="note-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </a>
+    {% endfor %}
+  </nav>
 </section>

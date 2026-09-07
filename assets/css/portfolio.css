@@ -278,6 +278,22 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .writing-card h2 { font-size: 1.25rem; }
 .writing-card p { color: var(--muted-foreground); margin-bottom: 0; }
 .writing-card > svg { color: var(--cyan); }
+.notes-terminal { border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.notes-terminal .section-bar { border-bottom-color: var(--border); }
+.field-notes-list { display: grid; }
+.field-note-entry { display: grid; grid-template-columns: 2.3rem minmax(13rem, .8fr) minmax(0, 1.5fr) auto; gap: 1rem; align-items: center; padding: 1.15rem 1rem; border-bottom: 1px solid var(--border); transition: background .2s, padding .2s; }
+.field-note-entry:last-child { border-bottom: 0; }
+.field-note-entry:hover, .field-note-entry:focus-visible { background: var(--surface); padding-left: 1.1rem; }
+.note-index { color: var(--purple); font: .7rem var(--font-code); }
+.note-file { display: grid; gap: .25rem; min-width: 0; color: var(--cyan); font: .8rem var(--font-code); }
+.note-file > span { display: inline-flex; align-items: center; gap: .45rem; min-width: 0; overflow-wrap: anywhere; }
+.note-file svg { flex: 0 0 auto; width: .85rem; }
+.note-file small { color: var(--muted-foreground); font: .67rem var(--font-code); }
+.note-copy { display: grid; gap: .3rem; min-width: 0; }
+.note-copy strong { font: 1rem var(--font-code); }
+.note-copy span { color: var(--muted-foreground); font-size: .86rem; line-height: 1.6; }
+.note-date { display: inline-flex; align-items: center; gap: .8rem; color: var(--muted-foreground); font: .7rem var(--font-code); white-space: nowrap; }
+.note-date svg { width: .9rem; color: var(--cyan); }
 .geek-intro { max-width: 42rem; font-size: 1.15rem; margin-bottom: 2rem; color: var(--muted-foreground); }
 .geek-card > svg { width: 1.8rem; height: 1.8rem; margin-bottom: 1.5rem; }
 .geek-card h2 { font-size: 1.25rem; }
@@ -327,6 +343,9 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .about-profile-terminal > .terminal-window-bar { grid-column: auto; }
   .about-profile-output { border-top: 1px solid var(--border); border-left: 0; }
   .principles-grid, .project-grid, .geek-grid, .projects-section .project-grid { grid-template-columns: 1fr; }
+  .field-note-entry { grid-template-columns: 1.5rem 1fr auto; row-gap: .45rem; }
+  .note-copy { grid-column: 2; }
+  .note-date { grid-column: 3; grid-row: 1 / 3; }
   .skills-tree { gap: 1rem; }
   .section-heading-row { display: block; }
   .directory-list a { grid-template-columns: 1.5rem 11rem 1fr auto; gap: .7rem; }
