@@ -12,6 +12,7 @@ permalink: /experience/
       <header class="experience-company-header">
         <div>
           <h2>{{ item.company }}</h2>
+          <p class="experience-location"><i data-lucide="map-pin" aria-hidden="true"></i>{{ item.location }}</p>
         </div>
         <time>{{ item.period }}</time>
       </header>
@@ -77,7 +78,7 @@ permalink: /experience/
   <div class="education-body">
     <div class="education-intro">
       <p class="section-index">cat education.md</p>
-      <h2 id="education-heading">Room To Explore. A Foundation To Return To.</h2>
+      <h2 id="education-heading"><span>Room To Explore.</span><span>A Foundation To Return To.</span></h2>
       <p>I worked on some pretty cool projects while I was studying. They gave me room to explore, but they always led me back to the same foundation: developer experience, rapid iteration, learning new tools, and seeing how the pieces build together.</p>
       <a class="text-link" href="{{ '/projects/' | relative_url }}">Explore the projects <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
     </div>
@@ -86,7 +87,7 @@ permalink: /experience/
         <article class="education-item">
           <div>
             <h3>{{ item.institution }}</h3>
-            <p>{{ item.degree }}</p>
+            <p>{{ item.degree }}{% if item.affiliation %} · {{ item.affiliation }}{% endif %}</p>
           </div>
           <div class="education-meta">
             <time>{{ item.period }}</time>

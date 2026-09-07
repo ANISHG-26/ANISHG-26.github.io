@@ -57,6 +57,15 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I086 — Experience Locations And Education Heading, 2026-09-07
+
+- Show the verified work location beneath each company name in the Experience
+  chronology.
+- Preserve JSS Academy’s Visvesvaraya Technological University affiliation and
+  use Bengaluru in the education location.
+- Break the education heading after “Room To Explore.” so the article “A” does
+  not wrap awkwardly at the end of the first line.
+
 ### I085 — Education As A Project Bridge, 2026-09-07
 
 - Keep a compact education section on the Experience page using verified degree

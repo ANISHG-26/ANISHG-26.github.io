@@ -1,4 +1,5 @@
 - company: Ernst & Young LLP
+  location: Ottawa, Ontario, Canada
   period: 2024 — Present
   summary: Built delivery paths and runtime foundations for internal GenAI and cybersecurity products, spanning Kubernetes, CI/CD, observability, QA enablement, and developer workflows.
   roles:
@@ -21,6 +22,7 @@
         - Security and quality controls integrated into the delivery workflow and release process.
 
 - company: Morgan Stanley
+  location: Montreal, Quebec, Canada
   period: 2023 — 2024
   summary: Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
   roles:
@@ -32,6 +34,7 @@
       summary: Modernized system-test workflows for an established platform with repeatable image construction, test execution, dependency inspection, and result-review tooling.
 
 - company: Accenture Solutions Pvt Ltd
+  location: Bengaluru, Karnataka, India
   period: 2020 — 2022
   summary: Built CI/CD automation, OpenShift delivery workflows, and reusable onboarding tools within an architect-led enterprise DevOps platform.
   roles:

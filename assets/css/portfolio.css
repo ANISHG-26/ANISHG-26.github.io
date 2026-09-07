@@ -201,6 +201,8 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .experience-company-header { display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; }
 .experience-label { color: var(--cyan); font: .7rem var(--font-code); letter-spacing: .04em; text-transform: uppercase; }
 .experience-company-header h2 { margin: 0; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.experience-location { display: inline-flex; align-items: center; gap: .35rem; margin: .45rem 0 0; color: var(--muted-foreground); font: .72rem/1.5 var(--font-code); }
+.experience-location svg { width: .8rem; height: .8rem; color: var(--cyan); }
 .experience-company-header > time, .experience-project-heading time { color: var(--purple); font: .73rem/1.6 var(--font-code); white-space: nowrap; }
 .experience-summary { max-width: none; margin: 1.1rem 0 1.8rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.75; }
 .experience-summary, .experience-project > p { text-align: justify; text-justify: inter-word; text-align-last: left; }
@@ -231,7 +233,8 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .tree-leaf { margin-right: .35rem; }
 .education-section { margin-top: 3.2rem; border: 1px solid var(--border-strong); border-top: 2px solid var(--purple); background: color-mix(in srgb, var(--surface) 90%, transparent); }
 .education-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 1.05fr); gap: clamp(2rem, 5vw, 5rem); padding: 1.8rem 1.3rem 1.4rem; }
-.education-intro h2 { max-width: 25ch; margin-bottom: 1rem; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.education-intro h2 { max-width: none; margin-bottom: 1rem; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.education-intro h2 span { display: block; }
 .education-intro > p:not(.section-index) { max-width: 58ch; color: var(--muted-foreground); text-align: justify; text-justify: inter-word; text-align-last: left; }
 .education-intro .text-link { margin-top: .35rem; }
 .education-list { display: grid; align-content: start; }
