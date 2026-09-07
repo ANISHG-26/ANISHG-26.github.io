@@ -108,6 +108,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Present the existing “Still Learning” content in the homepage’s terminal-card
   pattern while retaining its distinct “On Growing Deliberately” link.
 
+### I061 — Direction Label And Light Header Contrast, 2026-09-06
+
+- Remove the repeated “# Still Learning” corner label from the direction card.
+- Give the light-mode navigation bar a modestly darker surface for clearer
+  separation from the page while leaving dark mode unchanged.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header

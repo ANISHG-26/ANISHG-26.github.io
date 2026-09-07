@@ -25,6 +25,7 @@ body {
 :root:not(.dark) body {
   background: radial-gradient(circle at 8% 12%, color-mix(in srgb, var(--cyan) 14%, transparent), transparent 25rem), radial-gradient(circle at 92% 18%, color-mix(in srgb, var(--purple) 15%, transparent), transparent 28rem), radial-gradient(circle at 55% 78%, color-mix(in srgb, var(--pink) 10%, transparent), transparent 32rem), var(--background);
 }
+:root:not(.dark) .site-header { background: color-mix(in srgb, var(--background) 90%, var(--foreground) 10%); }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 a, button { -webkit-tap-highlight-color: transparent; }
