@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<a class="skip-link" href="#main">Skip to content</a>
+{% include site-header.html %}
+
+<main id="main" class="post-shell section-shell">
+  <header class="post-intro reveal">
+    <p class="command-line"><span class="prompt-mark">❯</span> cat {{ page.slug }}.md</p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta"><span>{{ page.status }}</span><span>{{ page.context }}</span></div>
+  </header>
+  <article class="post-content reveal">{{ content }}</article>
+  <a class="back-link post-back" href="{{ '/projects/' | relative_url }}"><i data-lucide="arrow-left" aria-hidden="true"></i> All Projects</a>
+</main>
+
+{% include site-footer.html %}

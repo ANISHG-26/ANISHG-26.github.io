@@ -167,6 +167,19 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .principle-card > span, .geek-card > span { display: block; margin-bottom: 1.8rem; font: .75rem var(--font-code); }
 .principle-card h3 { font-size: 1.2rem; }
 .principle-card p, .project-card p, .geek-card p { color: var(--muted-foreground); margin-bottom: 0; }
+.projects-section { padding-bottom: 3.2rem; }
+.projects-section + .projects-section { padding-top: .8rem; }
+.section-heading { margin-bottom: 1.5rem; }
+.section-heading h2 { margin-bottom: .45rem; font-size: 1.55rem; }
+.section-heading > p:last-child { max-width: 46rem; margin: 0; color: var(--muted-foreground); }
+.section-kicker { margin: 0 0 .55rem; color: var(--purple); font: .72rem var(--font-code); }
+.project-card { display: block; color: inherit; text-decoration: none; transition: border-color .2s, background .2s, transform .2s; }
+.project-card:hover, .project-card:focus-visible { border-color: var(--cyan); background: var(--surface); transform: translateY(-.15rem); }
+.project-card-link { display: inline-flex; align-items: center; gap: .35rem; margin-top: 1.35rem; color: var(--cyan); font: .72rem var(--font-code); }
+.project-card-link svg { width: .85rem; height: .85rem; }
+.projects-note { display: flex; align-items: center; gap: .7rem; margin-top: .2rem; padding: 1rem 1.1rem; border: 1px solid var(--border); color: var(--muted-foreground); font: .76rem/1.6 var(--font-code); }
+.projects-note svg { flex: 0 0 auto; width: 1rem; color: var(--purple); }
+.projects-note strong { color: var(--foreground); font-weight: 400; }
 .principle-card p, .journey-file p:last-child { text-align: justify; text-justify: inter-word; text-align-last: left; }
 .principle-cyan, .geek-car { border-top: 2px solid var(--cyan); }
 .principle-cyan > span, .geek-car > span, .geek-car > svg { color: var(--cyan); }

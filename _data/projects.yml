@@ -1,35 +1,35 @@
 - index: "01"
+  section: portfolio
   icon: cloud-cog
   status: Academic prototype
   title: Cross-Cloud MLOps Pipeline
-  description: >-
-    A comparative delivery workflow across AWS, Azure, and GCP, built with a
-    three-person university team.
-  tags:
-    - Cloud delivery
-    - Containers
-    - MLOps
+  url: /projects/cross-cloud-mlops-pipeline/
+  description: A three-person uOttawa project mapping a continuous training and deployment workflow across GCP, AWS, and Azure.
+  tags: [Cloud delivery, Containers, Kubernetes]
 
 - index: "02"
+  section: portfolio
   icon: truck
   status: Client-restricted case study
   title: Moving Services Application
-  description: >-
-    A cloud and DevOps workstream for a student consulting engagement,
-    presented without client source or private details.
-  tags:
-    - Azure
-    - GitHub Actions
-    - Platform design
+  url: /projects/moving-services-application/
+  description: A sanitized cloud and DevOps case study about laying a deployable foundation for a moving-estimation workflow.
+  tags: [Azure, GitHub Actions, Platform design]
 
 - index: "03"
+  section: other
+  icon: music
+  status: Collaborative course project
+  title: Music Recommendation Chatbot
+  url: /projects/music-recommendation-chatbot/
+  description: A collaborative recommendation prototype where the contribution centered on application integration and containerized cloud delivery.
+  tags: [Integration, Containers, GCP]
+
+- index: "04"
+  section: other
   icon: route
-  status: Team project
+  status: Hackathon team project
   title: ChargeRoute Navigator
-  description: >-
-    A hackathon EV route-planning prototype where the contribution focused on
-    hosted integration and team enablement.
-  tags:
-    - Integration
-    - Delivery
-    - Rapid prototyping
+  url: /projects/chargeroute-navigator/
+  description: An award-winning EV route-planning prototype where a simple hosted backend foundation helped the team iterate together.
+  tags: [Deployment, Enablement, Rapid prototyping]

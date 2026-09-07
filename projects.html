@@ -2,13 +2,18 @@
 layout: page
 title: Projects
 description: Selected engineering stories with context, collaboration, and ownership boundaries kept visible.
-command: ls ./selected-work
+command: ls ./projects
 permalink: /projects/
 ---
 
-<section class="project-grid">
-  {% for project in site.data.projects %}
-    <article class="project-card">
+{% assign portfolio_projects = site.data.projects | where: "section", "portfolio" %}
+{% assign other_projects = site.data.projects | where: "section", "other" %}
+
+<section class="projects-section">
+  <div class="section-heading"><p class="section-kicker">./portfolio/</p><h2>Portfolio-Worthy Projects</h2><p>Projects where the delivery path, platform choices, or team leverage are worth a closer look.</p></div>
+  <div class="project-grid">
+    {% for project in portfolio_projects %}
+      <a class="project-card" href="{{ project.url | relative_url }}">
       <div class="project-card-topline">
         <span class="project-index"><i data-lucide="{{ project.icon }}" aria-hidden="true"></i>{{ project.index }}</span>
         <span aria-hidden="true">drwxr-xr-x</span>
@@ -19,6 +24,24 @@ permalink: /projects/
       <ul aria-label="{{ project.title }} themes">
         {% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
       </ul>
-    </article>
-  {% endfor %}
+        <span class="project-card-link">Read project <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </a>
+    {% endfor %}
+  </div>
 </section>
+
+<section class="projects-section">
+  <div class="section-heading"><p class="section-kicker">./archive/</p><h2>Other Projects</h2><p>Smaller, collaborative, or supporting projects that still explain how I like to work.</p></div>
+  <div class="project-grid">
+    {% for project in other_projects %}
+      <a class="project-card" href="{{ project.url | relative_url }}">
+        <div class="project-card-topline"><span class="project-index"><i data-lucide="{{ project.icon }}" aria-hidden="true"></i>{{ project.index }}</span><span aria-hidden="true">drwxr-xr-x</span></div>
+        <span class="status-label">{{ project.status }}</span><h2>{{ project.title }}</h2><p>{{ project.description }}</p>
+        <ul aria-label="{{ project.title }} themes">{% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}</ul>
+        <span class="project-card-link">Read project <i data-lucide="arrow-up-right" aria-hidden="true"></i></span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<aside class="projects-note"><i data-lucide="sticky-note" aria-hidden="true"></i><span><strong>Next pass:</strong> enrich project content and skills after reviewing the LinkedIn record.</span></aside>

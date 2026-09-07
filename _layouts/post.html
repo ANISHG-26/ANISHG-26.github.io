@@ -17,7 +17,7 @@ layout: default
   <article class="post-content reveal">
     {{ content }}
   </article>
-  <a class="back-link post-back" href="{{ '/field-notes/' | relative_url }}"><i data-lucide="arrow-left" aria-hidden="true"></i> All Field Notes</a>
+  <a class="back-link post-back" href="{% if page.collection == 'projects' %}{{ '/projects/' | relative_url }}{% else %}{{ '/field-notes/' | relative_url }}{% endif %}"><i data-lucide="arrow-left" aria-hidden="true"></i> {% if page.collection == 'projects' %}All Projects{% else %}All Field Notes{% endif %}</a>
 </main>
 
 {% include site-footer.html %}
