@@ -67,6 +67,16 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Do not make further Experience-page edits unless the user explicitly reopens
   that page.
 
+### I102 — Projects Page Freeze, 2026-09-07
+
+- Freeze the current Projects page design and layout as the approved direction.
+- Preserve the Notable Projects and Past Projects sections, aligned responsive
+  card grid, linked Markdown detail pages, terminal-style project layout, and
+  current spacing and typography.
+- Future Projects work should focus on content and skills enrichment only,
+  including the planned later LinkedIn review, unless the user explicitly
+  reopens the page design.
+
 ### I095 — Education Metadata Right Alignment, 2026-09-07
 
 - Right-align the education date and location rows inside the right-side
