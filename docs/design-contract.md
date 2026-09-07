@@ -136,6 +136,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the direction paragraph left-aligned so justification does not create
   awkward word spacing.
 
+### I067 — Foundations Intro Width, 2026-09-07
+
+- Let the Foundations First intro description use the available horizontal
+  space instead of the narrower interior-page text cap.
+- Preserve the existing wording, typography, and responsive wrapping.
+
 ### I066 — Direction Card Width, 2026-09-06
 
 - Allow the direction-card paragraph to use the available card width instead of
