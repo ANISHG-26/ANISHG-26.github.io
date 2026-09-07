@@ -57,6 +57,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I077 — Skills Tree Repetition, 2026-09-07
+
+- Keep each skills branch as one readable tree entry, such as
+  `├── What I knew before/`, without repeating the category as a separate slug
+  line underneath.
+
 ### I076 — Linux Platform Skills Tree, 2026-09-07
 
 - Add a selected skills view to the Experience page as a terminal-style

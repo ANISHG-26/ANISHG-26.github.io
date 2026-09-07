@@ -30,8 +30,7 @@ permalink: /experience/
     <div class="skills-tree" id="skills-heading">
       {% for group in site.data.skills %}
         <section class="skill-branch">
-          <h2><span class="tree-branch">├──</span> {{ group.label }}</h2>
-          <p class="skill-directory">{{ group.directory }}</p>
+          <h2><span class="tree-branch">├──</span> {{ group.label }}/</h2>
           <p>{{ group.description }}</p>
           <ul>
             {% for skill in group.items %}

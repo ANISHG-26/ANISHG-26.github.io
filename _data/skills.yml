@@ -1,5 +1,4 @@
-- directory: what-i-am-really-good-at/
-  label: What I’m really good at
+- label: What I’m really good at
   description: The platform-delivery foundations I have used most deeply.
   items:
     - Kubernetes
@@ -12,8 +11,7 @@
     - Prometheus, Loki, Tempo, Grafana
     - Performance and load testing
 
-- directory: what-i-am-learning-now/
-  label: What I’m learning now
+- label: What I’m learning now
   description: Areas I am actively building depth in, without calling them production ownership.
   items:
     - Go
@@ -21,8 +19,7 @@
     - Terraform
     - Snowflake
 
-- directory: what-i-knew-before/
-  label: What I knew before
+- label: What I knew before
   description: Earlier platform, automation, and security experience that still informs the work.
   items:
     - Azure DevOps
