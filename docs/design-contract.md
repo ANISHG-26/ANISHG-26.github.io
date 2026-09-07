@@ -136,6 +136,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the direction paragraph left-aligned so justification does not create
   awkward word spacing.
 
+### I066 — Direction Card Width, 2026-09-06
+
+- Allow the direction-card paragraph to use the available card width instead of
+  inheriting the narrower long-form text limit.
+- Preserve the original wording and natural left-aligned spacing.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header

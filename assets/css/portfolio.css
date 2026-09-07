@@ -195,7 +195,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .direction-callout .terminal-window-bar { border-bottom: 1px solid var(--border); }
 .direction-callout-body { padding: 1.4rem; }
 .direction-callout h2 { font-size: 1.6rem; }
-.direction-callout-body > p:not(.section-index) { max-width: 43rem; color: var(--muted-foreground); }
+.direction-callout-body > p:not(.section-index) { max-width: none; color: var(--muted-foreground); }
 .experience-row { display: grid; grid-template-columns: 1.1fr 1fr auto; gap: 2rem; padding: 1.8rem 0; border-bottom: 1px solid var(--border); }
 .experience-row:first-child { padding-top: 0; }
 .experience-row h2 { font-size: 1.15rem; }
