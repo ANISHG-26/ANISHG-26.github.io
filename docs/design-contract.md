@@ -95,6 +95,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Group the theme and animation controls as one header item so the responsive
   grid preserves their compact side-by-side layout at every width.
 
+### I058 — Small Header And Bassline Polish, 2026-09-06
+
+- Add a small left separation before the animation control.
+- Use `# guess the bassline` as the bassline terminal comment while preserving
+  the approved transcription.
+
 ### I054 — Global Animation Control, 2026-09-06
 
 - Add a persistent header control that turns site animations on or off.
