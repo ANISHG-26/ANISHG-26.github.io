@@ -96,18 +96,34 @@ const experienceTreeCommand = document.querySelector('[data-experience-tree-comm
 const experienceTreeOutput = document.querySelector('.skills-tree');
 if (experienceTreeTerminal && experienceTreeCommand && experienceTreeOutput && animationsEnabled) {
   const command = experienceTreeCommand.textContent;
-  experienceTreeCommand.textContent = '';
-  document.documentElement.classList.add('experience-tree-pending');
-  let index = 0;
-  const typeExperienceTreeCommand = () => {
-    experienceTreeCommand.textContent = command.slice(0, ++index);
-    if (index < command.length) window.setTimeout(typeExperienceTreeCommand, 62);
-    else window.setTimeout(() => {
-      experienceTreeTerminal.classList.add('is-executed');
-      document.documentElement.classList.remove('experience-tree-pending');
-    }, 360);
+  let experienceTreeStarted = false;
+  const startExperienceTreeSequence = () => {
+    if (experienceTreeStarted) return;
+    experienceTreeStarted = true;
+    experienceTreeCommand.textContent = '';
+    document.documentElement.classList.add('experience-tree-pending');
+    let index = 0;
+    const typeExperienceTreeCommand = () => {
+      experienceTreeCommand.textContent = command.slice(0, ++index);
+      if (index < command.length) window.setTimeout(typeExperienceTreeCommand, 62);
+      else window.setTimeout(() => {
+        experienceTreeTerminal.classList.add('is-executed');
+        document.documentElement.classList.remove('experience-tree-pending');
+      }, 360);
+    };
+    typeExperienceTreeCommand();
   };
-  window.setTimeout(typeExperienceTreeCommand, 420);
+  if ('IntersectionObserver' in window) {
+    const experienceTreeObserver = new IntersectionObserver(entries => {
+      if (entries.some(entry => entry.isIntersecting)) {
+        startExperienceTreeSequence();
+        experienceTreeObserver.disconnect();
+      }
+    }, { threshold: 0.2, rootMargin: '0px 0px -8% 0px' });
+    experienceTreeObserver.observe(experienceTreeTerminal);
+  } else {
+    startExperienceTreeSequence();
+  }
 }
 const aboutCommand = document.querySelector('[data-about-command]');
 const aboutReveal = document.querySelector('.about-reveal');

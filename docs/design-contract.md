@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I082 — Scroll-Triggered Skills Tree, 2026-09-07
+
+- Start the Experience-page `tree ./skills/` type-in sequence when the skills
+  terminal enters the viewport, rather than on initial page load.
+- Run the sequence once per page visit and preserve the immediate full-content
+  behavior for disabled or reduced-motion states.
+
 ### I081 — Experience Reading Density And Tree Command, 2026-09-07
 
 - Use the available desktop width more effectively by placing multiple selected
