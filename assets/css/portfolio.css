@@ -196,12 +196,25 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .direction-callout-body { padding: 1.4rem; }
 .direction-callout h2 { font-size: 1.6rem; }
 .direction-callout-body > p:not(.section-index) { max-width: none; color: var(--muted-foreground); }
-.experience-row { display: grid; grid-template-columns: 1.1fr 1fr auto; gap: 2rem; padding: 1.8rem 0; border-bottom: 1px solid var(--border); }
-.experience-row:first-child { padding-top: 0; }
-.experience-row h2 { font-size: 1.15rem; }
-.experience-row p { font-size: .9rem; color: var(--muted-foreground); margin-bottom: .6rem; }
-.experience-row time { color: var(--purple); font: .73rem/1.6 var(--font-code); }
-.experience-row .previous-role { font-size: .8rem; }
+.experience-company { padding: 2.3rem 0 2.8rem; border-bottom: 1px solid var(--border-strong); }
+.experience-company:first-child { padding-top: 0; }
+.experience-company-header { display: flex; justify-content: space-between; align-items: baseline; gap: 2rem; }
+.experience-kicker, .experience-label { color: var(--cyan); font: .7rem var(--font-code); letter-spacing: .04em; text-transform: uppercase; }
+.experience-kicker { margin-bottom: .7rem; }
+.experience-company-header h2 { margin: 0; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.experience-company-header > time, .experience-project-heading time { color: var(--purple); font: .73rem/1.6 var(--font-code); white-space: nowrap; }
+.experience-summary { max-width: 58rem; margin: 1.1rem 0 1.8rem; color: var(--muted-foreground); font-size: 1rem; line-height: 1.75; }
+.experience-roles { display: grid; gap: .35rem; margin-bottom: 2rem; padding: .9rem 1rem; border-left: 2px solid var(--purple); background: color-mix(in srgb, var(--surface) 70%, transparent); }
+.experience-roles p { display: flex; justify-content: space-between; gap: 1rem; margin: 0; color: var(--foreground); font: .8rem/1.6 var(--font-code); }
+.experience-roles time { color: var(--muted-foreground); }
+.experience-projects { display: grid; gap: 1.1rem; }
+.experience-projects > .experience-label { margin-bottom: -.3rem; }
+.experience-project { padding: 1.1rem 1.2rem 1.2rem; border: 1px solid var(--border); border-left: 2px solid var(--cyan); background: color-mix(in srgb, var(--surface) 55%, transparent); }
+.experience-project-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.experience-project h3 { margin: 0; font-size: 1rem; }
+.experience-project > p { margin: .7rem 0 0; color: var(--muted-foreground); font-size: .88rem; line-height: 1.7; }
+.experience-project ul { display: grid; gap: .45rem; margin: .9rem 0 0; padding-left: 1.1rem; color: var(--muted-foreground); font-size: .82rem; line-height: 1.65; }
+.experience-project li::marker { color: var(--pink); }
 .skills-terminal { margin-top: 3.2rem; border: 1px solid var(--border-strong); border-top: 2px solid var(--cyan); background: color-mix(in srgb, var(--surface) 90%, transparent); }
 .skills-terminal-body { padding: 1.4rem 1.2rem 1.6rem; }
 .skills-terminal-body .command-line { margin-bottom: 1.5rem; color: var(--foreground); }
@@ -279,8 +292,6 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .about-profile-terminal > .terminal-window-bar { grid-column: auto; }
   .about-profile-output { border-top: 1px solid var(--border); border-left: 0; }
   .principles-grid, .project-grid, .geek-grid { grid-template-columns: 1fr; }
-  .experience-row { grid-template-columns: 1fr auto; }
-  .experience-focus { grid-row: 2; grid-column: 1/-1; }
   .skills-tree { gap: 1rem; }
   .section-heading-row { display: block; }
   .directory-list a { grid-template-columns: 1.5rem 11rem 1fr auto; gap: .7rem; }
@@ -301,8 +312,9 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .evolution-section h2 { white-space: normal; }
   .journey-terminal { grid-template-columns: 1fr; }
   .journey-tree { border-right: 0; border-bottom: 1px solid var(--border); }
-  .experience-row { grid-template-columns: 1fr; gap: .6rem; }
-  .experience-focus { grid-column: auto; grid-row: auto; }
+  .experience-company-header, .experience-project-heading { display: block; }
+  .experience-company-header > time, .experience-project-heading time { display: block; margin-top: .35rem; }
+  .experience-roles p { display: grid; gap: .1rem; }
   .skills-tree { grid-template-columns: 1fr; }
   .writing-card { grid-template-columns: 1fr auto; gap: 1rem; }
   .writing-meta { grid-column: 1/-1; display: flex; gap: 1rem; }

@@ -8,14 +8,40 @@ permalink: /experience/
 
 <section class="experience-list">
   {% for item in site.data.experience %}
-    <article class="experience-row">
-      <div>
-        <h2>{{ item.company }}</h2>
-        <p>{{ item.role }}</p>
-        {% if item.previous_role %}<p class="previous-role">{{ item.previous_role }}</p>{% endif %}
+    <article class="experience-company">
+      <header class="experience-company-header">
+        <div>
+          <p class="experience-kicker">company / {{ forloop.index | prepend: '0' }}</p>
+          <h2>{{ item.company }}</h2>
+        </div>
+        <time>{{ item.period }}</time>
+      </header>
+      <p class="experience-summary">{{ item.summary }}</p>
+      <div class="experience-roles">
+        <span class="experience-label">roles</span>
+        {% for role in item.roles %}
+          <p><strong>{{ role.title }}</strong><time>{{ role.period }}</time></p>
+        {% endfor %}
       </div>
-      <p class="experience-focus">{{ item.focus }}</p>
-      <time>{{ item.period }}</time>
+      <div class="experience-projects">
+        <span class="experience-label">selected work</span>
+        {% for project in item.projects %}
+          <section class="experience-project">
+            <div class="experience-project-heading">
+              <h3>{{ project.name }}</h3>
+              <time>{{ project.period }}</time>
+            </div>
+            <p>{{ project.summary }}</p>
+            {% if project.highlights %}
+              <ul>
+                {% for highlight in project.highlights %}
+                  <li>{{ highlight }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </section>
+        {% endfor %}
+      </div>
     </article>
   {% endfor %}
 </section>

@@ -57,6 +57,15 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I078 — Company-First Experience Narrative, 2026-09-07
+
+- Present the Experience page as company-level narratives with a short summary,
+  role chronology, and selected-work panels.
+- Combine EY’s internal GenAI and cybersecurity product work under one EY block,
+  while preserving their distinct scope, timelines, and delivery contexts.
+- Use the public resume as a compact content reference without duplicating its
+  full bullet chronology on the site.
+
 ### I077 — Skills Tree Repetition, 2026-09-07
 
 - Keep each skills branch as one readable tree entry, such as
