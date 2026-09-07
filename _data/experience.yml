@@ -22,14 +22,14 @@
 
 - company: Morgan Stanley
   period: 2023 — 2024
-  summary: Improved system-test execution with Docker, Python, and shell scripting within the wider platform team.
+  summary: Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
   roles:
     - title: Technology Analyst Intern
       period: May 2023 — Apr 2024
   projects:
     - name: System Test Platform
       period: 2023 — 2024
-      summary: Built repeatable image construction, test execution, dependency inspection, and result-review tooling for an established platform.
+      summary: Modernized system-test workflows for an established platform with repeatable image construction, test execution, dependency inspection, and result-review tooling.
 
 - company: Accenture Solutions Pvt Ltd
   period: 2020 — 2022
