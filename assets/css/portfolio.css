@@ -233,7 +233,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .tree-branch, .tree-leaf { color: var(--muted-foreground); }
 .tree-leaf { margin-right: .35rem; }
 .education-section { margin-top: 3.2rem; border: 1px solid var(--border-strong); border-top: 2px solid var(--purple); background: color-mix(in srgb, var(--surface) 90%, transparent); }
-.education-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 1.05fr); gap: clamp(2rem, 5vw, 5rem); padding: 1.8rem 1.3rem 1.4rem; }
+.education-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 1.05fr); gap: clamp(2rem, 5vw, 5rem); padding: 1.8rem .6rem 1.4rem 1.3rem; }
 .education-intro h2 { max-width: none; margin-bottom: 1rem; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
 .education-intro h2 span { display: block; }
 .education-intro > p:not(.section-index) { max-width: 58ch; color: var(--muted-foreground); text-align: justify; text-justify: inter-word; text-align-last: left; }
@@ -340,7 +340,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .experience-roles p { display: grid; gap: .1rem; }
   .experience-projects { grid-template-columns: 1fr; }
   .experience-project:only-of-type { grid-column: auto; }
-  .education-body { grid-template-columns: 1fr; gap: 1.5rem; }
+  .education-body { grid-template-columns: 1fr; gap: 1.5rem; padding-right: 1.2rem; }
   .skills-tree { grid-template-columns: 1fr; }
   .writing-card { grid-template-columns: 1fr auto; gap: 1rem; }
   .writing-meta { grid-column: 1/-1; display: flex; gap: 1rem; }

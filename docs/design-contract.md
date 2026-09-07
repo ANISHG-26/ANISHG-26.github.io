@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I094 — Education Metadata Right Inset, 2026-09-07
+
+- Reduce the desktop education panel’s right inset slightly so the aligned date
+  and location metadata sits closer to the panel edge.
+- Restore a comfortable right inset when the education layout stacks on smaller
+  screens.
+
 ### I093 — Education Metadata Alignment, 2026-09-07
 
 - Keep the education date and location metadata block on the right while
