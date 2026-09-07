@@ -57,6 +57,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I089 — Public Company And Division Labels, 2026-09-07
+
+- Use the public-facing company names Ernst & Young, Morgan Stanley, and
+  Accenture in the portfolio while retaining legal employer names in canonical
+  career records.
+- Show verified division and product context beneath each company without
+  changing the underlying ownership or role claims.
+
 ### I088 — Education Affiliation Line Break, 2026-09-07
 
 - Keep the complete “Affiliated to Visvesvaraya Technological University” text
