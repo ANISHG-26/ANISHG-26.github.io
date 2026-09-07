@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I085 — Education As A Project Bridge, 2026-09-07
+
+- Keep a compact education section on the Experience page using verified degree
+  and institution details from the canonical education record.
+- Use the section as a bridge to Projects, framing study-era work as exploration
+  that returned to developer experience, rapid iteration, and foundations.
+
 ### I084 — Experience Labels, 2026-09-07
 
 - Remove ordinal company labels from the Experience page so the chronology reads

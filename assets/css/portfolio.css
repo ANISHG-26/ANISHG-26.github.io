@@ -229,6 +229,19 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .skill-branch ul { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; color: var(--foreground); font: .78rem/1.6 var(--font-code); }
 .tree-branch, .tree-leaf { color: var(--muted-foreground); }
 .tree-leaf { margin-right: .35rem; }
+.education-section { margin-top: 3.2rem; border: 1px solid var(--border-strong); border-top: 2px solid var(--purple); background: color-mix(in srgb, var(--surface) 90%, transparent); }
+.education-body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(20rem, 1.05fr); gap: clamp(2rem, 5vw, 5rem); padding: 1.8rem 1.3rem 1.4rem; }
+.education-intro h2 { max-width: 25ch; margin-bottom: 1rem; font-size: clamp(1.35rem, 2.5vw, 1.8rem); }
+.education-intro > p:not(.section-index) { max-width: 58ch; color: var(--muted-foreground); text-align: justify; text-justify: inter-word; text-align-last: left; }
+.education-intro .text-link { margin-top: .35rem; }
+.education-list { display: grid; align-content: start; }
+.education-item { display: flex; justify-content: space-between; gap: 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.education-item:first-child { padding-top: 0; }
+.education-item:last-child { border-bottom: 0; padding-bottom: 0; }
+.education-item h3 { margin-bottom: .35rem; font-size: .95rem; }
+.education-item p { margin: 0; color: var(--muted-foreground); font-size: .82rem; line-height: 1.6; }
+.education-meta { display: grid; align-content: start; gap: .25rem; min-width: 8.5rem; color: var(--muted-foreground); font: .68rem/1.5 var(--font-code); text-align: right; }
+.education-meta time { color: var(--purple); }
 .page-note { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; padding: 1.1rem; margin-top: 2rem; border: 1px solid var(--border); color: var(--muted-foreground); font-size: .85rem; }
 .page-note p { flex: 1; margin: 0; }
 .page-note a { color: var(--cyan); }
@@ -321,11 +334,14 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .experience-roles p { display: grid; gap: .1rem; }
   .experience-projects { grid-template-columns: 1fr; }
   .experience-project:only-of-type { grid-column: auto; }
+  .education-body { grid-template-columns: 1fr; gap: 1.5rem; }
   .skills-tree { grid-template-columns: 1fr; }
   .writing-card { grid-template-columns: 1fr auto; gap: 1rem; }
   .writing-meta { grid-column: 1/-1; display: flex; gap: 1rem; }
   .post-meta { flex-direction: column; gap: .4rem; }
   .direction-callout-body { padding: 1.3rem; }
+  .education-item { display: grid; gap: .55rem; }
+  .education-meta { min-width: 0; text-align: left; }
   .off-duty-note .shell-comment { display: block; margin: .5rem 0 0; }
 }
 @media (prefers-reduced-motion: reduce) {
