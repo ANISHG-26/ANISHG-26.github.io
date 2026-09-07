@@ -101,6 +101,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Use `# guess the bassline` as the bassline terminal comment while preserving
   the approved transcription.
 
+### I059 — Light Hue And Header Spacing, 2026-09-06
+
+- Shift the grouped theme and animation controls slightly left from the header
+  edge with a small right margin.
+- Increase the light-mode ambient cyan, purple, and pink hue fields modestly
+  while preserving the neutral foundation and dark-mode palette.
+
 ### I054 — Global Animation Control, 2026-09-06
 
 - Add a persistent header control that turns site animations on or off.
