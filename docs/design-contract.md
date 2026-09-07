@@ -158,6 +158,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Increase the circular avatar’s even inset within the portrait card so the
   image has clearer breathing room above and below the caption.
 
+### I074 — About Page Freeze, 2026-09-07
+
+- Freeze the current About page as the approved direction before moving to the
+  next page.
+- Preserve its terminal/Linux hierarchy, justified reading copy, journey tree
+  interaction, animation control, direction card, and circular profile card.
+- Do not make further About-page edits unless the user explicitly reopens it.
+
 ### I069 — Bounded Portrait Card, 2026-09-07
 
 ### I068 — Natural Portrait Card Height, 2026-09-07
