@@ -124,6 +124,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Replace the chemistry-oriented lab bottle icon on the Curiosity card with a
   search icon that better represents asking questions and looking deeper.
 
+### I064 — About Copy Tightening, 2026-09-06
+
+- Remove the awkward “And” from the About description.
+- Tighten the direction-card sentence to a single clean line on wider layouts
+  without changing its meaning.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header
