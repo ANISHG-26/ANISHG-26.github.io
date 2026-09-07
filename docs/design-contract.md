@@ -119,6 +119,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Reduce the light-mode header contrast to a subtle 94/6 surface mix after
   visual review, preserving the gentle separation without a strong band.
 
+### I063 — Curiosity Icon, 2026-09-06
+
+- Replace the chemistry-oriented lab bottle icon on the Curiosity card with a
+  search icon that better represents asking questions and looking deeper.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header
