@@ -302,11 +302,11 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .geek-intro { max-width: none; font-size: 1.15rem; margin-bottom: 2rem; color: var(--muted-foreground); }
 .geek-card { display: flex; flex-direction: column; }
 .geek-card p { flex: 1; text-align: justify; text-justify: inter-word; text-align-last: left; }
-.geek-connect { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 2rem; border-top: 2px solid var(--cyan); }
+.geek-connect { grid-column: 1 / -1; display: block; border-top: 2px solid var(--cyan); }
 .geek-connect > div { min-width: 0; }
 .geek-connect > div > svg { width: 1.8rem; height: 1.8rem; margin-bottom: 1.5rem; color: var(--cyan); }
 .geek-connect > div > span { display: block; margin-bottom: 1.8rem; color: var(--cyan); font: .75rem var(--font-code); }
-.geek-connect .text-link { white-space: nowrap; }
+.geek-connect .text-link { margin-top: 1.35rem; white-space: nowrap; }
 .geek-connect .text-link svg { width: .85rem; height: .85rem; }
 .geek-card > svg { width: 1.8rem; height: 1.8rem; margin-bottom: 1.5rem; }
 .geek-card h2 { font-size: 1.25rem; }
