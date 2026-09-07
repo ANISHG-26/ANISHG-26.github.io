@@ -11,7 +11,7 @@ permalink: /field-notes/
   <div class="section-bar"><h2 id="notes-directory-title"><span class="prompt-mark">$</span> ls -lt ./field-notes/</h2><span>Read A Note</span></div>
   <nav class="field-notes-list" aria-label="Field notes">
     {% for post in site.posts %}
-      <a class="field-note-entry" href="{{ post.url | relative_url }}">
+      <a class="field-note-entry reveal" style="--reveal-delay: {{ forloop.index0 | times: 90 }}ms;" href="{{ post.url | relative_url }}">
         <span class="note-index">{{ forloop.index | prepend: '0' }}</span>
         <span class="note-file"><span><i data-lucide="file-text" aria-hidden="true"></i>{{ post.slug }}.md</span><small>{{ post.category_label }}</small></span>
         <span class="note-copy"><strong>{{ post.title }}</strong><span>{{ post.description }}</span></span>
