@@ -125,6 +125,23 @@ if (experienceTreeTerminal && experienceTreeCommand && experienceTreeOutput && a
     startExperienceTreeSequence();
   }
 }
+const fieldNotesCommand = document.querySelector('[data-field-notes-command]');
+const fieldNotesList = document.querySelector('.field-notes-list');
+if (fieldNotesCommand && fieldNotesList && animationsEnabled) {
+  const command = fieldNotesCommand.textContent;
+  fieldNotesCommand.textContent = '';
+  document.documentElement.classList.add('field-notes-command-pending');
+  let index = 0;
+  const typeFieldNotesCommand = () => {
+    fieldNotesCommand.textContent = command.slice(0, ++index);
+    if (index < command.length) window.setTimeout(typeFieldNotesCommand, 62);
+    else window.setTimeout(() => {
+      document.documentElement.classList.remove('field-notes-command-pending');
+      document.documentElement.classList.add('field-notes-command-executed');
+    }, 420);
+  };
+  window.setTimeout(typeFieldNotesCommand, 260);
+}
 const aboutCommand = document.querySelector('[data-about-command]');
 const aboutReveal = document.querySelector('.about-reveal');
 const aboutProfile = document.querySelector('.about-profile');

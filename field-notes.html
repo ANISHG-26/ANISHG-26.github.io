@@ -8,7 +8,7 @@ permalink: /field-notes/
 
 <section class="notes-terminal" aria-labelledby="notes-directory-title">
   <div class="terminal-window-bar"><span><i data-lucide="folder-open" aria-hidden="true"></i> ~/ag/field-notes</span><span class="file-type">DIRECTORY</span></div>
-  <div class="section-bar"><h2 id="notes-directory-title"><span class="prompt-mark">$</span> ls -lt ./field-notes/</h2><span>Read A Note</span></div>
+  <div class="section-bar"><h2 id="notes-directory-title"><span class="prompt-mark">$</span> <span data-field-notes-command>ls -lt ./field-notes/</span><span class="terminal-caret field-notes-command-caret" aria-hidden="true">▌</span></h2><span>Read A Note</span></div>
   <nav class="field-notes-list" aria-label="Field notes">
     {% for post in site.posts %}
       <a class="field-note-entry reveal" style="--reveal-delay: {{ forloop.index0 | times: 180 }}ms;" href="{{ post.url | relative_url }}">
