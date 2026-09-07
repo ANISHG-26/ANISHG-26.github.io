@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I092 — Education Alignment Cleanup, 2026-09-07
+
+- Keep the JSS affiliation aligned as plain continuation text beneath the
+  institution name, without a leading separator that resembles a list marker.
+- Preserve a flexible education text column so degree lines wrap cleanly beside
+  the right-aligned dates and locations.
+
 ### I091 — Short EY Website Division Label, 2026-09-07
 
 - Show `Digital & Emerging Technologies` on the website while preserving the
