@@ -242,7 +242,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .education-item:first-child { padding-top: 0; }
 .education-item:last-child { border-bottom: 0; padding-bottom: 0; }
 .education-item h3 { margin-bottom: .35rem; font-size: .95rem; }
-.education-affiliation { color: var(--muted-foreground); font-size: .72rem; font-weight: 400; }
+.education-affiliation { display: block; color: var(--muted-foreground); font-size: .72rem; font-weight: 400; }
 .education-item p { margin: 0; color: var(--muted-foreground); font-size: .82rem; line-height: 1.6; }
 .education-meta { display: grid; align-content: start; gap: .25rem; min-width: 8.5rem; color: var(--muted-foreground); font: .68rem/1.5 var(--font-code); text-align: right; white-space: nowrap; }
 .education-meta time { color: var(--purple); }

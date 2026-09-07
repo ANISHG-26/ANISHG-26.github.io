@@ -57,6 +57,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I088 — Education Affiliation Line Break, 2026-09-07
+
+- Keep the complete “Affiliated to Visvesvaraya Technological University” text
+  together on the second line beneath the JSS institution name.
+
 ### I087 — Education Affiliation And Location Flow, 2026-09-07
 
 - Keep the JSS institution and its Visvesvaraya Technological University
