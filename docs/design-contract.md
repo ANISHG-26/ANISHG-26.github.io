@@ -57,6 +57,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I095 — Education Metadata Right Alignment, 2026-09-07
+
+- Right-align the education date and location rows inside the right-side
+  metadata block so they share the same right edge, matching the earlier
+  approved visual treatment.
+
 ### I094 — Education Metadata Right Inset, 2026-09-07
 
 - Reduce the desktop education panel’s right inset slightly so the aligned date
