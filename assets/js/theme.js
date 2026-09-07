@@ -131,6 +131,23 @@ function runAboutGliSequence() {
 }
 const journeyEntries = [...document.querySelectorAll('[data-journey-target]')];
 const journeyPanels = [...document.querySelectorAll('[data-journey-panel]')];
+const journeyReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+function revealJourneyPanel(panel) {
+  const command = panel.querySelector('[data-journey-command]');
+  const content = panel.querySelector('.journey-file-content');
+  if (!command || !content || journeyReducedMotion.matches) return;
+  const fullCommand = command.dataset.command || command.textContent;
+  command.dataset.command = fullCommand;
+  command.textContent = '';
+  panel.classList.add('is-pending');
+  let index = 0;
+  const typeNext = () => {
+    command.textContent = fullCommand.slice(0, ++index);
+    if (index < fullCommand.length) window.setTimeout(typeNext, 42);
+    else window.setTimeout(() => panel.classList.remove('is-pending'), 300);
+  };
+  typeNext();
+}
 journeyEntries.forEach(entry => entry.addEventListener('click', () => {
   const target = entry.dataset.journeyTarget;
   journeyEntries.forEach(item => {
@@ -138,5 +155,11 @@ journeyEntries.forEach(entry => entry.addEventListener('click', () => {
     item.classList.toggle('is-active', active);
     item.setAttribute('aria-selected', String(active));
   });
-  journeyPanels.forEach(panel => { panel.hidden = panel.id !== target; });
+  journeyPanels.forEach(panel => {
+    panel.hidden = panel.id !== target;
+    panel.classList.remove('is-pending');
+    const command = panel.querySelector('[data-journey-command]');
+    if (command?.dataset.command) command.textContent = command.dataset.command;
+  });
+  revealJourneyPanel(document.getElementById(target));
 }));

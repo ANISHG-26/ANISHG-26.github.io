@@ -73,6 +73,13 @@ has not been verified. This is a reference-role contract, not a completed visual
   paragraphs in the principles cards, journey output, and direction callout.
 - Keep terminal commands, headings, and the short principles quote left-aligned.
 
+### I053 — Journey Cat Reveal, 2026-09-06
+
+- Animate the selected journey directory’s `cat .../README.md` command on click,
+  then reveal its content as terminal output.
+- Keep the interaction keyboard-accessible and show the complete content
+  immediately for reduced-motion users.
+
 ### I003 — User Direction, 2026-09-04
 
 - Make foundation-first philosophy the brand, expressed through a terminal/Linux
