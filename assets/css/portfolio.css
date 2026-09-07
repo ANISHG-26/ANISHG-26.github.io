@@ -202,6 +202,17 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .experience-row p { font-size: .9rem; color: var(--muted-foreground); margin-bottom: .6rem; }
 .experience-row time { color: var(--purple); font: .73rem/1.6 var(--font-code); }
 .experience-row .previous-role { font-size: .8rem; }
+.skills-terminal { margin-top: 3.2rem; border: 1px solid var(--border-strong); border-top: 2px solid var(--cyan); background: color-mix(in srgb, var(--surface) 90%, transparent); }
+.skills-terminal-body { padding: 1.4rem 1.2rem 1.6rem; }
+.skills-terminal-body .command-line { margin-bottom: 1.5rem; color: var(--foreground); }
+.skills-tree { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 2.5rem; }
+.skill-branch { min-width: 0; padding: 1rem 1.1rem 1.1rem; border: 1px solid var(--border); border-left: 2px solid var(--purple); background: color-mix(in srgb, var(--background) 36%, transparent); }
+.skill-branch h2 { margin: 0 0 .25rem; color: var(--purple); font: .88rem/1.5 var(--font-code); }
+.skill-branch > p { margin: 0 0 .9rem; color: var(--muted-foreground); font: .78rem/1.6 var(--font-code); }
+.skill-branch > .skill-directory { margin-bottom: .7rem; color: var(--cyan); font-size: .68rem; }
+.skill-branch ul { display: grid; gap: .4rem; margin: 0; padding: 0; list-style: none; color: var(--foreground); font: .78rem/1.6 var(--font-code); }
+.tree-branch, .tree-leaf { color: var(--muted-foreground); }
+.tree-leaf { margin-right: .35rem; }
 .page-note { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; padding: 1.1rem; margin-top: 2rem; border: 1px solid var(--border); color: var(--muted-foreground); font-size: .85rem; }
 .page-note p { flex: 1; margin: 0; }
 .page-note a { color: var(--cyan); }
@@ -271,6 +282,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .principles-grid, .project-grid, .geek-grid { grid-template-columns: 1fr; }
   .experience-row { grid-template-columns: 1fr auto; }
   .experience-focus { grid-row: 2; grid-column: 1/-1; }
+  .skills-tree { gap: 1rem; }
   .section-heading-row { display: block; }
   .directory-list a { grid-template-columns: 1.5rem 11rem 1fr auto; gap: .7rem; }
 }
@@ -292,6 +304,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .journey-tree { border-right: 0; border-bottom: 1px solid var(--border); }
   .experience-row { grid-template-columns: 1fr; gap: .6rem; }
   .experience-focus { grid-column: auto; grid-row: auto; }
+  .skills-tree { grid-template-columns: 1fr; }
   .writing-card { grid-template-columns: 1fr auto; gap: 1rem; }
   .writing-meta { grid-column: 1/-1; display: flex; gap: 1rem; }
   .post-meta { flex-direction: column; gap: .4rem; }

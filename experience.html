@@ -20,6 +20,31 @@ permalink: /experience/
   {% endfor %}
 </section>
 
+<section class="skills-terminal" aria-labelledby="skills-heading">
+  <div class="terminal-window-bar">
+    <span><i data-lucide="folder-tree" aria-hidden="true"></i> ~/ag/skills</span>
+    <span class="terminal-window-actions" aria-hidden="true"><i data-lucide="minus"></i><i data-lucide="square"></i><i data-lucide="x"></i></span>
+  </div>
+  <div class="skills-terminal-body">
+    <p class="command-line"><span class="prompt-mark">$</span> tree ./skills/ <span class="shell-comment"># selected capabilities</span></p>
+    <div class="skills-tree" id="skills-heading">
+      {% for group in site.data.skills %}
+        <section class="skill-branch">
+          <h2><span class="tree-branch">├──</span> {{ group.label }}</h2>
+          <p class="skill-directory">{{ group.directory }}</p>
+          <p>{{ group.description }}</p>
+          <ul>
+            {% for skill in group.items %}
+              <li><span class="tree-leaf">│   └──</span> {{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+  <p class="panel-footnote"><span>note:</span> a focused view of the tools and practices behind the work above.</p>
+</section>
+
 <aside class="page-note">
   <i data-lucide="info" aria-hidden="true"></i>
   <p>This is a selected view of the work. The resume carries the full professional chronology.</p>

@@ -57,6 +57,16 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I076 — Linux Platform Skills Tree, 2026-09-07
+
+- Add a selected skills view to the Experience page as a terminal-style
+  `tree ./skills/` output beneath the chronology.
+- Group public-safe capabilities into “What I’m really good at,” “What I’m
+  learning now,” and “What I knew before” rather than presenting a generic tag
+  cloud or unsupported proficiency scale.
+- Keep learning-only and unsupported items out of the public section, and make
+  the layout collapse cleanly on narrow screens.
+
 ### I075 — Responsive Terminal Artwork, 2026-09-07
 
 - Keep the frozen cats, bassline, and GLI terminal artwork intact without
