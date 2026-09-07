@@ -80,6 +80,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the interaction keyboard-accessible and show the complete content
   immediately for reduced-motion users.
 
+### I054 — Global Animation Control, 2026-09-06
+
+- Add a persistent header control that turns site animations on or off.
+- Keep animations enabled by default, respect the system reduced-motion setting,
+  and make the control keyboard-accessible with an explicit pressed state.
+- When disabled, reveal content immediately while preserving all navigation and
+  content interactions.
+
 ### I003 — User Direction, 2026-09-04
 
 - Make foundation-first philosophy the brand, expressed through a terminal/Linux

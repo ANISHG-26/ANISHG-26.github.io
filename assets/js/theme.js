@@ -1,6 +1,28 @@
 const options = [...document.querySelectorAll('[data-theme-option]')];
 const media = window.matchMedia('(prefers-color-scheme: dark)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const motionToggle = document.querySelector('[data-motion-toggle]');
+let animationsEnabled = true;
+try { animationsEnabled = localStorage.getItem('portfolio-motion') !== 'off'; } catch (_) {}
+animationsEnabled = animationsEnabled && !reducedMotion.matches;
+function applyMotionState(enabled) {
+  animationsEnabled = enabled && !reducedMotion.matches;
+  document.documentElement.classList.toggle('motion-disabled', !animationsEnabled);
+  if (motionToggle) {
+    motionToggle.setAttribute('aria-pressed', String(animationsEnabled));
+    motionToggle.setAttribute('aria-label', animationsEnabled ? 'Turn animations off' : 'Turn animations on');
+    motionToggle.title = animationsEnabled ? 'Animations on' : 'Animations off';
+    const icon = motionToggle.querySelector('[data-lucide]');
+    if (icon) icon.setAttribute('data-lucide', animationsEnabled ? 'pause' : 'play');
+    if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.6 } });
+  }
+}
+applyMotionState(animationsEnabled);
+motionToggle?.addEventListener('click', () => {
+  const next = !animationsEnabled;
+  try { localStorage.setItem('portfolio-motion', next ? 'on' : 'off'); } catch (_) {}
+  applyMotionState(next);
+});
 let selectedTheme = 'system';
 try { selectedTheme = localStorage.getItem('portfolio-theme') || 'system'; } catch (_) {}
 if (!['light', 'dark', 'system'].includes(selectedTheme)) selectedTheme = 'system';
@@ -21,7 +43,7 @@ options.forEach(button => button.addEventListener('click', () => {
 media.addEventListener('change', () => { if (selectedTheme === 'system') applyTheme('system'); });
 if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.6 } });
 const revealItems = [...document.querySelectorAll('.reveal')];
-if (!reducedMotion.matches && 'IntersectionObserver' in window) {
+if (animationsEnabled && 'IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
     if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
   }), { threshold: 0.03 });
@@ -32,7 +54,7 @@ if (!reducedMotion.matches && 'IntersectionObserver' in window) {
   });
 }
 const typedText = document.querySelector('[data-typed-text]');
-if (typedText && !reducedMotion.matches) {
+if (typedText && animationsEnabled) {
   const message = typedText.textContent;
   const valuesPanel = document.querySelector('.values-panel');
   typedText.setAttribute('aria-label', message);
@@ -54,7 +76,7 @@ if (typedText && !reducedMotion.matches) {
 const terminal = document.querySelector('.hero-terminal');
 const terminalCommand = document.querySelector('[data-terminal-command]');
 const terminalOutput = document.querySelector('[data-terminal-output]');
-if (terminal && terminalCommand && terminalOutput && !reducedMotion.matches) {
+if (terminal && terminalCommand && terminalOutput && animationsEnabled) {
   const command = terminalCommand.textContent;
   terminalCommand.textContent = '';
   document.documentElement.classList.add('terminal-sequence-pending');
@@ -78,7 +100,7 @@ const aboutBassCommand = document.querySelector('[data-about-bass-command]');
 const aboutEasterEgg = document.querySelector('[data-about-easter-egg]');
 const aboutGliCommand = document.querySelector('[data-about-gli-command]');
 const aboutGliOutput = document.querySelector('[data-about-gli-output]');
-if (aboutCommand && aboutReveal && aboutProfile && !reducedMotion.matches) {
+if (aboutCommand && aboutReveal && aboutProfile && animationsEnabled) {
   const command = aboutCommand.textContent;
   aboutCommand.textContent = '';
   document.documentElement.classList.add('about-sequence-pending');
@@ -135,7 +157,7 @@ const journeyReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 function revealJourneyPanel(panel) {
   const command = panel.querySelector('[data-journey-command]');
   const content = panel.querySelector('.journey-file-content');
-  if (!command || !content || journeyReducedMotion.matches) return;
+  if (!command || !content || journeyReducedMotion.matches || !animationsEnabled) return;
   const fullCommand = command.dataset.command || command.textContent;
   command.dataset.command = fullCommand;
   command.textContent = '';
