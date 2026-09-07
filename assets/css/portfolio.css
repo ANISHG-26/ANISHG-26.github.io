@@ -158,6 +158,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .principle-card > span, .geek-card > span { display: block; margin-bottom: 1.8rem; font: .75rem var(--font-code); }
 .principle-card h3 { font-size: 1.2rem; }
 .principle-card p, .project-card p, .geek-card p { color: var(--muted-foreground); margin-bottom: 0; }
+.principle-card p, .journey-file p:last-child, .direction-callout > p { text-align: justify; text-justify: inter-word; text-align-last: left; }
 .principle-cyan, .geek-car { border-top: 2px solid var(--cyan); }
 .principle-cyan > span, .geek-car > span, .geek-car > svg { color: var(--cyan); }
 .principle-pink, .geek-bass { border-top: 2px solid var(--pink); }

@@ -67,6 +67,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the controls keyboard-accessible and preserve a readable first-panel
   fallback when JavaScript is unavailable.
 
+### I052 — About Reading Alignment, 2026-09-06
+
+- Extend the homepage’s inter-word justification treatment to About-page body
+  paragraphs in the principles cards, journey output, and direction callout.
+- Keep terminal commands, headings, and the short principles quote left-aligned.
+
 ### I003 — User Direction, 2026-09-04
 
 - Make foundation-first philosophy the brand, expressed through a terminal/Linux
