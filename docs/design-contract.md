@@ -80,6 +80,21 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the interaction keyboard-accessible and show the complete content
   immediately for reduced-motion users.
 
+### I055 — Compact Animation Control, 2026-09-06
+
+- Match the animation toggle’s dimensions, radius, icon scale, and visual weight
+  to the adjacent theme controls in the header.
+
+### I056 — Responsive Animation Control, 2026-09-06
+
+- Keep the animation toggle beside the theme control at responsive header widths
+  instead of allowing it to stretch into a separate grid row.
+
+### I057 — Grouped Header Controls, 2026-09-06
+
+- Group the theme and animation controls as one header item so the responsive
+  grid preserves their compact side-by-side layout at every width.
+
 ### I054 — Global Animation Control, 2026-09-06
 
 - Add a persistent header control that turns site animations on or off.
