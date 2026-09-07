@@ -57,6 +57,16 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I051 — Linux Journey Directory, 2026-09-06
+
+- Represent the About-page journey as a `tree ./journey/` directory navigator.
+- Keep “The Tools Changed. The Instinct Stayed.” on one line at roomy widths,
+  with a responsive wrap on narrow screens to prevent overflow.
+- Present each journey theme as a selectable directory whose public-safe content
+  appears as the corresponding `README.md` output.
+- Keep the controls keyboard-accessible and preserve a readable first-panel
+  fallback when JavaScript is unavailable.
+
 ### I003 — User Direction, 2026-09-04
 
 - Make foundation-first philosophy the brand, expressed through a terminal/Linux

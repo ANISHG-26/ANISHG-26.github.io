@@ -129,3 +129,14 @@ function runAboutGliSequence() {
     document.documentElement.classList.remove('about-gli-pending');
   });
 }
+const journeyEntries = [...document.querySelectorAll('[data-journey-target]')];
+const journeyPanels = [...document.querySelectorAll('[data-journey-panel]')];
+journeyEntries.forEach(entry => entry.addEventListener('click', () => {
+  const target = entry.dataset.journeyTarget;
+  journeyEntries.forEach(item => {
+    const active = item === entry;
+    item.classList.toggle('is-active', active);
+    item.setAttribute('aria-selected', String(active));
+  });
+  journeyPanels.forEach(panel => { panel.hidden = panel.id !== target; });
+}));
