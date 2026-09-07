@@ -57,6 +57,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I091 — Short EY Website Division Label, 2026-09-07
+
+- Show `Digital & Emerging Technologies` on the website while preserving the
+  complete offer-letter wording in the canonical career record.
+
 ### I090 — EY Consulting Group Label, 2026-09-07
 
 - Use the user-confirmed offer-letter wording “Digital & Emerging Technologies
