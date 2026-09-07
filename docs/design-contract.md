@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I087 — Education Affiliation And Location Flow, 2026-09-07
+
+- Keep the JSS institution and its Visvesvaraya Technological University
+  affiliation together on the institution line.
+- Keep the Bengaluru education location together on one line where the layout
+  permits, while allowing the responsive mobile layout to remain readable.
+
 ### I086 — Experience Locations And Education Heading, 2026-09-07
 
 - Show the verified work location beneath each company name in the Experience

@@ -86,8 +86,8 @@ permalink: /experience/
       {% for item in site.data.education %}
         <article class="education-item">
           <div>
-            <h3>{{ item.institution }}</h3>
-            <p>{{ item.degree }}{% if item.affiliation %} · {{ item.affiliation }}{% endif %}</p>
+            <h3>{{ item.institution }}{% if item.affiliation %} <span class="education-affiliation">· Affiliated to {{ item.affiliation }}</span>{% endif %}</h3>
+            <p>{{ item.degree }}</p>
           </div>
           <div class="education-meta">
             <time>{{ item.period }}</time>
