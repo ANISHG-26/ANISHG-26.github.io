@@ -130,6 +130,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Tighten the direction-card sentence to a single clean line on wider layouts
   without changing its meaning.
 
+### I065 — Restore Direction Copy Spacing, 2026-09-06
+
+- Restore the full user-approved direction-card sentence.
+- Keep the direction paragraph left-aligned so justification does not create
+  awkward word spacing.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header
