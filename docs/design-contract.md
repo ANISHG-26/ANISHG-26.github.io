@@ -87,6 +87,15 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Future Field Notes work should focus on note content only unless the user
   explicitly reopens the page design.
 
+### I118 — Geek Out Page Freeze, 2026-09-07
+
+- Freeze the current Geek Out design and layout as the approved direction.
+- Preserve the three aligned interest cards, justified card copy, full-width
+  `hello_world.txt` connection card, LinkedIn link placement, responsive
+  behavior, and current terminal styling.
+- Future work should focus on content wording only unless the user explicitly
+  reopens the page design. Visual changes are limited to bug fixes.
+
 ### I095 — Education Metadata Right Alignment, 2026-09-07
 
 - Right-align the education date and location rows inside the right-side
