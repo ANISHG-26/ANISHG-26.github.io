@@ -136,6 +136,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the direction paragraph left-aligned so justification does not create
   awkward word spacing.
 
+### I070 — Constant Profile Picture, 2026-09-07
+
+- Keep the About portrait card at a constant `20rem` profile width on layouts
+  that can support it, with a fluid fallback on narrower screens.
+- Center the profile card when the layout stacks at smaller widths.
+
+### I069 — Bounded Portrait Card, 2026-09-07
+
 ### I068 — Natural Portrait Card Height, 2026-09-07
 
 - Keep the About portrait card at its natural content height instead of
