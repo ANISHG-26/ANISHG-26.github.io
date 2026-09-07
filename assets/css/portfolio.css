@@ -299,9 +299,15 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .note-copy span { color: var(--muted-foreground); font-size: .86rem; line-height: 1.6; }
 .note-date { display: inline-flex; align-items: center; gap: .8rem; color: var(--muted-foreground); font: .7rem var(--font-code); white-space: nowrap; }
 .note-date svg { width: .9rem; color: var(--cyan); }
-.geek-intro { max-width: 42rem; font-size: 1.15rem; margin-bottom: 2rem; color: var(--muted-foreground); }
+.geek-intro { max-width: none; font-size: 1.15rem; margin-bottom: 2rem; color: var(--muted-foreground); }
 .geek-card { display: flex; flex-direction: column; }
 .geek-card p { flex: 1; text-align: justify; text-justify: inter-word; text-align-last: left; }
+.geek-connect { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 2rem; border-top: 2px solid var(--cyan); }
+.geek-connect > div { min-width: 0; }
+.geek-connect > div > svg { width: 1.8rem; height: 1.8rem; margin-bottom: 1.5rem; color: var(--cyan); }
+.geek-connect > div > span { display: block; margin-bottom: 1.8rem; color: var(--cyan); font: .75rem var(--font-code); }
+.geek-connect .text-link { white-space: nowrap; }
+.geek-connect .text-link svg { width: .85rem; height: .85rem; }
 .geek-card > svg { width: 1.8rem; height: 1.8rem; margin-bottom: 1.5rem; }
 .geek-card h2 { font-size: 1.25rem; }
 .off-duty-note { margin: 2.5rem 0 0; font: .75rem/1.8 var(--font-code); }
@@ -378,6 +384,8 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .experience-company-header > time, .experience-project-heading time { display: block; margin-top: .35rem; }
   .experience-roles p { display: grid; gap: .1rem; }
   .experience-projects { grid-template-columns: 1fr; }
+  .geek-connect { grid-template-columns: 1fr; gap: 1rem; }
+  .geek-connect .text-link { justify-self: start; }
   .experience-project:only-of-type { grid-column: auto; }
   .education-body { grid-template-columns: 1fr; gap: 1.5rem; padding-right: 1.2rem; }
   .skills-tree { grid-template-columns: 1fr; }
