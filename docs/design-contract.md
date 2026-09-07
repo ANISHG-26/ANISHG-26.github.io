@@ -136,6 +136,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the direction paragraph left-aligned so justification does not create
   awkward word spacing.
 
+### I068 — Natural Portrait Card Height, 2026-09-07
+
+- Keep the About portrait card at its natural content height instead of
+  stretching it to match the adjacent profile terminal.
+- Preserve the responsive stack and centered terminal-cat footer treatment.
+
 ### I067 — Foundations Intro Width, 2026-09-07
 
 - Let the Foundations First intro description use the available horizontal
