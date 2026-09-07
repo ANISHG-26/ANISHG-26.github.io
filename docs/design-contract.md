@@ -153,6 +153,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Ensure the GitHub profile image keeps its intrinsic 1:1 sizing by allowing its
   rendered height to follow its responsive width before applying the circle crop.
 
+### I073 — Avatar Inset Spacing, 2026-09-07
+
+- Increase the circular avatar’s even inset within the portrait card so the
+  image has clearer breathing room above and below the caption.
+
 ### I069 — Bounded Portrait Card, 2026-09-07
 
 ### I068 — Natural Portrait Card Height, 2026-09-07
