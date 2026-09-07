@@ -114,6 +114,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Give the light-mode navigation bar a modestly darker surface for clearer
   separation from the page while leaving dark mode unchanged.
 
+### I062 — Softer Light Header Contrast, 2026-09-06
+
+- Reduce the light-mode header contrast to a subtle 94/6 surface mix after
+  visual review, preserving the gentle separation without a strong band.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header
