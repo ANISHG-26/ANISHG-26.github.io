@@ -10,7 +10,7 @@ permalink: /projects/
 {% assign other_projects = site.data.projects | where: "section", "other" %}
 
 <section class="projects-section">
-  <div class="section-heading"><p class="section-kicker">./portfolio/</p><h2>Portfolio-Worthy Projects</h2><p>Projects where the delivery path, platform choices, or team leverage are worth a closer look.</p></div>
+  <div class="section-heading"><p class="section-kicker">./notable/</p><h2>Notable Projects</h2><p>Projects where the delivery path, platform choices, or team leverage are worth a closer look.</p></div>
   <div class="project-grid">
     {% for project in portfolio_projects %}
       <a class="project-card" href="{{ project.url | relative_url }}">
@@ -31,7 +31,7 @@ permalink: /projects/
 </section>
 
 <section class="projects-section">
-  <div class="section-heading"><p class="section-kicker">./archive/</p><h2>Other Projects</h2><p>Smaller, collaborative, or supporting projects that still explain how I like to work.</p></div>
+  <div class="section-heading"><p class="section-kicker">./past/</p><h2>Past Projects</h2><p>Earlier projects that still explain how I like to work and what I learned along the way.</p></div>
   <div class="project-grid">
     {% for project in other_projects %}
       <a class="project-card" href="{{ project.url | relative_url }}">
