@@ -166,7 +166,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .principle-card > span, .geek-card > span { display: block; margin-bottom: 1.8rem; font: .75rem var(--font-code); }
 .principle-card h3 { font-size: 1.2rem; }
 .principle-card p, .project-card p, .geek-card p { color: var(--muted-foreground); margin-bottom: 0; }
-.principle-card p, .journey-file p:last-child, .direction-callout > p { text-align: justify; text-justify: inter-word; text-align-last: left; }
+.principle-card p, .journey-file p:last-child, .direction-callout-body > p:not(.section-index) { text-align: justify; text-justify: inter-word; text-align-last: left; }
 .principle-cyan, .geek-car { border-top: 2px solid var(--cyan); }
 .principle-cyan > span, .geek-car > span, .geek-car > svg { color: var(--cyan); }
 .principle-pink, .geek-bass { border-top: 2px solid var(--pink); }
@@ -190,9 +190,11 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .journey-file:not(.is-pending) .terminal-caret { opacity: 0; }
 .journey-file h3 { font-size: 1.2rem; }
 .journey-file p:last-child { color: var(--muted-foreground); margin: 0; max-width: 43rem; }
-.direction-callout { margin-top: 3rem; padding: 2rem; border-left: 2px solid var(--purple); background: color-mix(in srgb, var(--purple-soft) 35%, var(--surface)); }
+.direction-callout { margin-top: 3rem; border: 1px solid var(--border); border-left: 2px solid var(--pink); background: color-mix(in srgb, var(--surface) 65%, transparent); }
+.direction-callout .terminal-window-bar { border-bottom: 1px solid var(--border); }
+.direction-callout-body { padding: 1.4rem; }
 .direction-callout h2 { font-size: 1.6rem; }
-.direction-callout > p { max-width: 43rem; color: var(--muted-foreground); }
+.direction-callout-body > p:not(.section-index) { max-width: 43rem; color: var(--muted-foreground); }
 .experience-row { display: grid; grid-template-columns: 1.1fr 1fr auto; gap: 2rem; padding: 1.8rem 0; border-bottom: 1px solid var(--border); }
 .experience-row:first-child { padding-top: 0; }
 .experience-row h2 { font-size: 1.15rem; }
@@ -291,7 +293,7 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .writing-card { grid-template-columns: 1fr auto; gap: 1rem; }
   .writing-meta { grid-column: 1/-1; display: flex; gap: 1rem; }
   .post-meta { flex-direction: column; gap: .4rem; }
-  .direction-callout { padding: 1.3rem; }
+  .direction-callout-body { padding: 1.3rem; }
   .off-duty-note .shell-comment { display: block; margin: .5rem 0 0; }
 }
 @media (prefers-reduced-motion: reduce) {

@@ -101,6 +101,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Use `# guess the bassline` as the bassline terminal comment while preserving
   the approved transcription.
 
+### I060 — About Direction Card, 2026-09-06
+
+- Remove the duplicate About-page link to the longer Platform Engineering story,
+  which is already featured on the homepage.
+- Present the existing “Still Learning” content in the homepage’s terminal-card
+  pattern while retaining its distinct “On Growing Deliberately” link.
+
 ### I059 — Light Hue And Header Spacing, 2026-09-06
 
 - Shift the grouped theme and animation controls slightly left from the header
