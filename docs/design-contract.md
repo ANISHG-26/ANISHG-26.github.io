@@ -57,6 +57,16 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I081 — Experience Reading Density And Tree Command, 2026-09-07
+
+- Use the available desktop width more effectively by placing multiple selected
+  work panels in a responsive grid while keeping single panels full-width.
+- Justify longer Experience summaries and project descriptions with a left-aligned
+  final line for readable terminal-adjacent prose.
+- Animate the `tree ./skills/` command as a short type-in sequence, revealing its
+  output after completion and respecting the global animation control and reduced
+  motion preferences.
+
 ### I078 — Company-First Experience Narrative, 2026-09-07
 
 - Present the Experience page as company-level narratives with a short summary,

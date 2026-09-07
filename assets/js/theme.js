@@ -91,6 +91,24 @@ if (terminal && terminalCommand && terminalOutput && animationsEnabled) {
   };
   window.setTimeout(typeCommand, 420);
 }
+const experienceTreeTerminal = document.querySelector('.skills-terminal');
+const experienceTreeCommand = document.querySelector('[data-experience-tree-command]');
+const experienceTreeOutput = document.querySelector('.skills-tree');
+if (experienceTreeTerminal && experienceTreeCommand && experienceTreeOutput && animationsEnabled) {
+  const command = experienceTreeCommand.textContent;
+  experienceTreeCommand.textContent = '';
+  document.documentElement.classList.add('experience-tree-pending');
+  let index = 0;
+  const typeExperienceTreeCommand = () => {
+    experienceTreeCommand.textContent = command.slice(0, ++index);
+    if (index < command.length) window.setTimeout(typeExperienceTreeCommand, 62);
+    else window.setTimeout(() => {
+      experienceTreeTerminal.classList.add('is-executed');
+      document.documentElement.classList.remove('experience-tree-pending');
+    }, 360);
+  };
+  window.setTimeout(typeExperienceTreeCommand, 420);
+}
 const aboutCommand = document.querySelector('[data-about-command]');
 const aboutReveal = document.querySelector('.about-reveal');
 const aboutProfile = document.querySelector('.about-profile');
