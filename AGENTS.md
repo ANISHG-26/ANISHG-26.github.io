@@ -60,6 +60,10 @@ that direction changes.
   uncommitted files at handoff.
 - Committing locally does not authorize pushing, merging, or deployment. Keep
   this work local until the user asks for those actions.
+- Before pushing to a remote, run the repository's local Jekyll build followed
+  by `npm run validate` (which runs the visual tests, frozen-artwork tests, and
+  public-output audit). Do not push when a required check fails; record
+  unavailable checks and their reason in the local changelog.
 
 ## Changelog
 

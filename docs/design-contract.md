@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I075 — Responsive Terminal Artwork, 2026-09-07
+
+- Keep the frozen cats, bassline, and GLI terminal artwork intact without
+  horizontal overflow at the supported responsive widths.
+- Scale the portrait cats artwork with a bounded type size so it fits its
+  container while preserving `white-space: pre` and the approved source art.
+
 ### I051 — Linux Journey Directory, 2026-09-06
 
 - Represent the About-page journey as a `tree ./journey/` directory navigator.
