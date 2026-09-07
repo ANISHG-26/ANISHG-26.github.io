@@ -57,6 +57,11 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I093 — Education Metadata Alignment, 2026-09-07
+
+- Keep the education date and location metadata block on the right while
+  left-aligning its internal rows so dates and locations share a vertical edge.
+
 ### I092 — Education Alignment Cleanup, 2026-09-07
 
 - Keep the JSS affiliation aligned as plain continuation text beneath the
