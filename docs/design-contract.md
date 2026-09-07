@@ -142,6 +142,12 @@ has not been verified. This is a reference-role contract, not a completed visual
   that can support it, with a fluid fallback on narrower screens.
 - Center the profile card when the layout stacks at smaller widths.
 
+### I071 — Circular Profile Picture, 2026-09-07
+
+- Present the bounded About portrait as an inset circular profile picture inside
+  the existing terminal-style card.
+- Preserve the card frame, public-profile caption, and centered cat footer.
+
 ### I069 — Bounded Portrait Card, 2026-09-07
 
 ### I068 — Natural Portrait Card Height, 2026-09-07
