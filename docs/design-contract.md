@@ -57,6 +57,16 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I096 — Experience Page Freeze, 2026-09-07
+
+- Freeze the current Experience page as the approved direction before moving to
+  Projects.
+- Preserve its company-first narratives, verified locations and context labels,
+  justified copy, education bridge, right-aligned metadata, and scroll-triggered
+  skills-tree animation.
+- Do not make further Experience-page edits unless the user explicitly reopens
+  that page.
+
 ### I095 — Education Metadata Right Alignment, 2026-09-07
 
 - Right-align the education date and location rows inside the right-side
