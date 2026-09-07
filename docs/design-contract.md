@@ -57,6 +57,13 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I084 — Experience Labels, 2026-09-07
+
+- Remove ordinal company labels from the Experience page so the chronology reads
+  as a professional history rather than an indexed list.
+- Replace “Selected Work” with the more contextual “Focus Areas” label for the
+  project panels beneath each company.
+
 ### I083 — Full-Width Company Summaries, 2026-09-07
 
 - Let company-level Experience summaries use the available content width instead

@@ -11,7 +11,6 @@ permalink: /experience/
     <article class="experience-company">
       <header class="experience-company-header">
         <div>
-          <p class="experience-kicker">company / {{ forloop.index | prepend: '0' }}</p>
           <h2>{{ item.company }}</h2>
         </div>
         <time>{{ item.period }}</time>
@@ -24,7 +23,7 @@ permalink: /experience/
         {% endfor %}
       </div>
       <div class="experience-projects">
-        <span class="experience-label">selected work</span>
+        <span class="experience-label">focus areas</span>
         {% for project in item.projects %}
           <section class="experience-project">
             <div class="experience-project-heading">
