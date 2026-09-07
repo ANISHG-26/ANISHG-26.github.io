@@ -13,7 +13,7 @@ permalink: /experience/
         <div>
           <h2>{{ item.display_name | default: item.company }}</h2>
           <p class="experience-location"><i data-lucide="map-pin" aria-hidden="true"></i>{{ item.location }}</p>
-          <p class="experience-division">division / {{ item.division }}</p>
+          <p class="experience-division">{{ item.division }}</p>
         </div>
         <time>{{ item.period }}</time>
       </header>

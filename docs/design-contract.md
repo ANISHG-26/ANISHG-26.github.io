@@ -57,6 +57,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ## How To Change This Contract
 
+### I090 — EY Consulting Group Label, 2026-09-07
+
+- Use the user-confirmed offer-letter wording “Digital & Emerging Technologies
+  group in our Consulting practice” for the EY public Experience context.
+- Remove the generic `division /` prefix from all company context labels.
+
 ### I089 — Public Company And Division Labels, 2026-09-07
 
 - Use the public-facing company names Ernst & Young, Morgan Stanley, and
