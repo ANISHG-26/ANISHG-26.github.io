@@ -10,7 +10,7 @@
 - index: "02"
   section: portfolio
   icon: truck
-  status: Client-restricted case study
+  status: Client project case study
   title: Moving Services Application
   url: /projects/moving-services-application/
   description: A client case study in translating a moving-cost workflow and business constraints into a deployable Azure foundation.

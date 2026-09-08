@@ -1,7 +1,7 @@
 # Public Resume
 
 `anish-george-public.tex` is the general-purpose, public-safe Platform Engineering
-resume grounded in the career repository's canonical evidence and reviewed for
+resume grounded in reviewed career evidence and checked for
 content coherence on 2026-09-07. It uses the established two-page application-resume
 format while keeping the positioning broad enough for Platform, Infrastructure,
 select SRE, and technically aligned forward-deployed conversations.
@@ -14,18 +14,9 @@ Consulting strengths appear as requirements discovery, systems thinking, technic
 communication, and cross-functional delivery; they support the engineering story
 without changing the primary Platform Engineering position.
 
-Project review disposition:
-
-- Cross-Cloud MLOps, Moving Services, and ChargeRoute remain public with their
-  academic, client-restricted, and team boundaries visible.
-- Music Recommendation Chatbot is withheld from the generated site because personal
-  contribution allocation and credential remediation remain unresolved.
-- The Local Platform Lab and ServerGoBrrr remain future candidates. They are not
-  added until implemented milestones, tests, documentation, and ownership are
-  verified through the career evidence workflow.
-- Snowflake is removed from the public skills view because the discovery assignment
-  did not progress into implementation. Terraform, Go, and GitOps remain explicitly
-  learning-only on the site and are excluded from the resume.
+The source intentionally contains only material selected for the public resume.
+Project links and additional skills can be added later when they are useful to a
+reader and ready for publication.
 
 Build from the portfolio root using an installed LaTeX environment:
 

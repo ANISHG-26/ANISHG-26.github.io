@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Moving Services Application
-status: Client-restricted case study
+status: Client project case study
 context: uOttawa industry-internship course · 2023
 ---
 
@@ -13,8 +13,8 @@ A student team worked with a moving-company client on an application that estima
 
 <figure class="mini-architecture" aria-labelledby="moving-architecture-caption">
   <div class="terminal-window-bar" aria-hidden="true">
-    <span>~/ag/projects/moving-services/public-architecture</span>
-    <span>SANITIZED VIEW</span>
+    <span>~/ag/projects/moving-services/solution-architecture</span>
+    <span>SOLUTION VIEW</span>
   </div>
   <div class="mini-architecture-body">
     <div class="architecture-flow architecture-flow-compact" role="img" aria-label="Client requirements flow into a React progressive web application, a containerized Spring Boot API, and an Azure service foundation.">
@@ -38,5 +38,3 @@ As the cloud engineer, I mapped requirements to cloud services, evaluated the ar
 ## What stayed with me
 
 Translating a business workflow into technical choices taught me that requirements, cost, architecture, and delivery are one conversation. That requirements-to-solution loop became the bridge between engineering and the consulting work I later pursued.
-
-> This is a sanitized case study. Client source, repository links, credentials, and private implementation details are intentionally not included.

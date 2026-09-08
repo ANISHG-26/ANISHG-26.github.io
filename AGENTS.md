@@ -11,12 +11,12 @@ that direction changes.
 
 - Treat every tracked file, commit message, branch name, Issue, pull request, build
   artifact, and generated page as public. Git deletion does not remove prior commits.
-- Do not copy restricted material from the career repository or any other repository
+- Do not copy restricted material from private sources or other repositories
   into this one. Restricted material includes direct contact details, home addresses,
   raw career narratives, private reflections, job-search or application status,
   compensation, recruiter or networking records, private correspondence, credentials,
   confidential client or product details, and local filesystem paths.
-- Import career claims only from approved canonical evidence and reduce them to the
+- Import career claims only from reviewed, approved source material and reduce them to the
   minimum public-safe wording needed by the site. Public identity, approved biography,
   professional history, education, portfolio interests, GitHub, LinkedIn, and this
   portfolio URL are allowed only when intentionally selected for publication.
@@ -91,17 +91,17 @@ that direction changes.
   of referenced local paths; they do not require a site build.
 - Never claim a check passed unless it ran successfully. Record unavailable checks.
 
-## Career Evidence And Publication
+## Career Content And Publication
 
-- Use the sibling career repository's canonical experience, approved metrics,
-  skills, education, and career profile as the authority for career claims.
+- Use only career claims, metrics, skills, education, and profile details that have
+  been explicitly reviewed for public use.
 - Never invent ownership, scale, tools, outcomes, or proficiency. Keep academic,
   team, learning, and professional work distinct; preserve official titles.
-- Canonical fact changes and new numerical claims require user approval. Keep
+- New career facts and numerical claims require user approval. Keep
   confidential client/product details and private reflections out of this repo.
 - A local checkpoint does not approve a resume or career claim for publication.
-  The inherited resume's candidate-approval status must be resolved before public
-  deployment. Do not infer approval from its presence in `assets/resume/`.
+  Review resume content before public deployment; do not infer approval from a
+  file's presence in `assets/resume/`.
 - Public resume contact details must be limited to LinkedIn, GitHub, and the
   portfolio URL. Rebuild from public-safe source; check extracted text, annotations,
   and metadata for email/phone data before committing the PDF. Never commit the
