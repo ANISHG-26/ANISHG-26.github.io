@@ -18,15 +18,6 @@
 
 - index: "03"
   section: other
-  icon: music
-  status: Collaborative course project
-  title: Music Recommendation Chatbot
-  url: /projects/music-recommendation-chatbot/
-  description: A collaborative recommendation prototype where the contribution centered on application integration and containerized cloud delivery.
-  tags: [Integration, Containers, GCP]
-
-- index: "04"
-  section: other
   icon: route
   status: Hackathon team project
   title: ChargeRoute Navigator

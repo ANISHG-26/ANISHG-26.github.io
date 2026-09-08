@@ -4,7 +4,7 @@
   division: Digital & Emerging Technologies group in our Consulting practice
   division_display: Digital & Emerging Technologies
   period: 2024 — Present
-  summary: Built delivery paths and runtime foundations for internal GenAI and cybersecurity products, spanning Kubernetes, CI/CD, observability, QA enablement, and developer workflows.
+  summary: Turned evolving product needs into dependable delivery paths and runtime foundations for GenAI and cybersecurity products, working across application, product, security, and platform teams.
   roles:
     - title: Senior Technology Consultant
       period: Aug 2026 — Present
@@ -13,37 +13,38 @@
   projects:
     - name: FlexiGenAI
       period: Oct 2025 — Jul 2026
-      summary: Translated an evolving multi-component application into working Kubernetes development and QA environments, with reusable artifact delivery and centralized runtime visibility.
+      summary: Served as the core infrastructure and platform engineer, translating architectural intent and developer-built components into working Kubernetes delivery while making dependencies and trade-offs visible as priorities evolved.
       highlights:
-        - Kubernetes manifests, Azure delivery integrations, persistent storage, autoscaling, disruption budgets, and health probes.
-        - GitHub migration, JFrog package publishing, Prometheus/Loki/Tempo/Grafana observability, and CI-integrated performance testing.
+        - Deployed and recovered a materially changed multi-component architecture through incremental rollout, log inspection, and dependency verification across internal development, QA, demo, and consultant-use environments.
+        - Built adopted pipelines for reusable Python and UI packages, migrated repositories to GitHub, and removed more than 200 stale branches with CSV-driven automation.
+        - Centralized logs, metrics, and traces with Prometheus, Loki, Tempo, and Grafana, and integrated performance validation into CI/CD with application engineers.
     - name: Internal Cybersecurity Product
       period: Oct 2024 — Dec 2025
-      summary: Moved a VM-hosted application into a containerized AKS deployment and led the infrastructure, DevOps, QA enablement, and internal release work.
+      summary: Owned the infrastructure and DevOps implementation within the product team, carrying an early VM-hosted application through containerized AKS delivery and an internal enterprise production release.
       highlights:
         - Helm-based deployment patterns, Azure DevOps pipelines, branching and promotion practices.
-        - Security and quality controls integrated into the delivery workflow and release process.
+        - Security, quality, secrets, and certificate controls integrated into the delivery workflow and release process.
 
 - company: Morgan Stanley
   display_name: Morgan Stanley
   location: Montreal, Quebec, Canada
   division: Enterprise Technology & Services (ETS)
   period: 2023 — 2024
-  summary: Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
+  summary: Led an assigned test-infrastructure modernization workstream within a wider platform team, making established system-test workflows easier to reproduce and reason about.
   roles:
     - title: Technology Analyst Intern
       period: May 2023 — Apr 2024
   projects:
     - name: System Test Platform
       period: 2023 — 2024
-      summary: Modernized system-test workflows for an established platform with repeatable image construction, test execution, dependency inspection, and result-review tooling.
+      summary: Traced direct and transitive dependencies, containerized system tests, and built Python and shell tooling for repeatable image construction, execution, and result inspection.
 
 - company: Accenture Solutions Pvt Ltd
   display_name: Accenture
   location: Bengaluru, Karnataka, India
   division: Advanced Technology Centers in India (ATCI)
   period: 2020 — 2022
-  summary: Built CI/CD automation, OpenShift delivery workflows, and reusable onboarding tools within an architect-led enterprise DevOps platform.
+  summary: Adapted security automation, CI/CD, and OpenShift delivery practices across multi-cloud operations and a constrained client environment, within architect-led platform direction.
   roles:
     - title: Application Development Analyst
       period: Dec 2021 — Aug 2022
@@ -52,7 +53,11 @@
   projects:
     - name: myWizard for DevXOps
       period: 2020 — 2022
-      summary: Connected Jenkins, GitLab, SonarQube, and Nexus through reusable Groovy and Job DSL automation for application teams.
+      summary: Implemented the CI/CD automation and application-delivery layer of an enterprise DevOps platform for a telecommunications client.
       highlights:
-        - Automated repository and Jenkins-job onboarding with shared libraries and Job DSL.
-        - Built Python automation to compare image versions across OpenShift environments and exposed it through Jenkins.
+        - Connected Jenkins, GitLab, SonarQube, Nexus, and OpenShift through reusable Groovy Shared Library and Job DSL automation.
+        - Worked with application teams to automate repository and Jenkins-job onboarding and cross-environment image-version checks.
+        - Delivered application components through bastion-host access in an internet-restricted environment on customer-managed VMware-backed compute.
+    - name: Cloud Security Automation
+      period: 2020 — 2021
+      summary: Automated recurring AWS security-remediation and compliance work with Python, Boto3, and Lambda while applying security practices across AWS, Azure, and GCP environments.

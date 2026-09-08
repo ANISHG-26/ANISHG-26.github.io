@@ -1,92 +1,135 @@
 \documentclass[11pt]{article}
-\usepackage[letterpaper,margin=0.65in]{geometry}
+\usepackage[paper=letterpaper,top=0.58in,bottom=0.58in,left=0.62in,right=0.62in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[default]{carlito}
+\renewcommand{\familydefault}{\sfdefault}
 \usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
-\hypersetup{pdftitle={Anish George - Platform Engineering},pdfauthor={Anish George},pdfsubject={Public portfolio resume}}
-\pagestyle{plain}
+\DisableLigatures{encoding = *, family = *}
+\hypersetup{pdftitle={Anish George - Platform Engineering},pdfauthor={Anish George},pdfsubject={Public general-purpose resume}}
+\emergencystretch=2em
+\hyphenpenalty=500
+\exhyphenpenalty=500
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
-\renewenvironment{itemize}{\begin{list}{\textbullet}{\setlength{\leftmargin}{1.3em}\setlength{\itemsep}{3pt}\setlength{\topsep}{4pt}\setlength{\parsep}{0pt}}}{\end{list}}
-\newcommand{\sect}[1]{\vspace{5pt}{\large\bfseries #1}\par\vspace{1pt}\hrule\vspace{4pt}}
-\newcommand{\role}[2]{\textbf{#1}\hfill #2\par}
+\setlength{\parskip}{0pt}
+\linespread{0.97}
+\frenchspacing
+\pagestyle{empty}
+
+\newcommand{\TwoColLine}[2]{\noindent #1\hfill #2\par}
+\newcommand{\ResumeSection}[1]{\vspace{5pt}\begin{center}\textbf{\MakeUppercase{#1}}\\[-4pt]\rule{0.98\textwidth}{0.6pt}\end{center}\vspace{1pt}}
+\newcommand{\RoleLine}[2]{\TwoColLine{\textbf{#1}}{#2}}
+\newcommand{\OrgLine}[1]{\noindent\textit{#1}\par}
+\newcommand{\OrgContinuationLine}[2]{\TwoColLine{\textit{#1}}{#2}}
+\newcommand{\ContextLine}[1]{\noindent\textbf{\textit{#1}}\par}
+\newcommand{\RoleSummary}[1]{\vspace{1pt}\noindent #1\par\vspace{1pt}}
+\newcommand{\EngineeringWorkLabel}{\vspace{1pt}}
+\newlength{\BulletIndent}
+\setlength{\BulletIndent}{1.3em}
+\newenvironment{ResumeItems}{\begin{list}{\textbullet}{\setlength{\leftmargin}{\BulletIndent}\setlength{\labelwidth}{0.8em}\setlength{\labelsep}{0.5em}\setlength{\itemindent}{0pt}\setlength{\itemsep}{0.5pt}\setlength{\parsep}{0pt}\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}}}{\par\end{list}}
+\newcommand{\PB}[1]{\par\item #1}
+
 \begin{document}
-{\LARGE\bfseries Anish George}\par
-{\large Platform Engineering | Developer Experience}\par
-Ottawa, Ontario, Canada\par
-\href{https://www.linkedin.com/in/anishgeorge97}{LinkedIn: anishgeorge97}\enspace |\enspace
-\href{https://github.com/ANISHG-26}{GitHub: ANISHG-26}\enspace |\enspace
-\href{https://anishg-26.github.io/}{Portfolio: anishg-26.github.io}
+{\fontsize{20pt}{20pt}\selectfont\bfseries Anish George}\par
+\vspace{2pt}
+\TwoColLine{\textbf{Platform Engineering $\mid$ Developer Enablement $\mid$ Enterprise Delivery}}{}
+\TwoColLine{Ottawa, Ontario}{\textbf{GitHub:} \href{https://github.com/ANISHG-26}{ANISHG-26}}
+\TwoColLine{}{\textbf{LinkedIn:} \href{https://www.linkedin.com/in/anishgeorge97}{anishgeorge97} $\mid$ \textbf{Portfolio:} \href{https://anishg-26.github.io/}{anishg-26.github.io}}
 
-\sect{Profile}
-Platform engineer focused on the runtime foundations, delivery paths, and developer
-workflows that help teams build with confidence. Experience spans reusable CI/CD,
-containerized test infrastructure, Kubernetes delivery, secure release workflows,
-and observability. Works with application teams to understand friction and turn
-recurring tasks into understandable, repeatable engineering practices.
+\vspace{5pt}
+\textbf{Professional Summary}\\
+Platform engineer and technology consultant who turns ambiguous product needs into
+dependable delivery paths and developer-enablement systems. Experience spans
+Kubernetes and OpenShift delivery, reusable CI/CD, test reproducibility, secure
+release workflows, observability, and performance validation across enterprise
+product and client environments. Brings empathetic requirements discovery, systems
+thinking, and clear technical communication to help application and platform teams
+understand trade-offs and move from intent to working delivery.
+\par
 
-\sect{Technical Capabilities}
-\textbf{Platform:} Kubernetes, Azure Kubernetes Service, Docker, Helm, OpenShift application delivery.\par
-\textbf{Delivery \& Automation:} GitHub Actions, Azure DevOps, Jenkins, GitLab, JFrog Artifactory, Python, Shell, Groovy, Git.\par
-\textbf{Observability \& Validation:} OpenTelemetry, Prometheus, Grafana, Loki, Tempo, Locust.\par
-\textbf{Secure Delivery:} SAST, SCA, container and DAST integration; Azure Key Vault with Secrets Store CSI Driver.
+\ResumeSection{Technical Capabilities}
+\begin{ResumeItems}
+\PB{\textbf{Platform Delivery:} Kubernetes, Azure Kubernetes Service, OpenShift, Docker, Helm}
+\PB{\textbf{Delivery \& Automation:} GitHub Actions, Azure DevOps, Jenkins, GitLab, JFrog Artifactory, Python, Shell, Groovy, Git}
+\PB{\textbf{Observability \& Validation:} OpenTelemetry, Prometheus, Loki, Tempo, Grafana, Locust, k6}
+\PB{\textbf{Secure Delivery:} Azure Key Vault, Secrets Store CSI Driver, SonarQube, Mend, AquaSec, Checkmarx One, Qualys WAS}
+\PB{\textbf{Consulting \& Delivery:} Requirements discovery, stakeholder empathy, systems thinking, solution visualization, technical communication, cross-functional delivery}
+\end{ResumeItems}
 
-\sect{Professional Experience}
-\textbf{Ernst \& Young LLP} --- Ottawa, Ontario\par
-\role{Senior Technology Consultant}{Aug 2026 -- Present}
-\role{Staff Technology Consultant}{Oct 2024 -- Jul 2026}
-\textit{Enterprise GenAI Product | Platform Delivery | Oct 2025 -- Jul 2026}
-\begin{itemize}
-\item Translated an evolving multi-component application design into working Kubernetes development and QA environments, using manifests, Azure delivery integrations, persistent storage, autoscaling, disruption budgets, and health probes.
-\item Built adopted pipelines to version and publish Python SDK wheels and shared UI packages to JFrog for reuse across product components.
-\item Collaborated with application engineers on shared-storage tool-installation and Module Federation delivery proofs of concept. Dynamic lifecycle automation and dependency isolation remained incomplete.
-\item Deployed Prometheus, Loki, Tempo, and Grafana in internal environments to centralize logs, metrics, traces, and scaling visibility for developer troubleshooting.
-\item Built an initial k6 proof of concept and integrated developer-authored Locust tests into CI/CD; proposed weighted usage scenarios implemented by another engineer.
-\item Migrated repositories from Azure DevOps to GitHub using centrally managed tooling and removed more than 200 stale branches with CSV-driven automation.
-\end{itemize}
-\textit{Scope: internal development, QA, demo, and consultant-use environments; no customer-production, formal on-call, or SLO ownership.}
+\ResumeSection{Professional Experience}
+\RoleLine{Senior Technology Consultant}{Aug 2026 \textendash{} Present}
+\RoleLine{Staff Technology Consultant}{Oct 2024 \textendash{} Jul 2026}
+\OrgLine{Ernst \& Young LLP, Ottawa, Ontario}
+\TwoColLine{\textbf{\textit{FlexiGenAI \textemdash{} Kubernetes Platform \& Delivery Engineering}}}{Oct 2025 \textendash{} Jul 2026}
+\RoleSummary{Served as the core infrastructure and platform engineer for a
+multi-component enterprise GenAI product, translating architectural intent and
+developer-built components into working Kubernetes delivery while making
+dependencies and system trade-offs visible as priorities evolved.}
+\EngineeringWorkLabel
+\begin{ResumeItems}
+\PB{Established GitHub Actions delivery workflows and deployed a materially changed architecture on Kubernetes, implementing Deployments, Services, ConfigMaps, ingress, persistent storage, autoscaling, disruption budgets, health probes, and environment-specific configuration.}
+\PB{Integrated delivery with Azure Kubernetes Service, Container Registry, Application Gateway, Front Door/CDN, Blob Storage, Key Vault, networking, DNS, and certificates while coordinating deeper IAM and security configuration with another engineer.}
+\PB{Recovered a multi-component deployment through incremental service rollout, log inspection, and dependency verification, restoring a working delivery path across internal development, QA, demo, and consultant-use environments.}
+\PB{Built adopted pipelines that versioned and published Python SDK wheels and shared UI packages to JFrog for reuse across backend, tools-engine, and frontend components.}
+\PB{Deployed Prometheus, Loki, Tempo, and Grafana across internal environments to centralize Kubernetes logs, metrics, traces, and scaling visibility for developer troubleshooting.}
+\PB{Migrated repositories from Azure DevOps to GitHub and removed more than 200 stale branches with CSV-driven automation; integrated developer-authored Locust tests into CI/CD and built an initial k6 proof of concept.}
+\end{ResumeItems}
 
 \newpage
-{\large\bfseries Anish George}\hfill Platform Engineering\par
-\sect{Professional Experience, Continued}
-\textbf{Ernst \& Young LLP}\par
-\textit{Internal Cybersecurity Product | Infrastructure \& Delivery | Oct 2024 -- Dec 2025}
-\begin{itemize}
-\item Owned infrastructure and DevOps implementation within the product team, moving a VM-hosted application to a containerized Azure Kubernetes Service deployment with Helm-based deployment patterns.
-\item Built Azure DevOps delivery pipelines, branching and promotion practices, and integrated security and quality controls into the release workflow.
-\item Led QA enablement and release into the organization's internal production environment through required enterprise processes and controls.
-\end{itemize}
+\OrgContinuationLine{Ernst \& Young LLP (continued)}{Oct 2024 \textendash{} Present}
+\ContextLine{Internal Cybersecurity Product \textemdash{} Infrastructure \& DevSecOps Delivery}
+\RoleSummary{Owned infrastructure and DevOps implementation within the product
+team, carrying an early VM-hosted application through hosted evaluation and an
+internal enterprise production release.}
+\EngineeringWorkLabel
+\begin{ResumeItems}
+\PB{Replaced the VM-hosted deployment with containerized React and .NET services on Azure Kubernetes Service and created reusable Helm-based Kubernetes deployment patterns.}
+\PB{Built Azure DevOps pipelines and integrated SonarQube, Mend, AquaSec, Checkmarx One, and Qualys WAS into delivery workflows.}
+\PB{Led QA enablement and release readiness across functional and non-functional validation while consuming secrets and certificates from Azure Key Vault through the Secrets Store CSI Driver.}
+\end{ResumeItems}
 
-\textbf{Morgan Stanley} --- Montreal, Quebec\par
-\role{Technology Analyst Intern}{May 2023 -- Apr 2024}
-\begin{itemize}
-\item Supported modernization of an established platform’s system-test workflows with Docker, Python, and shell scripting within the wider platform team.
-\item Traced direct and transitive dependencies and built CLI tooling for repeatable image construction, test execution, and result inspection. A future parallel runner remained exploratory.
-\end{itemize}
+\vspace{3pt}
+\RoleLine{Technology Analyst Intern}{May 2023 \textendash{} Apr 2024}
+\OrgLine{Morgan Stanley, Montreal, Quebec}
+\RoleSummary{Led an assigned test-infrastructure modernization workstream for a
+long-lived internal application-hosting platform within the wider platform team.}
+\EngineeringWorkLabel
+\begin{ResumeItems}
+\PB{Made established system-test execution more reproducible by tracing direct and transitive dependencies from a centralized shared filesystem and packaging them into Docker images.}
+\PB{Built Python and shell helper files plus CLI tooling for repeatable image construction, test execution, and result inspection.}
+\end{ResumeItems}
 
-\textbf{Accenture Solutions Pvt Ltd} --- Bengaluru, India\par
-\role{Application Development Analyst}{Dec 2021 -- Aug 2022}
-\role{Application Development Associate}{Nov 2020 -- Nov 2021}
-\begin{itemize}
-\item Implemented CI/CD and OpenShift application delivery within an architect-led enterprise DevOps platform, connecting Jenkins, GitLab, SonarQube, and Nexus.
-\item Built reusable Groovy Shared Library logic and Job DSL automation for repository and Jenkins-job onboarding.
-\item Developed Python automation to compare image versions across OpenShift environments and exposed the workflow through Jenkins for application teams.
-\end{itemize}
+\vspace{3pt}
+\RoleLine{Application Development Analyst}{Dec 2021 \textendash{} Aug 2022}
+\RoleLine{Application Development Associate}{Nov 2020 \textendash{} Nov 2021}
+\OrgLine{Accenture Solutions Pvt Ltd, Bengaluru, India}
+\RoleSummary{Adapted cloud-security automation, CI/CD, and OpenShift application
+delivery across multi-cloud operations and an architect-led enterprise DevOps
+platform for a telecommunications client.}
+\EngineeringWorkLabel
+\begin{ResumeItems}
+\PB{Implemented AWS Lambda automation with Python and Boto3 for recurring security-remediation and compliance work, alongside security practices across AWS, Azure, and GCP environments.}
+\PB{Engineered reusable Groovy Shared Library components for myWizard for DevXOps Jenkins workflows integrating GitLab, SonarQube, Nexus, and OpenShift.}
+\PB{Built Groovy, Job DSL, and Python automation for repository and Jenkins-job onboarding and cross-environment OpenShift image-version comparison exposed through Jenkins.}
+\PB{Delivered application components through bastion-host access in an internet-restricted client environment, adapting OpenShift workloads within customer-managed VMware-backed compute.}
+\end{ResumeItems}
 
-\sect{Selected Projects}
-\textbf{Cross-Cloud MLOps Pipeline} | Academic three-person team | 2023\par
-Implemented provider-specific training and deployment artifacts across AWS SageMaker,
-Azure Machine Learning, and GCP Vertex AI; tested hosted endpoints through a shared
-notebook. Academic prototype, not production MLOps ownership.\par
-\textbf{Moving Services Application} | Student client engagement | 2023\par
-Led the cloud and DevOps workstream within a student team, evaluated Azure hosting,
-and established GitHub Actions delivery for a React and Spring Boot solution.
+\ResumeSection{Projects}
+\RoleLine{Cross-Cloud MLOps Pipeline}{Mar 2023 \textendash{} Apr 2023}
+\OrgLine{University of Ottawa \textemdash{} Academic Three-Person Course Project}
+\begin{ResumeItems}
+\PB{Led the team and implemented provider-specific continuous-training and deployment artifacts across AWS SageMaker, Azure Machine Learning, and GCP Vertex AI using Docker and provider-native mechanisms; tested hosted endpoints through a shared notebook.}
+\end{ResumeItems}
+\vspace{2pt}
+\RoleLine{Moving Services Application}{Sep 2023 \textendash{} Dec 2023}
+\OrgLine{University of Ottawa \textemdash{} Six-Person Student Client Engagement}
+\begin{ResumeItems}
+\PB{Led the cloud and DevOps workstream, evaluated hosting options, mapped the React and Spring Boot solution to Azure services, and established GitHub Actions delivery for a working hosted foundation.}
+\end{ResumeItems}
 
-\sect{Education}
-\textbf{Master of Engineering, Electrical and Computer Engineering}\par
-University of Ottawa | Sep 2022 -- May 2024\par
-\textbf{Bachelor of Engineering, Electronics and Communication Engineering}\par
-JSS Academy of Technical Education, Visvesvaraya Technological University\par
-Aug 2016 -- Aug 2020
+\ResumeSection{Education}
+\TwoColLine{\textbf{Master of Engineering in Electrical and Computer Engineering}}{Sep 2022 \textendash{} May 2024}
+\OrgLine{University of Ottawa, Ottawa, Ontario}
+\TwoColLine{\textbf{Bachelor of Engineering in Electronics and Communication Engineering}}{Aug 2016 \textendash{} Aug 2020}
+\OrgLine{JSS Academy of Technical Education, Karnataka, India \quad (Visvesvaraya Technological University)}
 \end{document}

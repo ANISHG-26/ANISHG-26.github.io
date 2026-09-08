@@ -3,6 +3,7 @@ layout: project
 title: Music Recommendation Chatbot
 status: Collaborative course project
 context: uOttawa · 2023
+published: false
 ---
 
 ## The project
