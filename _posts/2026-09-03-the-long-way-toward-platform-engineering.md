@@ -15,7 +15,7 @@ By 2023 and 2024, that pattern had become clearer. Cross-cloud MLOps work pulled
 
 ## From Repetition To A Throughline
 
-Professional work deepened the same instinct. At Accenture, it appeared in reusable CI/CD and onboarding automation. At Morgan Stanley, it appeared in reproducible containerized test infrastructure for a legacy platform. At EY, it expanded into Kubernetes delivery, secure release workflows, artifact lifecycles, observability, performance validation, and knowledge transfer.
+Professional work deepened the same instinct. At Accenture, it appeared in reusable CI/CD and onboarding automation. At Morgan Stanley, it appeared in reproducible, containerized system-test infrastructure for an established application-hosting platform. At EY, it expanded into Kubernetes delivery, secure release workflows, artifact lifecycles, observability, performance validation, and knowledge transfer.
 
 Looking backward, the throughline is not a particular cloud or tool. It is the desire to make complicated systems more dependable and more usable for the engineers working inside them.
 

@@ -57,7 +57,7 @@
       highlights:
         - Connected Jenkins, GitLab, SonarQube, Nexus, and OpenShift through reusable Groovy Shared Library and Job DSL automation.
         - Worked with application teams to automate repository and Jenkins-job onboarding and cross-environment image-version checks.
-        - Delivered application components through bastion-host access in an internet-restricted environment on customer-managed VMware-backed compute.
+        - Implemented application-delivery configurations on the client's OpenShift cluster using manifests, services, routes, Secrets, and ConfigMaps in an internet-restricted environment.
     - name: Cloud Security Automation
       period: 2020 — 2021
       summary: Automated recurring AWS security-remediation and compliance work with Python, Boto3, and Lambda while applying security practices across AWS, Azure, and GCP environments.

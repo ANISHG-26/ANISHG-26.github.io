@@ -1,8 +1,7 @@
 - label: What I’m really good at
   description: The platform-delivery foundations I have used most deeply.
   items:
-    - Kubernetes
-    - Azure Kubernetes Service
+    - Kubernetes (Azure Kubernetes Service)
     - Docker
     - Helm
     - GitHub Actions
@@ -10,6 +9,7 @@
     - OpenTelemetry
     - Prometheus, Loki, Tempo, Grafana
     - Performance and load testing
+    - "Secure delivery: SonarQube, Mend, AquaSec, Checkmarx One, Qualys WAS"
 
 - label: What I’m learning now
   description: Areas I am actively building depth in, without calling them production ownership.
@@ -25,6 +25,6 @@
     - Jenkins
     - JFrog Artifactory
     - Azure Key Vault + Secrets Store CSI Driver
-    - SAST, SCA, and DAST integration
-    - AWS and Google Cloud Platform
-    - Multi-cloud security and compliance
+    - SonarQube and Nexus
+    - AWS security automation with Lambda and Boto3
+    - Multi-cloud security and compliance across AWS, Azure, and GCP
