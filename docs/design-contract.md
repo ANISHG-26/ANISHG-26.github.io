@@ -55,6 +55,35 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the engineering philosophy and personal interests. Visual iterations must
   not silently rewrite career positioning or replace the user's voice.
 
+### I122 — Cross-Cloud Architecture Translation, 2026-09-08
+
+- Add a responsive, portfolio-native architecture view to the Cross-Cloud MLOps
+  project using the user-provided academic reports as source evidence.
+- Preserve the reports' continuous-integration, continuous-training, and
+  continuous-deployment intent without copying their dated raster artwork.
+- Keep the workflow provider-neutral in the primary diagram and identify the
+  historical AWS, Azure, and GCP service mappings separately.
+- Preserve the academic, collaborative, and non-production boundaries; do not
+  publish benchmark figures or model-quality claims from the reports.
+
+### I123 — Project Lessons And Skills Clarity, 2026-09-08
+
+- Add the Music Recommendation Chatbot as a Past Project using the approved
+  four-person collaboration, data-analysis, deployment, and system-integration
+  scope. Keep the public voice warm rather than expressing review boundaries as
+  disclaimer language. Add repository links only when intentionally selected for
+  publication.
+- Let the four project stories imply distinct lessons: rapid iteration through
+  ChargeRoute, architecture and shared vision through Cross-Cloud MLOps,
+  requirements-to-solution translation through the moving-services client, and
+  collaboration with a clear personal contribution through the music chatbot.
+- Translate the music and moving-services architectures into small responsive,
+  portfolio-native diagrams. Do not copy the supplied moving-services artwork;
+  publish only the simplified architecture mapping.
+- Reopen only the Experience skills content. Group direct current work,
+  reliability/security work, historical professional context, and active
+  learning so the evidence level of every item is explicit.
+
 ## How To Change This Contract
 
 ### I096 — Experience Page Freeze, 2026-09-07
@@ -123,8 +152,8 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 ### I091 — Short EY Website Division Label, 2026-09-07
 
-- Show `Digital & Emerging Technologies` on the website while preserving the
-  complete offer-letter wording in the canonical career record.
+- Show `Digital & Emerging Technologies` on the website while keeping the longer
+  legal wording out of the public presentation.
 
 ### I090 — EY Consulting Group Label, 2026-09-07
 
@@ -135,8 +164,7 @@ has not been verified. This is a reference-role contract, not a completed visual
 ### I089 — Public Company And Division Labels, 2026-09-07
 
 - Use the public-facing company names Ernst & Young, Morgan Stanley, and
-  Accenture in the portfolio while retaining legal employer names in canonical
-  career records.
+  Accenture in the portfolio.
 - Show verified division and product context beneath each company without
   changing the underlying ownership or role claims.
 
@@ -164,7 +192,7 @@ has not been verified. This is a reference-role contract, not a completed visual
 ### I085 — Education As A Project Bridge, 2026-09-07
 
 - Keep a compact education section on the Experience page using verified degree
-  and institution details from the canonical education record.
+  and institution details.
 - Use the section as a bridge to Projects, framing study-era work as exploration
   that returned to developer experience, rapid iteration, and foundations.
 
@@ -380,16 +408,14 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Make foundation-first philosophy the brand, expressed through a terminal/Linux
   interface and a `cat values.yaml` panel. Keep the existing colors and ambient
   background. Preserve the small header identity alongside this content panel.
-- Convey the career evolution through public-safe lessons from canonical evidence.
-  Private notes can inform broad themes only; never copy private narratives into
-  this repository or the built site.
+- Convey the career evolution through public-safe lessons from reviewed evidence.
+  Never copy private source narratives into this repository or the built site.
 - Keep the tone friendly, personal, and restrained. A public portfolio should
   invite conversation without exposing private motivations or employer criticism.
 - Public resume contact links are limited to LinkedIn, GitHub, and this portfolio.
   No phone number, email, mailto/tel link, or embedded private contact data.
-- User-confirmed interests: manual Volkswagen GLI, Japanese food, being a foodie
-  and home cook, guitar, and bass. These are approved personal portfolio details,
-  not additions to canonical professional evidence.
+- Personal interests shown on the portfolio include the manual Volkswagen GLI,
+  Japanese food, home cooking, guitar, and bass.
 - This iteration is for local feedback. Commit it and wait for feedback before
   starting another design direction; no push or publication is authorized.
 

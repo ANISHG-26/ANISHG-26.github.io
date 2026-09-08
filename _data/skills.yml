@@ -1,31 +1,35 @@
-- label: What I’m really good at
-  description: The platform-delivery foundations I have used most deeply.
+- label: Core platform delivery
+  description: Direct professional experience building application delivery and runtime foundations.
   items:
-    - Kubernetes
-    - Azure Kubernetes Service
-    - Docker
-    - Helm
-    - GitHub Actions
-    - Python
+    - Kubernetes (Azure Kubernetes Service)
+    - Docker and Helm
+    - GitHub Actions and Azure DevOps
+    - Python automation
+    - JFrog Artifactory and Nexus
+
+- label: Reliability, testing, and security
+  description: Direct professional integration work around feedback, validation, and secure delivery.
+  items:
     - OpenTelemetry
     - Prometheus, Loki, Tempo, Grafana
-    - Performance and load testing
+    - Performance and load testing with k6 and Locust
+    - SonarQube, Mend, AquaSec, Checkmarx One, Qualys WAS
+    - Azure Key Vault with Secrets Store CSI Driver
 
-- label: What I’m learning now
-  description: Areas I am actively building depth in, without calling them production ownership.
+- label: Earlier enterprise platforms
+  description: Historical professional work that still informs how I approach platform engineering.
+  items:
+    - Jenkins and self-hosted GitLab
+    - OpenShift application delivery
+    - HashiCorp Vault and LDAP integration
+    - Red Hat Quay, Podman, and Skopeo
+    - Node.js/GraphQL and Java service deployment
+    - AWS Lambda automation with Boto3
+    - Multi-cloud security across AWS, Azure, and GCP
+
+- label: Building depth
+  description: Active hands-on learning, listed separately from production experience.
   items:
     - Go
     - GitOps
     - Terraform
-    - Snowflake
-
-- label: What I knew before
-  description: Earlier platform, automation, and security experience that still informs the work.
-  items:
-    - Azure DevOps
-    - Jenkins
-    - JFrog Artifactory
-    - Azure Key Vault + Secrets Store CSI Driver
-    - SAST, SCA, and DAST integration
-    - AWS and Google Cloud Platform
-    - Multi-cloud security and compliance

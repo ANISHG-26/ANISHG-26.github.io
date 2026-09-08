@@ -1,13 +1,22 @@
 # Public Resume
 
-`anish-george-public.tex` is a public-safe derivative grounded in the career
-repository's canonical evidence as reviewed on 2026-09-04. It replaces the older
-networking draft in the portfolio without changing the original career repository.
+`anish-george-public.tex` is the general-purpose, public-safe Platform Engineering
+resume grounded in reviewed career evidence and checked for
+content coherence on 2026-09-07. It uses the established two-page application-resume
+format while keeping the positioning broad enough for Platform, Infrastructure,
+select SRE, and technically aligned forward-deployed conversations.
 
 Only LinkedIn, GitHub, and portfolio contact links are included. Internal product
 and client names are generalized. The GenAI, test-infrastructure, and academic
 project descriptions preserve their collaborative and non-production boundaries.
 No numerical outcome is used except the approved conservative branch count.
+Consulting strengths appear as requirements discovery, systems thinking, technical
+communication, and cross-functional delivery; they support the engineering story
+without changing the primary Platform Engineering position.
+
+The source intentionally contains only material selected for the public resume.
+Project links and additional skills can be added later when they are useful to a
+reader and ready for publication.
 
 Build from the portfolio root using an installed LaTeX environment:
 

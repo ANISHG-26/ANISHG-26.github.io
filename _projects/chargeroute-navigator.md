@@ -15,6 +15,6 @@ I found a public Canadian charging-station source, validated the full stack loca
 
 ## What stayed with me
 
-The hosting itself was technically simple. Its value was in reducing dependency friction and creating leverage for the rest of the team to iterate.
+Rapid iteration succeeds when a team keeps its feedback loops short and chooses the smallest useful next step. The hosting was technically simple, but the shared endpoint reduced dependency friction and helped the team keep moving together.
 
 > This was a team award and a collaborative product. I am not claiming ownership of the Django backend, React frontend, or a custom CI/CD pipeline.
