@@ -55,6 +55,17 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Keep the engineering philosophy and personal interests. Visual iterations must
   not silently rewrite career positioning or replace the user's voice.
 
+### I122 — Cross-Cloud Architecture Translation, 2026-09-08
+
+- Add a responsive, portfolio-native architecture view to the Cross-Cloud MLOps
+  project using the user-provided academic reports as source evidence.
+- Preserve the reports' continuous-integration, continuous-training, and
+  continuous-deployment intent without copying their dated raster artwork.
+- Keep the workflow provider-neutral in the primary diagram and identify the
+  historical AWS, Azure, and GCP service mappings separately.
+- Preserve the academic, collaborative, and non-production boundaries; do not
+  publish benchmark figures or model-quality claims from the reports.
+
 ## How To Change This Contract
 
 ### I096 — Experience Page Freeze, 2026-09-07
