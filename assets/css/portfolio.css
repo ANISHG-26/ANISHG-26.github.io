@@ -342,6 +342,21 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
 .mlops-provider-map section { padding: 1rem; border: 1px solid var(--border); background: var(--surface); }
 .mlops-provider-map h3 { margin: 0 0 .45rem; color: var(--cyan); font: 700 .8rem var(--font-code); }
 .post-content .mlops-provider-map p { margin: 0; color: var(--muted-foreground); font: .7rem/1.65 var(--font-code); text-align: left; }
+.mini-architecture { margin: 2rem 0; border: 1px solid var(--border); background: var(--surface); }
+.mini-architecture .terminal-window-bar { border-bottom: 1px solid var(--border); }
+.mini-architecture .terminal-window-bar > span:last-child { color: var(--pink); font-size: .62rem; letter-spacing: .08em; }
+.mini-architecture-body { padding: 1.25rem; }
+.architecture-flow { display: flex; align-items: stretch; gap: .45rem; }
+.architecture-flow-compact { max-width: 43rem; margin-inline: auto; }
+.architecture-node { display: flex; flex: 1 1 0; min-width: 0; min-height: 4.6rem; flex-direction: column; align-items: center; justify-content: center; gap: .25rem; padding: .65rem .45rem; border: 1px solid var(--border-strong); background: var(--surface-raised); text-align: center; }
+.architecture-node-owned { border-color: var(--cyan); background: color-mix(in srgb, var(--cyan-soft) 35%, var(--surface-raised)); }
+.architecture-node strong { color: var(--foreground); font: 600 .66rem/1.35 var(--font-code); }
+.architecture-node small { color: var(--muted-foreground); font: .56rem/1.35 var(--font-code); }
+.architecture-arrow { align-self: center; color: var(--teal); font: 700 1rem var(--font-code); }
+.architecture-support { display: flex; align-items: baseline; justify-content: center; gap: .7rem; margin-top: 1rem; padding-top: .8rem; border-top: 1px dashed var(--border); color: var(--muted-foreground); font: .62rem/1.5 var(--font-code); text-align: center; }
+.architecture-support span { color: var(--purple); text-transform: uppercase; letter-spacing: .05em; }
+.architecture-support strong { color: var(--foreground); font-weight: 500; }
+.mini-architecture figcaption { padding: 0 1.25rem 1.1rem; color: var(--muted-foreground); font: .72rem/1.65 var(--font-code); }
 .back-link { display: inline-flex; align-items: center; gap: .6rem; font: .8rem var(--font-code); color: var(--cyan); }
 .site-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; border-top: 1px solid var(--border); padding-block: 1.5rem; color: var(--muted-foreground); font: .7rem/1.8 var(--font-code); }
 .footer-links { display: flex; gap: 1.2rem; }
@@ -428,6 +443,11 @@ svg { width: 1.1rem; height: 1.1rem; flex: 0 0 auto; }
   .mlops-mobile-flow li { position: relative; padding: .65rem .75rem; border: 1px solid var(--border); background: var(--surface-raised); color: var(--foreground); font: .72rem/1.45 var(--font-code); counter-increment: mlops-step; }
   .mlops-mobile-flow li:not(:last-child)::after { content: "↓"; position: absolute; left: 50%; bottom: -.72rem; z-index: 1; color: var(--teal); transform: translateX(-50%); }
   .mlops-architecture .terminal-window-bar { align-items: flex-start; flex-direction: column; gap: .25rem; }
+  .mini-architecture .terminal-window-bar { align-items: flex-start; flex-direction: column; gap: .25rem; }
+  .architecture-flow { flex-direction: column; }
+  .architecture-node { width: 100%; min-height: 0; padding: .75rem; }
+  .architecture-arrow { transform: rotate(90deg); }
+  .architecture-support { align-items: center; flex-direction: column; gap: .25rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

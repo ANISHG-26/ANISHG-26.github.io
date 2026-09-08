@@ -131,6 +131,6 @@ I led the team and owned the primary cross-cloud workflow implementation, includ
 
 ## What stayed with me
 
-The same engineering intent can be expressed through very different provider primitives. The important lesson was not that one cloud “won,” but that the delivery pattern could be discovered, transferred, and adapted.
+The same engineering intent can be expressed through very different provider primitives. Architecture became more than a diagram: it was the shared vision that kept the workflow coherent while each provider forced different implementation choices.
 
 > This was an educational prototype, not production MLOps ownership. The project was collaborative, and the model was a test vehicle rather than the core innovation.

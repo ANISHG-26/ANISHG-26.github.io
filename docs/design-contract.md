@@ -66,6 +66,22 @@ has not been verified. This is a reference-role contract, not a completed visual
 - Preserve the academic, collaborative, and non-production boundaries; do not
   publish benchmark figures or model-quality claims from the reports.
 
+### I123 — Project Lessons And Skills Clarity, 2026-09-08
+
+- Add the Music Recommendation Chatbot as a Past Project using the approved
+  four-person collaboration, data-analysis, deployment, and system-integration
+  boundaries; withhold repository links until project hygiene is complete.
+- Let the four project stories imply distinct lessons: rapid iteration through
+  ChargeRoute, architecture and shared vision through Cross-Cloud MLOps,
+  requirements-to-solution translation through the moving-services client, and
+  collaboration with individual ownership through the music chatbot.
+- Translate the music and moving-services architectures into small responsive,
+  portfolio-native diagrams. Keep the moving-services source image private and
+  publish only the approved, sanitized architecture mapping.
+- Reopen only the Experience skills content. Group direct current work,
+  reliability/security work, historical professional context, and active
+  learning so the evidence level of every item is explicit.
+
 ## How To Change This Contract
 
 ### I096 — Experience Page Freeze, 2026-09-07
