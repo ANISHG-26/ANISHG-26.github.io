@@ -30,15 +30,13 @@ A four-person course team built a music-recommendation prototype that combined s
     </div>
     <div class="architecture-support"><span>shared integrations</span><strong>Spotify API · song data · model assets</strong></div>
   </div>
-  <figcaption id="music-architecture-caption">The system was collaborative. My primary ownership was the deployment path and the integration needed to make the pieces run together.</figcaption>
+  <figcaption id="music-architecture-caption">We built the system together. I focused on the deployment path and the integration that helped the pieces run as one.</figcaption>
 </figure>
 
 ## My contribution
 
-I contributed data cleansing, initial data analysis, and exploratory analysis. I also initiated and owned the infrastructure, deployment, and system-integration work: packaging the Flask service with Docker, deploying it to Cloud Run, and connecting the hosted service into the Dialogflow ES and Telegram flow.
+I worked on data cleansing, initial data analysis, and exploratory analysis, then took the lead on infrastructure, deployment, and system integration. That meant packaging the Flask service with Docker, deploying it to Cloud Run, and connecting the hosted service into the Dialogflow ES and Telegram flow.
 
 ## What stayed with me
 
-Collaboration works best when shared effort and individual ownership are both visible. The model and application were team work; I took responsibility for the path that made those pieces available as one working system.
-
-> This was an academic team project. I am not claiming sole model ownership, personal ownership of the Spotify integration, or ownership of every connected component. Repository links are intentionally withheld until project hygiene is complete.
+Good collaboration does not mean everyone has to do the same thing. We shared the work, and I found my lane in making the system run end to end—something I have kept gravitating toward ever since.

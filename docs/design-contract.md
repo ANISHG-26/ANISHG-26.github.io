@@ -70,11 +70,12 @@ has not been verified. This is a reference-role contract, not a completed visual
 
 - Add the Music Recommendation Chatbot as a Past Project using the approved
   four-person collaboration, data-analysis, deployment, and system-integration
-  boundaries; withhold repository links until project hygiene is complete.
+  scope. Keep the public voice warm rather than expressing governance as disclaimer
+  language; withhold repository links until project hygiene is complete.
 - Let the four project stories imply distinct lessons: rapid iteration through
   ChargeRoute, architecture and shared vision through Cross-Cloud MLOps,
   requirements-to-solution translation through the moving-services client, and
-  collaboration with individual ownership through the music chatbot.
+  collaboration with a clear personal contribution through the music chatbot.
 - Translate the music and moving-services architectures into small responsive,
   portfolio-native diagrams. Keep the moving-services source image private and
   publish only the approved, sanitized architecture mapping.
